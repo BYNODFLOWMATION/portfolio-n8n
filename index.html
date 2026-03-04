@@ -604,18 +604,24 @@
         .project-card + .project-card { margin-top: 32px; }
         .project-card:nth-child(even) { direction: rtl; }
         .project-card:nth-child(even) > * { direction: ltr; }
-        .project-visual {
-            position: relative; min-height: 500px; overflow: hidden;
-            display: flex; align-items: center; justify-content: center;
-            background: var(--dark-surface);
-        }
-        .project-visual img {
-            width: 100%; 
-            height: 100%; 
-            object-fit: cover;
-            object-position: center;
-            transition: transform 0.8s var(--transition);
-        }
+.project-visual {
+    position: relative; 
+    min-height: 500px; 
+    overflow: hidden;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background: #1a1a1a; /* Fond pour workflow n8n */
+    padding: 24px; /* ✅ Ajoute de l'espace autour */
+}
+
+.project-visual img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; /* ✅ Garde les proportions */
+    object-position: center;
+    transition: transform 0.8s var(--transition);
+}
         .project-card:hover .project-visual img { transform: scale(1.05); }
         .project-visual-number {
             position: absolute; top: 24px; left: 24px; z-index: 2;
