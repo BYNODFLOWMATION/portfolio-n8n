@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Primary -->
+    <title>BY NODFLOWMATION — Expert Automatisation n8n & IA | Workflow Automation</title>
+    <meta name="description" content="Expert freelance en automatisation n8n et intégration IA (GPT-4, Mistral, Gemini). Automatisation de workflows : factures, souscriptions, documents juridiques. Jusqu'à 95% de temps gagné.">
+    <meta name="keywords" content="n8n automation, workflow automation expert, automatisation n8n, intégration IA, GPT-4, Mistral, Gemini, process automation, API integration, automatisation factures, OCR, freelance automation, expert n8n France">
+    <meta name="author" content="BY NODFLOWMATION">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://bynodflowmation.github.io/portfolio-n8n/">
+
+    <!-- Alternate languages -->
+    <link rel="alternate" hreflang="fr" href="https://bynodflowmation.github.io/portfolio-n8n/?lang=fr">
+    <link rel="alternate" hreflang="en" href="https://bynodflowmation.github.io/portfolio-n8n/?lang=en">
+    <link rel="alternate" hreflang="x-default" href="https://bynodflowmation.github.io/portfolio-n8n/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./LOGO_BW_WHITE.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --black: #0a0a0a;
+            --dark: #111111;
+            --dark-surface: #1a1a1a;
+            --dark-border: #2a2a2a;
+            --gray-900: #171717;
+            --gray-800: #262626;
+            --gray-700: #404040;
+            --gray-600: #525252;
+            --gray-500: #737373;
+            --gray-400: #a3a3a3;
+            --gray-300: #d4d4d4;
+            --white: #ffffff;
+            --accent: #6366f1;
+            --accent-light: #818cf8;
+            --accent-dark: #4f46e5;
+            --accent-glow: rgba(99, 102, 241, 0.15);
+            --green: #22c55e;
+            --orange: #f59e0b;
+            --cyan: #06b6d4;
+            --radius: 16px;
+            --radius-sm: 8px;
+            --radius-lg: 24px;
+            --transition: cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--black);
+            color: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden;
+            cursor: none;
+        }
+
+        ::selection { background: var(--accent); color: white; }
+
+        /* ═══════════════════════════════════════
+           CUSTOM CURSOR
+        ═══════════════════════════════════════ */
+        .cursor {
+            width: 20px; height: 20px;
+            border: 2px solid var(--accent-light);
+            border-radius: 50%; position: fixed;
+            pointer-events: none; z-index: 10000;
+            transition: transform 0.15s var(--transition), opacity 0.15s;
+            transform: translate(-50%, -50%);
+            mix-blend-mode: difference;
+        }
+        .cursor-dot {
+            width: 6px; height: 6px;
+            background: var(--accent); border-radius: 50%;
+            position: fixed; pointer-events: none; z-index: 10001;
+            transform: translate(-50%, -50%); transition: transform 0.08s;
+        }
+        .cursor.hover {
+            transform: translate(-50%, -50%) scale(2.5);
+            border-color: var(--accent);
+            background: rgba(99, 102, 241, 0.1);
+        }
+
+        /* ═══════════════════════════════════════
+           NAVIGATION
+        ═══════════════════════════════════════ */
+        nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            padding: 24px 48px; display: flex; justify-content: space-between;
+            align-items: center; transition: all 0.5s var(--transition);
+        }
+        nav.scrolled {
+            padding: 16px 48px;
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(20px) saturate(180%);
+            border-bottom: 1px solid var(--dark-border);
+        }
+        .nav-logo {
+            text-decoration: none; display: flex; align-items: center;
+        }
+        .nav-logo-img {
+            height: 56px; width: auto; object-fit: contain;
+            transition: opacity 0.3s;
+        }
+        .nav-logo-img:hover { opacity: 0.8; }
+        .nav-links {
+            display: flex; align-items: center; gap: 32px; list-style: none;
+        }
+        .nav-links a {
+            color: var(--gray-400); text-decoration: none; font-size: 14px;
+            font-weight: 500; letter-spacing: 0.05em; transition: color 0.3s;
+            position: relative;
+        }
+        .nav-links a::after {
+            content: ''; position: absolute; bottom: -4px; left: 0;
+            width: 0; height: 2px; background: var(--accent);
+            transition: width 0.3s var(--transition);
+        }
+        .nav-links a:hover { color: var(--white); }
+        .nav-links a:hover::after { width: 100%; }
+        .nav-cta {
+            padding: 7px 16px !important; background: var(--white);
+            color: var(--black) !important; border-radius: 100px;
+            font-weight: 600 !important; font-size: 11px !important;
+            letter-spacing: 0.02em !important;
+            transition: all 0.3s var(--transition) !important;
+        }
+        .nav-cta::after { display: none !important; }
+        .nav-cta:hover {
+            background: var(--accent) !important;
+            color: var(--white) !important; transform: scale(1.05);
+        }
+
+        /* Language Switcher */
+        .lang-switch {
+            display: flex; align-items: center; gap: 4px;
+            background: var(--dark-surface); border: 1px solid var(--dark-border);
+            border-radius: 100px; padding: 3px; margin-left: 8px;
+        }
+        .lang-btn {
+            padding: 5px 12px; border-radius: 100px; border: none;
+            background: transparent; color: var(--gray-500);
+            font-size: 12px; font-weight: 600; cursor: pointer;
+            transition: all 0.3s var(--transition);
+            font-family: 'Inter', sans-serif; letter-spacing: 0.05em;
+        }
+        .lang-btn.active {
+            background: var(--accent); color: var(--white);
+        }
+        .lang-btn:hover:not(.active) { color: var(--white); }
+
+        .menu-toggle {
+            display: none; flex-direction: column; gap: 6px;
+            cursor: pointer; z-index: 1001; background: none;
+            border: none; padding: 8px;
+        }
+        .menu-toggle span {
+            width: 28px; height: 2px; background: var(--white);
+            transition: all 0.3s var(--transition); display: block;
+        }
+        .menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translateY(5.5px); }
+        .menu-toggle.active span:nth-child(2) { opacity: 0; }
+        .menu-toggle.active span:nth-child(3) { transform: rotate(-45deg) translateY(-5.5px); }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            position: fixed; inset: 0; background: var(--black); z-index: 999;
+            display: flex; align-items: center; justify-content: center;
+            flex-direction: column; gap: 32px;
+            opacity: 0; visibility: hidden; transition: all 0.5s var(--transition);
+        }
+        .mobile-menu.active { opacity: 1; visibility: visible; }
+        .mobile-menu a {
+            font-family: 'Space Grotesk', sans-serif; font-size: 48px;
+            font-weight: 600; color: var(--white); text-decoration: none;
+            transition: color 0.3s;
+        }
+        .mobile-menu a:hover { color: var(--accent); }
+
+        /* ═══════════════════════════════════════
+           HERO
+        ═══════════════════════════════════════ */
+        .hero {
+            min-height: 100vh; display: flex; align-items: center;
+            position: relative; overflow: hidden; padding: 140px 48px 100px;
+        }
+        .hero-bg { position: absolute; inset: 0; z-index: 0; }
+        .hero-gradient {
+            position: absolute; top: -30%; right: -20%;
+            width: 900px; height: 900px;
+            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+            animation: floatGradient 15s ease-in-out infinite;
+        }
+        .hero-gradient-2 {
+            position: absolute; bottom: -20%; left: -10%;
+            width: 700px; height: 700px;
+            background: radial-gradient(circle, rgba(6, 182, 212, 0.08) 0%, transparent 70%);
+            animation: floatGradient 20s ease-in-out infinite reverse;
+        }
+        @keyframes floatGradient {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 30px) scale(0.95); }
+        }
+        .hero-grid {
+            position: absolute; inset: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 80px 80px;
+            mask-image: radial-gradient(ellipse 60% 60% at 50% 50%, black 20%, transparent 70%);
+        }
+        .hero-content {
+            position: relative; z-index: 1; max-width: 1400px;
+            margin: 0 auto; width: 100%;
+        }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 10px;
+            padding: 8px 20px 8px 8px; background: var(--dark-surface);
+            border: 1px solid var(--dark-border); border-radius: 100px;
+            margin-bottom: 48px; font-size: 13px; color: var(--gray-400);
+            font-weight: 500;
+        }
+        .hero-badge-dot {
+            width: 8px; height: 8px; background: var(--green);
+            border-radius: 50%; animation: pulse 2s ease-in-out infinite;
+            box-shadow: 0 0 8px rgba(34, 197, 94, 0.5);
+        }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+
+        .hero-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(48px, 7.5vw, 110px);
+            font-weight: 700; line-height: 1.05;
+            letter-spacing: -0.03em; margin-bottom: 40px;
+        }
+        .hero-title .gradient-text {
+            background: linear-gradient(135deg, var(--accent-light), var(--cyan), var(--accent));
+            -webkit-background-clip: text; background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+            animation: shimmer 3s ease-in-out infinite;
+        }
+        @keyframes shimmer {
+            0%, 100% { background-position: 0% center; }
+            50% { background-position: 100% center; }
+        }
+        .hero-description {
+            font-size: 20px; color: var(--gray-400); max-width: 620px;
+            line-height: 1.7; font-weight: 400; margin-bottom: 56px;
+        }
+        .hero-actions {
+            display: flex; align-items: center; gap: 20px;
+        }
+        .btn-primary {
+            display: inline-flex; align-items: center; gap: 12px;
+            padding: 18px 36px; background: var(--white); color: var(--black);
+            border-radius: 100px; font-size: 15px; font-weight: 600;
+            text-decoration: none; transition: all 0.4s var(--transition);
+            border: none; cursor: pointer;
+        }
+        .btn-primary:hover {
+            background: var(--accent); color: var(--white);
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(99, 102, 241, 0.3);
+        }
+        .btn-primary .arrow { transition: transform 0.3s var(--transition); }
+        .btn-primary:hover .arrow { transform: translateX(4px); }
+        .btn-secondary {
+            display: inline-flex; align-items: center; gap: 10px;
+            padding: 18px 36px; background: transparent; color: var(--white);
+            border: 1px solid var(--dark-border); border-radius: 100px;
+            font-size: 15px; font-weight: 500; text-decoration: none;
+            transition: all 0.4s var(--transition); cursor: pointer;
+        }
+        .btn-secondary:hover {
+            border-color: var(--gray-500); background: var(--dark-surface);
+        }
+        .hero-stats {
+            display: flex; gap: 64px; margin-top: 100px;
+            padding-top: 48px; border-top: 1px solid var(--dark-border);
+        }
+        .hero-stat { display: flex; flex-direction: column; gap: 8px; }
+        .hero-stat-value {
+            font-family: 'Space Grotesk', sans-serif; font-size: 48px;
+            font-weight: 700; line-height: 1;
+            background: linear-gradient(135deg, var(--white), var(--gray-400));
+            -webkit-background-clip: text; background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-stat-label {
+            font-size: 13px; color: var(--gray-500);
+            text-transform: uppercase; letter-spacing: 0.12em; font-weight: 500;
+        }
+
+        /* ═══════════════════════════════════════
+           SECTIONS COMMON
+        ═══════════════════════════════════════ */
+        .section { padding: 160px 48px; position: relative; }
+        .section-container { max-width: 1400px; margin: 0 auto; }
+        .section-header {
+            display: flex; justify-content: space-between;
+            align-items: flex-end; margin-bottom: 80px; gap: 40px; flex-wrap: wrap;
+        }
+        .section-label {
+            font-family: 'JetBrains Mono', monospace; font-size: 13px;
+            color: var(--accent-light); text-transform: uppercase;
+            letter-spacing: 0.15em; font-weight: 500; margin-bottom: 20px;
+            display: flex; align-items: center; gap: 12px;
+        }
+        .section-label::before {
+            content: ''; width: 32px; height: 1px; background: var(--accent);
+        }
+        .section-heading {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(36px, 4.5vw, 64px);
+            font-weight: 700; line-height: 1.15;
+            letter-spacing: -0.02em; max-width: 700px;
+        }
+        .section-subtitle {
+            font-size: 18px; color: var(--gray-500);
+            max-width: 400px; line-height: 1.7;
+        }
+
+        /* ═══════════════════════════════════════
+           PROJECTS
+        ═══════════════════════════════════════ */
+        .projects-section { background: var(--black); }
+        .project-card {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2px; background: var(--dark);
+            border-radius: var(--radius-lg); overflow: hidden;
+            border: 1px solid var(--dark-border);
+            transition: all 0.6s var(--transition);
+            opacity: 0; transform: translateY(60px);
+        }
+        .project-card.visible { opacity: 1; transform: translateY(0); }
+        .project-card:hover {
+            border-color: var(--gray-700); transform: translateY(-4px);
+            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
+        }
+        .project-card + .project-card { margin-top: 32px; }
+        .project-card:nth-child(even) { direction: rtl; }
+        .project-card:nth-child(even) > * { direction: ltr; }
+        .project-visual {
+            position: relative; min-height: 500px; overflow: hidden;
+            display: flex; align-items: center; justify-content: center;
+            background: var(--dark-surface);
+        }
+        .project-visual img {
+            width: 100%; height: 100%; object-fit: cover;
+            transition: transform 0.8s var(--transition);
+        }
+        .project-card:hover .project-visual img { transform: scale(1.05); }
+        .project-visual-number {
+            position: absolute; top: 24px; left: 24px; z-index: 2;
+            font-family: 'JetBrains Mono', monospace; font-size: 13px;
+            color: rgba(255,255,255,0.3); letter-spacing: 0.1em;
+        }
+        .project-info {
+            padding: 56px; display: flex; flex-direction: column; justify-content: center;
+        }
+        .project-tag {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 6px 14px; background: var(--accent-glow);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 100px; font-family: 'JetBrains Mono', monospace;
+            font-size: 11px; color: var(--accent-light);
+            text-transform: uppercase; letter-spacing: 0.1em;
+            font-weight: 500; margin-bottom: 24px; width: fit-content;
+        }
+        .project-info h3 {
+            font-family: 'Space Grotesk', sans-serif; font-size: 32px;
+            font-weight: 700; line-height: 1.2; margin-bottom: 16px;
+            letter-spacing: -0.01em;
+        }
+        .project-info p {
+            font-size: 16px; color: var(--gray-400);
+            line-height: 1.7; margin-bottom: 32px;
+        }
+        .project-metrics { display: flex; gap: 32px; margin-bottom: 32px; flex-wrap: wrap; }
+        .project-metric { display: flex; flex-direction: column; gap: 4px; }
+        .project-metric-value {
+            font-family: 'Space Grotesk', sans-serif; font-size: 28px;
+            font-weight: 700; color: var(--white);
+        }
+        .project-metric-label {
+            font-size: 12px; color: var(--gray-500);
+            text-transform: uppercase; letter-spacing: 0.1em;
+        }
+        .project-stack { display: flex; flex-wrap: wrap; gap: 8px; }
+        .project-stack-item {
+            padding: 6px 14px; background: var(--dark-surface);
+            border: 1px solid var(--dark-border); border-radius: 100px;
+            font-size: 12px; color: var(--gray-300); font-weight: 500;
+        }
+
+        /* ═══════════════════════════════════════
+           CONTACT
+        ═══════════════════════════════════════ */
+        .contact-section {
+            background: var(--black); border-top: 1px solid var(--dark-border);
+            text-align: center; position: relative; overflow: hidden;
+        }
+        .contact-bg-text {
+            position: absolute; top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(100px, 20vw, 300px); font-weight: 900;
+            color: rgba(255,255,255,0.02); white-space: nowrap;
+            pointer-events: none; user-select: none;
+        }
+        .contact-content { position: relative; z-index: 1; }
+        .contact-heading {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(40px, 6vw, 80px); font-weight: 700;
+            line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 28px;
+        }
+        .contact-sub {
+            font-size: 20px; color: var(--gray-500);
+            max-width: 500px; margin: 0 auto 56px; line-height: 1.7;
+        }
+        .contact-email {
+            display: inline-flex; align-items: center; gap: 16px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(20px, 3vw, 36px); font-weight: 600;
+            color: var(--white); text-decoration: none; padding: 20px 0;
+            border-bottom: 2px solid var(--gray-700);
+            transition: all 0.4s var(--transition);
+        }
+        .contact-email:hover { border-color: var(--accent); color: var(--accent-light); }
+        .contact-email svg { transition: transform 0.3s var(--transition); }
+        .contact-email:hover svg { transform: translate(4px, -4px); }
+
+        /* ═══════════════════════════════════════
+           FOOTER
+        ═══════════════════════════════════════ */
+        footer {
+            padding: 40px 48px; border-top: 1px solid var(--dark-border);
+            display: flex; justify-content: space-between; align-items: center;
+            background: var(--black);
+        }
+        footer p { font-size: 13px; color: var(--gray-600); }
+        .footer-back-top {
+            width: 44px; height: 44px; border: 1px solid var(--dark-border);
+            border-radius: 50%; display: flex; align-items: center;
+            justify-content: center; color: var(--gray-500);
+            text-decoration: none; font-size: 18px;
+            transition: all 0.3s var(--transition);
+        }
+        .footer-back-top:hover {
+            border-color: var(--accent); color: var(--accent);
+            transform: translateY(-3px);
+        }
+
+        /* ═══════════════════════════════════════
+           RESPONSIVE
+        ═══════════════════════════════════════ */
+        @media (max-width: 1100px) {
+            .project-card { grid-template-columns: 1fr; }
+            .project-card:nth-child(even) { direction: ltr; }
+            .project-visual { min-height: 400px; }
+        }
+        @media (max-width: 900px) {
+            .hero { padding: 120px 28px 80px; }
+            .section { padding: 100px 28px; }
+            nav { padding: 20px 28px; }
+            nav.scrolled { padding: 16px 28px; }
+            .nav-links { display: none; }
+            .menu-toggle { display: flex; }
+            .hero-stats { gap: 32px; flex-wrap: wrap; }
+            .project-info { padding: 36px 28px; }
+            footer { padding: 32px 28px; }
+        }
+        @media (max-width: 600px) {
+            .hero { padding: 100px 20px 60px; }
+            .section { padding: 80px 20px; }
+            nav { padding: 16px 20px; }
+            .hero-actions { flex-direction: column; align-items: stretch; }
+            .btn-primary, .btn-secondary { justify-content: center; text-align: center; }
+            .hero-stats { gap: 24px; }
+            .hero-stat-value { font-size: 36px; }
+            .project-metrics { gap: 20px; }
+            .project-info h3 { font-size: 24px; }
+            footer { flex-direction: column; gap: 20px; text-align: center; }
+            .cursor, .cursor-dot { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- Navigation -->
+    <nav id="nav" role="navigation" aria-label="Main navigation">
+        <a href="#" class="nav-logo" aria-label="BY NODFLOWMATION - Home">
+            <img src="./LOGO_BW_WHITE.png" alt="BY NODFLOWMATION logo" class="nav-logo-img">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#work" data-i18n="nav_work">Projets</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+            <li>
+                <a href="https://cal.eu/blong.yang" target="_blank" rel="noopener noreferrer" class="nav-cta" data-i18n="nav_cta">Réserver un appel</a>
+            </li>
+            <li>
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="fr" aria-label="Français">FR</button>
+                    <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+                </div>
+            </li>
+        </ul>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+        <a href="#work" class="mobile-link" data-i18n="nav_work">Projets</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+        <div class="lang-switch" style="margin-top: 24px;">
+            <button class="lang-btn active" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-gradient-2"></div>
+            <div class="hero-grid"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="hero-badge-dot"></span>
+                <span data-i18n="hero_badge">Disponible pour de nouveaux projets</span>
+            </div>
+
+            <h1 class="hero-title">
+                <span data-i18n="hero_line1">Automatiser vos</span><br>
+                <span data-i18n="hero_line2">workflows complexes</span><br>
+                <span data-i18n="hero_line3_prefix">avec </span><span class="gradient-text" data-i18n="hero_line3_accent">intelligence</span>
+            </h1>
+
+            <p class="hero-description" data-i18n="hero_description">
+                Je conçois et développe des workflows d'automatisation intelligents avec n8n, 
+                des modèles d'IA et des intégrations sur mesure — transformant des heures de travail manuel 
+                en minutes de processus automatisés.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#work" class="btn-primary">
+                    <span data-i18n="hero_btn_projects">Voir les projets</span>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="https://cal.eu/blong.yang" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-i18n="hero_btn_talk">
+                    Discutons
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-value">4</div>
+                    <div class="hero-stat-label" data-i18n="stat_projects">Projets</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value">95%</div>
+                    <div class="hero-stat-label" data-i18n="stat_time">Temps gagné</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value">42</div>
+                    <div class="hero-stat-label" data-i18n="stat_nodes">Nodes max</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value">100%</div>
+                    <div class="hero-stat-label" data-i18n="stat_accuracy">Précision</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         PROJECTS
+    ═══════════════════════════════════════ -->
+    <section class="section projects-section" id="work" aria-labelledby="work-heading">
+        <div class="section-container">
+            <div class="section-header">
+                <div>
+                    <div class="section-label" data-i18n="projects_label">Projets sélectionnés</div>
+                    <h2 class="section-heading" id="work-heading" data-i18n="projects_heading">Des workflows qui automatisent l'impossible</h2>
+                </div>
+                <p class="section-subtitle" data-i18n="projects_subtitle">
+                    Chaque workflow est conçu pour éliminer les tâches manuelles et maximiser la précision.
+                </p>
+            </div>
+
+            <!-- Project 1: BSA AIR -->
+            <article class="project-card" data-animate>
+                <div class="project-visual">
+                    <div class="project-visual-number">01</div>
+                    <img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/BSA_AIR.png" alt="BSA AIR Workflow" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <div class="project-tag" data-i18n="p1_tag">Finance</div>
+                    <h3 data-i18n="p1_title">Pipeline de souscription BSA AIR</h3>
+                    <p data-i18n="p1_desc">Workflow ultra-complexe : extraction OCR multi-documents, identification automatique des fondateurs, 15+ calculs financiers imbriqués, génération multi-formats (bulletins, annexes). Validation juridique intégrée.</p>
+                    <div class="project-metrics">
+                        <div class="project-metric">
+                            <div class="project-metric-value">96%</div>
+                            <div class="project-metric-label" data-i18n="metric_time">Temps gagné</div>
+                        </div>
+                        <div class="project-metric">
+                            <div class="project-metric-value">42</div>
+                            <div class="project-metric-label">Nodes</div>
+                        </div>
+                    </div>
+                    <div class="project-stack">
+                        <span class="project-stack-item">n8n</span>
+                        <span class="project-stack-item">GPT-4.1 Mini</span>
+                        <span class="project-stack-item">Mistral OCR</span>
+                        <span class="project-stack-item">Carbone API</span>
+                        <span class="project-stack-item">Legaia API</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2: Constitution Avocats -->
+            <article class="project-card" data-animate>
+                <div class="project-visual">
+                    <div class="project-visual-number">02</div>
+                    <img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/CONSTITUTION_AVOCATS.png" alt="Constitution Avocats Workflow" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <div class="project-tag" data-i18n="p2_tag">Juridique</div>
+                    <h3 data-i18n="p2_title">Constitution d'Avocat Automatisée</h3>
+                    <p data-i18n="p2_desc">Extraction IA de documents juridiques (assignations, statuts), détection intelligente des tribunaux compétents, enrichissement entreprises via API, génération automatique avec validation de conformité.</p>
+                    <div class="project-metrics">
+                        <div class="project-metric">
+                            <div class="project-metric-value">87%</div>
+                            <div class="project-metric-label" data-i18n="metric_time">Temps gagné</div>
+                        </div>
+                        <div class="project-metric">
+                            <div class="project-metric-value">20</div>
+                            <div class="project-metric-label">Nodes</div>
+                        </div>
+                    </div>
+                    <div class="project-stack">
+                        <span class="project-stack-item">n8n</span>
+                        <span class="project-stack-item">GPT-4.1 Mini</span>
+                        <span class="project-stack-item">Mistral OCR</span>
+                        <span class="project-stack-item">Legaia API</span>
+                        <span class="project-stack-item">Carbone</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3: Pouvoir Formalités -->
+            <article class="project-card" data-animate>
+                <div class="project-visual">
+                    <div class="project-visual-number">03</div>
+                    <img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/POUVOIR_FORMALITE.png" alt="Pouvoir Formalités Workflow" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <div class="project-tag" data-i18n="p3_tag">Corporate</div>
+                    <h3 data-i18n="p3_title">Procuration pour Formalités Juridiques</h3>
+                    <p data-i18n="p3_desc">Génération intelligente de procurations : détection société immatriculée/en formation, extraction des statuts via OCR, enrichissement RCS automatique, génération conforme aux normes légales.</p>
+                    <div class="project-metrics">
+                        <div class="project-metric">
+                            <div class="project-metric-value">92%</div>
+                            <div class="project-metric-label" data-i18n="metric_time">Temps gagné</div>
+                        </div>
+                        <div class="project-metric">
+                            <div class="project-metric-value">18</div>
+                            <div class="project-metric-label">Nodes</div>
+                        </div>
+                    </div>
+                    <div class="project-stack">
+                        <span class="project-stack-item">n8n</span>
+                        <span class="project-stack-item">GPT-4.1 Mini</span>
+                        <span class="project-stack-item">Mistral OCR</span>
+                        <span class="project-stack-item">Legaia API</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 4: Agrégation Factures -->
+            <article class="project-card" data-animate>
+                <div class="project-visual">
+                    <div class="project-visual-number">04</div>
+                    <img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/AGGREGATION_FACTURE.png" alt="Agrégation Factures Workflow" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <div class="project-tag" data-i18n="p4_tag">Data Pipeline</div>
+                    <h3 data-i18n="p4_title">Traitement Intelligent de Factures</h3>
+                    <p data-i18n="p4_desc">Extraction IA avec Gemini OCR, classification automatique de 50+ types de produits, normalisation, détection de doublons, split PDF multi-pages, insertion Supabase. 1000+ factures/mois.</p>
+                    <div class="project-metrics">
+                        <div class="project-metric">
+                            <div class="project-metric-value">1K+</div>
+                            <div class="project-metric-label" data-i18n="metric_month">Par mois</div>
+                        </div>
+                        <div class="project-metric">
+                            <div class="project-metric-value">38</div>
+                            <div class="project-metric-label">Nodes</div>
+                        </div>
+                    </div>
+                    <div class="project-stack">
+                        <span class="project-stack-item">Google Gemini</span>
+                        <span class="project-stack-item">Supabase</span>
+                        <span class="project-stack-item">ILovePDF</span>
+                        <span class="project-stack-item">Google Sheets</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         CONTACT
+    ═══════════════════════════════════════ -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+        <div class="contact-bg-text">CONTACT</div>
+        <div class="section-container contact-content">
+            <div class="section-label" style="justify-content: center;" data-i18n="contact_label">Contact</div>
+            <h2 class="contact-heading" id="contact-heading" data-i18n="contact_heading">Construisons quelque chose<br>de remarquable ensemble</h2>
+            <p class="contact-sub" data-i18n="contact_sub">
+                Vous avez un workflow à automatiser ? Parlons de comment l'automatisation propulsée par l'IA peut transformer vos processus.
+            </p>
+            <a href="mailto:blong.yang1@outlook.fr" class="contact-email" aria-label="Send email to blong.yang1@outlook.fr">
+                blong.yang1@outlook.fr
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <p>© 2025 BY NODFLOWMATION — <span data-i18n="footer_rights">Tous droits réservés</span></p>
+        <a href="#hero" class="footer-back-top" aria-label="Back to top">↑</a>
+    </footer>
+
+    <!-- ═══════════════════════════════════════
+         JAVASCRIPT
+    ═══════════════════════════════════════ -->
+    <script>
+    // ═══════════════════════════════════════
+    // TRANSLATIONS
+    // ═══════════════════════════════════════
+    const translations = {
+        fr: {
+            // Nav
+            nav_work: "Projets",
+            nav_contact: "Contact",
+            nav_cta: "Réserver un appel",
+
+            // Hero
+            hero_badge: "Disponible pour de nouveaux projets",
+            hero_line1: "Automatiser vos",
+            hero_line2: "workflows complexes",
+            hero_line3_prefix: "avec ",
+            hero_line3_accent: "intelligence",
+            hero_description: "Je conçois et développe des workflows d'automatisation intelligents avec n8n, des modèles d'IA et des intégrations sur mesure — transformant des heures de travail manuel en minutes de processus automatisés.",
+            hero_btn_projects: "Voir les projets",
+            hero_btn_talk: "Discutons",
+            stat_projects: "Projets",
+            stat_time: "Temps gagné",
+            stat_nodes: "Nodes max",
+            stat_accuracy: "Précision",
+
+            // Projects
+            projects_label: "Projets sélectionnés",
+            projects_heading: "Des workflows qui automatisent l'impossible",
+            projects_subtitle: "Chaque workflow est conçu pour éliminer les tâches manuelles et maximiser la précision.",
+            
+            p1_tag: "Finance",
+            p1_title: "Pipeline de souscription BSA AIR",
+            p1_desc: "Workflow ultra-complexe : extraction OCR multi-documents, identification automatique des fondateurs, 15+ calculs financiers imbriqués, génération multi-formats (bulletins, annexes). Validation juridique intégrée.",
+            
+            p2_tag: "Juridique",
+            p2_title: "Constitution d'Avocat Automatisée",
+            p2_desc: "Extraction IA de documents juridiques (assignations, statuts), détection intelligente des tribunaux compétents, enrichissement entreprises via API, génération automatique avec validation de conformité.",
+            
+            p3_tag: "Corporate",
+            p3_title: "Procuration pour Formalités Juridiques",
+            p3_desc: "Génération intelligente de procurations : détection société immatriculée/en formation, extraction des statuts via OCR, enrichissement RCS automatique, génération conforme aux normes légales.",
+            
+            p4_tag: "Data Pipeline",
+            p4_title: "Traitement Intelligent de Factures",
+            p4_desc: "Extraction IA avec Gemini OCR, classification automatique de 50+ types de produits, normalisation, détection de doublons, split PDF multi-pages, insertion Supabase. 1000+ factures/mois.",
+
+            metric_time: "Temps gagné",
+            metric_month: "Par mois",
+
+            // Contact
+            contact_label: "Contact",
+            contact_heading: "Construisons quelque chose<br>de remarquable ensemble",
+            contact_sub: "Vous avez un workflow à automatiser ? Parlons de comment l'automatisation propulsée par l'IA peut transformer vos processus.",
+
+            // Footer
+            footer_rights: "Tous droits réservés"
+        },
+
+        en: {
+            // Nav
+            nav_work: "Work",
+            nav_contact: "Contact",
+            nav_cta: "Book a Call",
+
+            // Hero
+            hero_badge: "Available for new projects",
+            hero_line1: "Automating your",
+            hero_line2: "complex workflows",
+            hero_line3_prefix: "with ",
+            hero_line3_accent: "intelligence",
+            hero_description: "I design and build intelligent automation workflows using n8n, AI models, and smart integrations — transforming hours of manual work into minutes of automated processes.",
+            hero_btn_projects: "View Projects",
+            hero_btn_talk: "Let's Talk",
+            stat_projects: "Projects",
+            stat_time: "Time Saved",
+            stat_nodes: "Max Nodes",
+            stat_accuracy: "Accuracy",
+
+            // Projects
+            projects_label: "Selected Work",
+            projects_heading: "Workflows that automate the impossible",
+            projects_subtitle: "Each workflow is engineered to eliminate manual tasks and maximize precision.",
+            
+            p1_tag: "Finance",
+            p1_title: "BSA AIR Subscription Pipeline",
+            p1_desc: "Ultra-complex workflow: multi-document OCR extraction, automatic founder identification, 15+ nested financial calculations, multi-format generation (bulletins, annexes). Integrated legal validation.",
+            
+            p2_tag: "Legal",
+            p2_title: "Automated Attorney Constitution",
+            p2_desc: "AI extraction of legal documents (summons, statutes), intelligent court detection, company enrichment via API, automatic generation with compliance validation.",
+            
+            p3_tag: "Corporate",
+            p3_title: "Power of Attorney for Legal Formalities",
+            p3_desc: "Intelligent proxy generation: registered/forming company detection, statute extraction via OCR, automatic RCS enrichment, legal standard-compliant generation.",
+            
+            p4_tag: "Data Pipeline",
+            p4_title: "Intelligent Invoice Processing",
+            p4_desc: "AI extraction with Gemini OCR, automatic classification of 50+ product types, normalization, duplicate detection, multi-page PDF split, Supabase insertion. 1000+ invoices/month.",
+
+            metric_time: "Time Saved",
+            metric_month: "Per Month",
+
+            // Contact
+            contact_label: "Get in Touch",
+            contact_heading: "Let's build something<br>remarkable together",
+            contact_sub: "Have a workflow that needs automating? Let's talk about how AI-powered automation can transform your processes.",
+
+            // Footer
+            footer_rights: "All rights reserved"
+        }
+    };
+
+    // ═══════════════════════════════════════
+    // LANGUAGE SWITCHER
+    // ═══════════════════════════════════════
+    let currentLang = localStorage.getItem('lang') || 
+                      (navigator.language.startsWith('fr') ? 'fr' : 'en');
+
+    function setLanguage(lang) {
+        currentLang = lang;
+        localStorage.setItem('lang', lang);
+        document.documentElement.lang = lang;
+
+        // Update meta
+        const descMeta = document.querySelector('meta[name="description"]');
+        if (lang === 'fr') {
+            descMeta.content = "Expert freelance en automatisation n8n et intégration IA (GPT-4, Mistral, Gemini). Automatisation de workflows complexes. Jusqu'à 95% de temps gagné.";
+            document.title = "BY NODFLOWMATION — Expert Automatisation n8n & IA";
+        } else {
+            descMeta.content = "Freelance n8n workflow automation expert. AI integration (GPT-4, Mistral, Gemini). Complex workflow automation. Up to 95% time saved.";
+            document.title = "BY NODFLOWMATION — Workflow Automation Expert";
+        }
+
+        // Translate all elements
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (translations[lang][key]) {
+                el.innerHTML = translations[lang][key];
+            }
+        });
+
+        // Update button states
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.lang === lang);
+        });
+    }
+
+    // Desktop lang buttons
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
+    });
+
+    // Apply language on load
+    document.addEventListener('DOMContentLoaded', () => {
+        setLanguage(currentLang);
+    });
+
+    // ═══════════════════════════════════════
+    // CUSTOM CURSOR
+    // ═══════════════════════════════════════
+    const cursor = document.getElementById('cursor');
+    const cursorDot = document.getElementById('cursorDot');
+    let mouseX = 0, mouseY = 0, cursorX = 0, cursorY = 0;
+
+    document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        cursorDot.style.left = mouseX + 'px';
+        cursorDot.style.top = mouseY + 'px';
+    });
+
+    function animateCursor() {
+        cursorX += (mouseX - cursorX) * 0.15;
+        cursorY += (mouseY - cursorY) * 0.15;
+        cursor.style.left = cursorX + 'px';
+        cursor.style.top = cursorY + 'px';
+        requestAnimationFrame(animateCursor);
+    }
+    animateCursor();
+
+    document.querySelectorAll('a, button, .btn-primary, .btn-secondary, .nav-cta, .project-card, .lang-btn').forEach(el => {
+        el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+        el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+    });
+
+    // ═══════════════════════════════════════
+    // NAV SCROLL
+    // ═══════════════════════════════════════
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // ═══════════════════════════════════════
+    // MOBILE MENU
+    // ═══════════════════════════════════════
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuToggle.addEventListener('click', () => {
+        const isActive = menuToggle.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        menuToggle.setAttribute('aria-expanded', isActive);
+        document.body.style.overflow = isActive ? 'hidden' : '';
+    });
+
+    document.querySelectorAll('.mobile-link').forEach(link => {
+        link.addEventListener('click', () => {
+            menuToggle.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        });
+    });
+
+    // ═══════════════════════════════════════
+    // SCROLL ANIMATIONS
+    // ═══════════════════════════════════════
+    const observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const delay = entry.target.dataset.delay || 0;
+                setTimeout(() => {
+                    entry.target.classList.add('visible');
+                }, delay);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('[data-animate]').forEach((el, i) => {
+        el.dataset.delay = i * 100;
+        observer.observe(el);
+    });
+
+    // ═══════════════════════════════════════
+    // SMOOTH SCROLL
+    // ═══════════════════════════════════════
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+    </script>
+</body>
+</html>
