@@ -5,11 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Primary -->
-    <title>BY NODFLOWMATION — Expert Automatisation n8n & IA | Workflow Automation</title>
-    <meta name="description" content="Expert freelance en automatisation n8n et intégration IA (GPT-4, Mistral, Gemini). Automatisation de workflows : factures, souscriptions, documents juridiques. Jusqu'à 95% de temps gagné.">
-    <meta name="keywords" content="n8n automation, workflow automation expert, automatisation n8n, intégration IA, GPT-4, Mistral, Gemini, process automation, API integration, automatisation factures, OCR, freelance automation, expert n8n France">
+    <title>BY NODFLOWMATION — Expert Automatisation Workflow n8n & IA | Freelance</title>
+    <meta name="description" content="Expert freelance en automatisation n8n : workflows intelligents, intégration IA (GPT-4, Mistral, Gemini), OCR, traitement de documents. Automatisation de processus métier. Jusqu'à 96% de temps gagné. Disponible sur Malt.">
+    <meta name="keywords" content="n8n automation, automatisation workflow, expert n8n, freelance automation, intégration IA, GPT-4, Mistral, OCR, traitement documents, API integration, workflow automation France, n8n expert France, automatisation processus, no-code automation">
     <meta name="author" content="BY NODFLOWMATION">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="BY NODFLOWMATION — Expert Automatisation n8n & IA">
+    <meta property="og:description" content="Expert freelance en automatisation de workflows intelligents avec n8n et IA. Jusqu'à 96% de temps gagné.">
+    <meta property="og:url" content="https://bynodflowmation.github.io/portfolio-n8n/">
+    <meta property="og:image" content="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/LOGOBYNODFLOWMATION_WHITE.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BY NODFLOWMATION — Expert Automatisation n8n">
+    <meta name="twitter:description" content="Workflows intelligents avec n8n et IA. Jusqu'à 96% de temps gagné.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://bynodflowmation.github.io/portfolio-n8n/">
@@ -20,12 +32,32 @@
     <link rel="alternate" hreflang="x-default" href="https://bynodflowmation.github.io/portfolio-n8n/">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./LOGO_BW_WHITE.png">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/LOGOBYNODFLOWMATION_WHITE.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "BY NODFLOWMATION",
+      "description": "Expert freelance en automatisation n8n et intégration IA",
+      "url": "https://bynodflowmation.github.io/portfolio-n8n/",
+      "sameAs": [
+        "https://www.malt.fr/profile/blongyang"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "FR"
+      },
+      "areaServed": "Worldwide",
+      "priceRange": "$$"
+    }
+    </script>
 
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -111,7 +143,7 @@
             text-decoration: none; display: flex; align-items: center;
         }
         .nav-logo-img {
-            height: 56px; width: auto; object-fit: contain;
+            height: 48px; width: auto; object-fit: contain;
             transition: opacity 0.3s;
         }
         .nav-logo-img:hover { opacity: 0.8; }
@@ -360,7 +392,10 @@
             background: var(--dark-surface);
         }
         .project-visual img {
-            width: 100%; height: 100%; object-fit: cover;
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover;
+            object-position: center;
             transition: transform 0.8s var(--transition);
         }
         .project-card:hover .project-visual img { transform: scale(1.05); }
@@ -444,6 +479,23 @@
         .contact-email svg { transition: transform 0.3s var(--transition); }
         .contact-email:hover svg { transform: translate(4px, -4px); }
 
+        .contact-links {
+            display: flex; align-items: center; justify-content: center;
+            gap: 24px; margin-top: 48px;
+        }
+        .contact-link {
+            display: inline-flex; align-items: center; gap: 10px;
+            padding: 14px 28px; background: var(--dark-surface);
+            border: 1px solid var(--dark-border); border-radius: 100px;
+            color: var(--gray-300); text-decoration: none;
+            font-size: 14px; font-weight: 500;
+            transition: all 0.3s var(--transition);
+        }
+        .contact-link:hover {
+            border-color: var(--accent); background: var(--accent-glow);
+            color: var(--white);
+        }
+
         /* ═══════════════════════════════════════
            FOOTER
         ═══════════════════════════════════════ */
@@ -483,6 +535,7 @@
             .hero-stats { gap: 32px; flex-wrap: wrap; }
             .project-info { padding: 36px 28px; }
             footer { padding: 32px 28px; }
+            .contact-links { flex-direction: column; }
         }
         @media (max-width: 600px) {
             .hero { padding: 100px 20px 60px; }
@@ -508,7 +561,7 @@
     <!-- Navigation -->
     <nav id="nav" role="navigation" aria-label="Main navigation">
         <a href="#" class="nav-logo" aria-label="BY NODFLOWMATION - Home">
-            <img src="./LOGO_BW_WHITE.png" alt="BY NODFLOWMATION logo" class="nav-logo-img">
+            <img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/LOGOBYNODFLOWMATION_WHITE.png" alt="BY NODFLOWMATION logo" class="nav-logo-img">
         </a>
         <ul class="nav-links">
             <li><a href="#work" data-i18n="nav_work">Projets</a></li>
@@ -570,8 +623,8 @@
                     <span data-i18n="hero_btn_projects">Voir les projets</span>
                     <span class="arrow">→</span>
                 </a>
-                <a href="https://cal.eu/blong.yang" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-i18n="hero_btn_talk">
-                    Discutons
+                <a href="https://www.malt.fr/profile/blongyang" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-i18n="hero_btn_malt">
+                    Profil Malt
                 </a>
             </div>
 
@@ -581,7 +634,7 @@
                     <div class="hero-stat-label" data-i18n="stat_projects">Projets</div>
                 </div>
                 <div class="hero-stat">
-                    <div class="hero-stat-value">95%</div>
+                    <div class="hero-stat-value">96%</div>
                     <div class="hero-stat-label" data-i18n="stat_time">Temps gagné</div>
                 </div>
                 <div class="hero-stat">
@@ -604,23 +657,23 @@
             <div class="section-header">
                 <div>
                     <div class="section-label" data-i18n="projects_label">Projets sélectionnés</div>
-                    <h2 class="section-heading" id="work-heading" data-i18n="projects_heading">Des workflows qui automatisent l'impossible</h2>
+                    <h2 class="section-heading" id="work-heading" data-i18n="projects_heading">Automatisation intelligente de processus métier</h2>
                 </div>
                 <p class="section-subtitle" data-i18n="projects_subtitle">
-                    Chaque workflow est conçu pour éliminer les tâches manuelles et maximiser la précision.
+                    Des workflows sur mesure qui éliminent les tâches répétitives et maximisent la précision.
                 </p>
             </div>
 
-            <!-- Project 1: BSA AIR -->
+            <!-- Project 1 -->
             <article class="project-card" data-animate>
                 <div class="project-visual">
                     <div class="project-visual-number">01</div>
-                    <img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/BSA_AIR.png" alt="BSA AIR Workflow" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/BSA_AIR.png" alt="Workflow de souscription financière" loading="lazy">
                 </div>
                 <div class="project-info">
                     <div class="project-tag" data-i18n="p1_tag">Finance</div>
-                    <h3 data-i18n="p1_title">Pipeline de souscription BSA AIR</h3>
-                    <p data-i18n="p1_desc">Workflow ultra-complexe : extraction OCR multi-documents, identification automatique des fondateurs, 15+ calculs financiers imbriqués, génération multi-formats (bulletins, annexes). Validation juridique intégrée.</p>
+                    <h3 data-i18n="p1_title">Automatisation de Souscription Financière</h3>
+                    <p data-i18n="p1_desc">Pipeline complexe d'extraction multi-documents avec OCR, identification automatique des parties prenantes, calculs financiers imbriqués, génération de documents contractuels multi-formats avec validation juridique intégrée.</p>
                     <div class="project-metrics">
                         <div class="project-metric">
                             <div class="project-metric-value">96%</div>
@@ -633,24 +686,23 @@
                     </div>
                     <div class="project-stack">
                         <span class="project-stack-item">n8n</span>
-                        <span class="project-stack-item">GPT-4.1 Mini</span>
+                        <span class="project-stack-item">GPT-4</span>
                         <span class="project-stack-item">Mistral OCR</span>
-                        <span class="project-stack-item">Carbone API</span>
-                        <span class="project-stack-item">Legaia API</span>
+                        <span class="project-stack-item">API REST</span>
                     </div>
                 </div>
             </article>
 
-            <!-- Project 2: Constitution Avocats -->
+            <!-- Project 2 -->
             <article class="project-card" data-animate>
                 <div class="project-visual">
                     <div class="project-visual-number">02</div>
-                    <img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/CONSTITUTION_AVOCATS.png" alt="Constitution Avocats Workflow" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/CONSTITUTION_AVOCATS.png" alt="Workflow de génération juridique" loading="lazy">
                 </div>
                 <div class="project-info">
                     <div class="project-tag" data-i18n="p2_tag">Juridique</div>
-                    <h3 data-i18n="p2_title">Constitution d'Avocat Automatisée</h3>
-                    <p data-i18n="p2_desc">Extraction IA de documents juridiques (assignations, statuts), détection intelligente des tribunaux compétents, enrichissement entreprises via API, génération automatique avec validation de conformité.</p>
+                    <h3 data-i18n="p2_title">Génération Automatisée de Documents Juridiques</h3>
+                    <p data-i18n="p2_desc">Extraction intelligente de documents légaux via IA, détection contextuelle des informations clés, enrichissement de données via API tierces, génération automatique avec validation de conformité réglementaire.</p>
                     <div class="project-metrics">
                         <div class="project-metric">
                             <div class="project-metric-value">87%</div>
@@ -663,24 +715,23 @@
                     </div>
                     <div class="project-stack">
                         <span class="project-stack-item">n8n</span>
-                        <span class="project-stack-item">GPT-4.1 Mini</span>
+                        <span class="project-stack-item">GPT-4</span>
                         <span class="project-stack-item">Mistral OCR</span>
-                        <span class="project-stack-item">Legaia API</span>
-                        <span class="project-stack-item">Carbone</span>
+                        <span class="project-stack-item">API REST</span>
                     </div>
                 </div>
             </article>
 
-            <!-- Project 3: Pouvoir Formalités -->
+            <!-- Project 3 -->
             <article class="project-card" data-animate>
                 <div class="project-visual">
                     <div class="project-visual-number">03</div>
-                    <img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/POUVOIR_FORMALITE.png" alt="Pouvoir Formalités Workflow" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/POUVOIR_FORMALITE.png" alt="Workflow de génération de mandats" loading="lazy">
                 </div>
                 <div class="project-info">
                     <div class="project-tag" data-i18n="p3_tag">Corporate</div>
-                    <h3 data-i18n="p3_title">Procuration pour Formalités Juridiques</h3>
-                    <p data-i18n="p3_desc">Génération intelligente de procurations : détection société immatriculée/en formation, extraction des statuts via OCR, enrichissement RCS automatique, génération conforme aux normes légales.</p>
+                    <h3 data-i18n="p3_title">Génération Intelligente de Mandats</h3>
+                    <p data-i18n="p3_desc">Création automatisée de documents légaux : détection du statut d'entité, extraction de données via OCR, enrichissement automatique depuis registres officiels, génération conforme aux standards juridiques.</p>
                     <div class="project-metrics">
                         <div class="project-metric">
                             <div class="project-metric-value">92%</div>
@@ -693,23 +744,23 @@
                     </div>
                     <div class="project-stack">
                         <span class="project-stack-item">n8n</span>
-                        <span class="project-stack-item">GPT-4.1 Mini</span>
+                        <span class="project-stack-item">GPT-4</span>
                         <span class="project-stack-item">Mistral OCR</span>
-                        <span class="project-stack-item">Legaia API</span>
+                        <span class="project-stack-item">API REST</span>
                     </div>
                 </div>
             </article>
 
-            <!-- Project 4: Agrégation Factures -->
+            <!-- Project 4 -->
             <article class="project-card" data-animate>
                 <div class="project-visual">
                     <div class="project-visual-number">04</div>
-                    <img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/AGGREGATION_FACTURE.png" alt="Agrégation Factures Workflow" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/AGGREGATION_FACTURE.png" alt="Workflow de traitement de factures" loading="lazy">
                 </div>
                 <div class="project-info">
                     <div class="project-tag" data-i18n="p4_tag">Data Pipeline</div>
-                    <h3 data-i18n="p4_title">Traitement Intelligent de Factures</h3>
-                    <p data-i18n="p4_desc">Extraction IA avec Gemini OCR, classification automatique de 50+ types de produits, normalisation, détection de doublons, split PDF multi-pages, insertion Supabase. 1000+ factures/mois.</p>
+                    <h3 data-i18n="p4_title">Pipeline de Traitement de Documents Financiers</h3>
+                    <p data-i18n="p4_desc">Extraction de données par IA avec Gemini OCR, classification automatique multi-catégories, normalisation et déduplication intelligente, traitement de fichiers multi-pages, intégration base de données. Volume : 1000+ documents/mois.</p>
                     <div class="project-metrics">
                         <div class="project-metric">
                             <div class="project-metric-value">1K+</div>
@@ -724,7 +775,7 @@
                         <span class="project-stack-item">Google Gemini</span>
                         <span class="project-stack-item">Supabase</span>
                         <span class="project-stack-item">ILovePDF</span>
-                        <span class="project-stack-item">Google Sheets</span>
+                        <span class="project-stack-item">n8n</span>
                     </div>
                 </div>
             </article>
@@ -740,7 +791,7 @@
             <div class="section-label" style="justify-content: center;" data-i18n="contact_label">Contact</div>
             <h2 class="contact-heading" id="contact-heading" data-i18n="contact_heading">Construisons quelque chose<br>de remarquable ensemble</h2>
             <p class="contact-sub" data-i18n="contact_sub">
-                Vous avez un workflow à automatiser ? Parlons de comment l'automatisation propulsée par l'IA peut transformer vos processus.
+                Vous avez un processus à automatiser ? Parlons de comment transformer vos workflows manuels en systèmes intelligents.
             </p>
             <a href="mailto:blong.yang1@outlook.fr" class="contact-email" aria-label="Send email to blong.yang1@outlook.fr">
                 blong.yang1@outlook.fr
@@ -748,6 +799,24 @@
                     <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
                 </svg>
             </a>
+
+            <div class="contact-links">
+                <a href="https://www.malt.fr/profile/blongyang" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H4V5h16v14zM6 10h2v7H6zm1-4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm4 4h2v7h-2v-3.5c0-.83-.67-1.5-1.5-1.5S10 12.67 10 13.5V17H8v-7h2v1c.5-.5 1.5-1 2.5-1 1.93 0 3.5 1.57 3.5 3.5V17h-2v-3.5c0-.55-.45-1-1-1s-1 .45-1 1V17z"/>
+                    </svg>
+                    <span data-i18n="contact_malt">Profil Malt</span>
+                </a>
+                <a href="https://cal.eu/blong.yang" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                        <line x1="16" y1="2" x2="16" y2="6"/>
+                        <line x1="8" y1="2" x2="8" y2="6"/>
+                        <line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                    <span data-i18n="contact_cal">Réserver un appel</span>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -757,21 +826,15 @@
         <a href="#hero" class="footer-back-top" aria-label="Back to top">↑</a>
     </footer>
 
-    <!-- ═══════════════════════════════════════
-         JAVASCRIPT
-    ═══════════════════════════════════════ -->
     <script>
     // ═══════════════════════════════════════
     // TRANSLATIONS
     // ═══════════════════════════════════════
     const translations = {
         fr: {
-            // Nav
             nav_work: "Projets",
             nav_contact: "Contact",
             nav_cta: "Réserver un appel",
-
-            // Hero
             hero_badge: "Disponible pour de nouveaux projets",
             hero_line1: "Automatiser vos",
             hero_line2: "workflows complexes",
@@ -779,52 +842,45 @@
             hero_line3_accent: "intelligence",
             hero_description: "Je conçois et développe des workflows d'automatisation intelligents avec n8n, des modèles d'IA et des intégrations sur mesure — transformant des heures de travail manuel en minutes de processus automatisés.",
             hero_btn_projects: "Voir les projets",
-            hero_btn_talk: "Discutons",
+            hero_btn_malt: "Profil Malt",
             stat_projects: "Projets",
             stat_time: "Temps gagné",
             stat_nodes: "Nodes max",
             stat_accuracy: "Précision",
-
-            // Projects
             projects_label: "Projets sélectionnés",
-            projects_heading: "Des workflows qui automatisent l'impossible",
-            projects_subtitle: "Chaque workflow est conçu pour éliminer les tâches manuelles et maximiser la précision.",
+            projects_heading: "Automatisation intelligente de processus métier",
+            projects_subtitle: "Des workflows sur mesure qui éliminent les tâches répétitives et maximisent la précision.",
             
             p1_tag: "Finance",
-            p1_title: "Pipeline de souscription BSA AIR",
-            p1_desc: "Workflow ultra-complexe : extraction OCR multi-documents, identification automatique des fondateurs, 15+ calculs financiers imbriqués, génération multi-formats (bulletins, annexes). Validation juridique intégrée.",
+            p1_title: "Automatisation de Souscription Financière",
+            p1_desc: "Pipeline complexe d'extraction multi-documents avec OCR, identification automatique des parties prenantes, calculs financiers imbriqués, génération de documents contractuels multi-formats avec validation juridique intégrée.",
             
             p2_tag: "Juridique",
-            p2_title: "Constitution d'Avocat Automatisée",
-            p2_desc: "Extraction IA de documents juridiques (assignations, statuts), détection intelligente des tribunaux compétents, enrichissement entreprises via API, génération automatique avec validation de conformité.",
+            p2_title: "Génération Automatisée de Documents Juridiques",
+            p2_desc: "Extraction intelligente de documents légaux via IA, détection contextuelle des informations clés, enrichissement de données via API tierces, génération automatique avec validation de conformité réglementaire.",
             
             p3_tag: "Corporate",
-            p3_title: "Procuration pour Formalités Juridiques",
-            p3_desc: "Génération intelligente de procurations : détection société immatriculée/en formation, extraction des statuts via OCR, enrichissement RCS automatique, génération conforme aux normes légales.",
+            p3_title: "Génération Intelligente de Mandats",
+            p3_desc: "Création automatisée de documents légaux : détection du statut d'entité, extraction de données via OCR, enrichissement automatique depuis registres officiels, génération conforme aux standards juridiques.",
             
             p4_tag: "Data Pipeline",
-            p4_title: "Traitement Intelligent de Factures",
-            p4_desc: "Extraction IA avec Gemini OCR, classification automatique de 50+ types de produits, normalisation, détection de doublons, split PDF multi-pages, insertion Supabase. 1000+ factures/mois.",
+            p4_title: "Pipeline de Traitement de Documents Financiers",
+            p4_desc: "Extraction de données par IA avec Gemini OCR, classification automatique multi-catégories, normalisation et déduplication intelligente, traitement de fichiers multi-pages, intégration base de données. Volume : 1000+ documents/mois.",
 
             metric_time: "Temps gagné",
             metric_month: "Par mois",
-
-            // Contact
             contact_label: "Contact",
             contact_heading: "Construisons quelque chose<br>de remarquable ensemble",
-            contact_sub: "Vous avez un workflow à automatiser ? Parlons de comment l'automatisation propulsée par l'IA peut transformer vos processus.",
-
-            // Footer
+            contact_sub: "Vous avez un processus à automatiser ? Parlons de comment transformer vos workflows manuels en systèmes intelligents.",
+            contact_malt: "Profil Malt",
+            contact_cal: "Réserver un appel",
             footer_rights: "Tous droits réservés"
         },
 
         en: {
-            // Nav
             nav_work: "Work",
             nav_contact: "Contact",
             nav_cta: "Book a Call",
-
-            // Hero
             hero_badge: "Available for new projects",
             hero_line1: "Automating your",
             hero_line2: "complex workflows",
@@ -832,49 +888,42 @@
             hero_line3_accent: "intelligence",
             hero_description: "I design and build intelligent automation workflows using n8n, AI models, and smart integrations — transforming hours of manual work into minutes of automated processes.",
             hero_btn_projects: "View Projects",
-            hero_btn_talk: "Let's Talk",
+            hero_btn_malt: "Malt Profile",
             stat_projects: "Projects",
             stat_time: "Time Saved",
             stat_nodes: "Max Nodes",
             stat_accuracy: "Accuracy",
-
-            // Projects
             projects_label: "Selected Work",
-            projects_heading: "Workflows that automate the impossible",
-            projects_subtitle: "Each workflow is engineered to eliminate manual tasks and maximize precision.",
+            projects_heading: "Intelligent business process automation",
+            projects_subtitle: "Custom workflows that eliminate repetitive tasks and maximize precision.",
             
             p1_tag: "Finance",
-            p1_title: "BSA AIR Subscription Pipeline",
-            p1_desc: "Ultra-complex workflow: multi-document OCR extraction, automatic founder identification, 15+ nested financial calculations, multi-format generation (bulletins, annexes). Integrated legal validation.",
+            p1_title: "Financial Subscription Automation",
+            p1_desc: "Complex multi-document extraction pipeline with OCR, automatic stakeholder identification, nested financial calculations, multi-format contractual document generation with integrated legal validation.",
             
             p2_tag: "Legal",
-            p2_title: "Automated Attorney Constitution",
-            p2_desc: "AI extraction of legal documents (summons, statutes), intelligent court detection, company enrichment via API, automatic generation with compliance validation.",
+            p2_title: "Automated Legal Document Generation",
+            p2_desc: "Intelligent extraction of legal documents via AI, contextual key information detection, data enrichment via third-party APIs, automatic generation with regulatory compliance validation.",
             
             p3_tag: "Corporate",
-            p3_title: "Power of Attorney for Legal Formalities",
-            p3_desc: "Intelligent proxy generation: registered/forming company detection, statute extraction via OCR, automatic RCS enrichment, legal standard-compliant generation.",
+            p3_title: "Intelligent Power of Attorney Generation",
+            p3_desc: "Automated legal document creation: entity status detection, OCR data extraction, automatic enrichment from official registries, generation compliant with legal standards.",
             
             p4_tag: "Data Pipeline",
-            p4_title: "Intelligent Invoice Processing",
-            p4_desc: "AI extraction with Gemini OCR, automatic classification of 50+ product types, normalization, duplicate detection, multi-page PDF split, Supabase insertion. 1000+ invoices/month.",
+            p4_title: "Financial Document Processing Pipeline",
+            p4_desc: "AI data extraction with Gemini OCR, automatic multi-category classification, intelligent normalization and deduplication, multi-page file processing, database integration. Volume: 1000+ documents/month.",
 
             metric_time: "Time Saved",
             metric_month: "Per Month",
-
-            // Contact
             contact_label: "Get in Touch",
             contact_heading: "Let's build something<br>remarkable together",
-            contact_sub: "Have a workflow that needs automating? Let's talk about how AI-powered automation can transform your processes.",
-
-            // Footer
+            contact_sub: "Have a process to automate? Let's talk about transforming your manual workflows into intelligent systems.",
+            contact_malt: "Malt Profile",
+            contact_cal: "Book a Call",
             footer_rights: "All rights reserved"
         }
     };
 
-    // ═══════════════════════════════════════
-    // LANGUAGE SWITCHER
-    // ═══════════════════════════════════════
     let currentLang = localStorage.getItem('lang') || 
                       (navigator.language.startsWith('fr') ? 'fr' : 'en');
 
@@ -883,17 +932,17 @@
         localStorage.setItem('lang', lang);
         document.documentElement.lang = lang;
 
-        // Update meta
         const descMeta = document.querySelector('meta[name="description"]');
+        const titleMeta = document.querySelector('title');
+        
         if (lang === 'fr') {
-            descMeta.content = "Expert freelance en automatisation n8n et intégration IA (GPT-4, Mistral, Gemini). Automatisation de workflows complexes. Jusqu'à 95% de temps gagné.";
-            document.title = "BY NODFLOWMATION — Expert Automatisation n8n & IA";
+            descMeta.content = "Expert freelance en automatisation n8n : workflows intelligents, intégration IA (GPT-4, Mistral, Gemini), OCR, traitement de documents. Jusqu'à 96% de temps gagné.";
+            titleMeta.textContent = "BY NODFLOWMATION — Expert Automatisation Workflow n8n & IA";
         } else {
-            descMeta.content = "Freelance n8n workflow automation expert. AI integration (GPT-4, Mistral, Gemini). Complex workflow automation. Up to 95% time saved.";
-            document.title = "BY NODFLOWMATION — Workflow Automation Expert";
+            descMeta.content = "Freelance n8n automation expert: intelligent workflows, AI integration (GPT-4, Mistral, Gemini), OCR, document processing. Up to 96% time saved.";
+            titleMeta.textContent = "BY NODFLOWMATION — n8n Workflow Automation Expert & AI";
         }
 
-        // Translate all elements
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
             if (translations[lang][key]) {
@@ -901,21 +950,16 @@
             }
         });
 
-        // Update button states
         document.querySelectorAll('.lang-btn').forEach(btn => {
             btn.classList.toggle('active', btn.dataset.lang === lang);
         });
     }
 
-    // Desktop lang buttons
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
     });
 
-    // Apply language on load
-    document.addEventListener('DOMContentLoaded', () => {
-        setLanguage(currentLang);
-    });
+    document.addEventListener('DOMContentLoaded', () => setLanguage(currentLang));
 
     // ═══════════════════════════════════════
     // CUSTOM CURSOR
@@ -940,7 +984,7 @@
     }
     animateCursor();
 
-    document.querySelectorAll('a, button, .btn-primary, .btn-secondary, .nav-cta, .project-card, .lang-btn').forEach(el => {
+    document.querySelectorAll('a, button, .btn-primary, .btn-secondary, .nav-cta, .project-card, .lang-btn, .contact-link').forEach(el => {
         el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
         el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
     });
