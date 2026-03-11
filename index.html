@@ -22,7 +22,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-    <script async src="https://cal.com/embed.js"></script>
+    
+    <script type="application/ld+json">
+    { "@context": "https://schema.org", "@type": "Person", "name": "Blong Yang", "url": "https://bynodflowmation.github.io/portfolio-n8n/", "jobTitle": "Freelance Automation Expert", "knowsAbout": ["n8n", "Zapier", "Workflow Automation", "AI Integration", "API Integration", "Baserow", "Apify"] }
+    </script>
+    <script type="application/ld+json">
+    { "@context": "https://schema.org", "@type": "ProfessionalService", "name": "BY NODFLOWMATION", "description": "Expert freelance en automatisation n8n et intégration IA pour PME et startups.", "url": "https://bynodflowmation.github.io/portfolio-n8n/", "logo": "https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/LOGOBYNODFLOWMATION_WHITE.png", "email": "blong@bynodflowmation.com", "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "1" } }
+    </script>
+    <script type="application/ld+json">
+    { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [ { "@type": "Question", "name": "Qu'est-ce que n8n ?", "acceptedAnswer": { "@type": "Answer", "text": "n8n est une plateforme d'automatisation open-source puissante, alternative à Zapier, offrant plus de flexibilité pour créer des workflows sur-mesure." } }, { "@type": "Question", "name": "Pourquoi choisir n8n plutôt que Zapier ?", "acceptedAnswer": { "@type": "Answer", "text": "n8n est idéal pour les workflows complexes, l'intégration poussée de l'IA et pour les entreprises qui souhaitent garder le contrôle total de leurs données grâce à l'auto-hébergement." } } ] }
+    </script>
 
     <style>
         :root {
@@ -43,24 +52,23 @@
         
         body {
             font-family: 'Inter', sans-serif;
-            background: var(--background);
+            background-color: var(--background);
             color: var(--text-primary);
             line-height: 1.6;
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
         }
 
         ::selection { background: var(--primary); color: var(--text-primary); }
 
         .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-        
         .section { padding: 100px 0; position: relative; }
         
         .section-header { margin-bottom: 64px; }
-        .section-label { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px; }
-        .section-heading { font-family: 'Space Grotesk', sans-serif; font-size: clamp(32px, 4vw, 56px); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; max-width: 800px; }
+        .section-label { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px; }
+        .section-heading { font-family: 'Space Grotesk', sans-serif; font-size: clamp(32px, 4vw, 48px); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; max-width: 800px; }
         .centered-header { text-align: center; }
+        .centered-header .section-heading { margin-left: auto; margin-right: auto; }
         
         .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 24px; border-radius: 100px; font-size: 14px; font-weight: 500; text-decoration: none; transition: var(--transition); border: 1px solid transparent; cursor: pointer; }
         .btn-primary { background: var(--primary); color: var(--text-primary); }
@@ -82,23 +90,35 @@
         .menu-toggle.active span:nth-child(2) { opacity: 0; }
         .menu-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
         .mobile-menu { display: none; }
+        .mobile-menu.active { display: flex; position: fixed; inset: 0; background: var(--background); z-index: 999; align-items: center; justify-content: center; flex-direction: column; gap: 32px; }
+        .mobile-menu a { font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 500; color: var(--text-primary); text-decoration: none; }
 
-        .hero { min-height: 100vh; display: flex; align-items: center; text-align: center; }
-        .hero-content { z-index: 1; }
-        .hero-title { font-family: 'Space Grotesk', sans-serif; font-size: clamp(40px, 7vw, 80px); font-weight: 700; line-height: 1.1; letter-spacing: -0.03em; margin: 24px 0; }
+        .hero { min-height: 90vh; display: flex; align-items: center; }
+        .hero-content { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 48px; }
+        .hero-text { text-align: left; }
+        .hero-badge { display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 100px; margin-bottom: 24px; font-size: 13px; color: var(--text-secondary); }
+        .hero-badge-dot { width: 8px; height: 8px; background: var(--green); border-radius: 50%; animation: pulse-dot 2s ease-in-out infinite; }
+        @keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+        .hero-title { font-family: 'Space Grotesk', sans-serif; font-size: clamp(40px, 6vw, 72px); font-weight: 700; line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 24px; }
         .hero-title .gradient-text { background: linear-gradient(135deg, var(--primary-light), var(--accent)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-        .hero-description { font-size: 18px; color: var(--text-secondary); max-width: 600px; margin: 0 auto 40px; }
-        .hero-actions { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+        .hero-description { font-size: 18px; color: var(--text-secondary); max-width: 500px; line-height: 1.7; margin-bottom: 40px; }
+        .hero-actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+        .hero-visual svg { width: 100%; max-width: 450px; height: auto; overflow: visible; margin: 0 auto; }
+        .node-circle { animation: pulse 3s ease-in-out infinite alternate; transform-origin: center; }
+        .node-circle:nth-child(2) { animation-delay: 0.5s; }
+        .node-line { stroke-dasharray: 100; stroke-dashoffset: 100; animation: draw 5s ease-in-out infinite alternate; }
+        @keyframes pulse { to { transform: scale(1.1); } }
+        @keyframes draw { to { stroke-dashoffset: 0; } }
 
         .about-section { background: var(--dark); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
         .about-content { max-width: 800px; margin: 0 auto; text-align: center; }
         .about-avatar { width: 120px; height: 120px; border-radius: 50%; border: 3px solid var(--primary); margin: 0 auto 24px; }
         .about-avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
-        .about-text h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(28px, 4vw, 40px); font-weight: 700; margin-bottom: 16px; line-height: 1.2; }
+        .about-text h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(28px, 4vw, 40px); font-weight: 700; margin-bottom: 16px; }
         .about-text p { font-size: 18px; color: var(--text-secondary); line-height: 1.7; }
-
+        
         .card { background: var(--surface); border-radius: var(--radius); border: 1px solid var(--border); transition: var(--transition); padding: 32px; }
-        .card:hover { transform: translateY(-5px); border-color: var(--primary); box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+        .card:hover { transform: translateY(-5px); border-color: var(--primary); }
         .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; }
         .service-icon { font-size: 32px; margin-bottom: 16px; }
         .service-name { font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 700; margin-bottom: 8px; }
@@ -109,31 +129,28 @@
         .project-card + .project-card { margin-top: 32px; }
         .project-card:nth-child(even) { direction: rtl; }
         .project-card:nth-child(even) > * { direction: ltr; }
-        .project-visual { min-height: 400px; padding: 24px; display: flex; align-items: center; justify-content: center; background: var(--background); }
-        .project-visual img { max-width: 100%; height: auto; object-fit: contain; }
+        .project-visual { padding: 24px; background: var(--background); display: flex; align-items: center; justify-content: center; }
+        .project-visual img { max-width: 100%; height: auto; }
         .project-info { padding: 40px; display: flex; flex-direction: column; justify-content: center; }
         .project-tag { display: inline-block; padding: 4px 12px; background: rgba(237, 120, 43, 0.1); border-radius: 100px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--accent); text-transform: uppercase; margin-bottom: 24px; }
         .project-info h3 { font-family: 'Space Grotesk', sans-serif; font-size: 24px; font-weight: 700; line-height: 1.2; margin-bottom: 16px; }
-        .project-section-title { font-size: 13px; color: var(--primary-light); text-transform: uppercase; font-weight: 600; margin-bottom: 8px; font-family: 'JetBrains Mono', monospace; }
         .project-section-content { font-size: 15px; color: var(--text-secondary); margin-bottom: 20px; }
-        .project-metrics { display: flex; gap: 32px; margin: 24px 0; }
-        .project-metric-value { font-family: 'Space Grotesk', sans-serif; font-size: 24px; font-weight: 700; color: var(--text-primary); }
-        .project-metric-label { font-size: 11px; color: var(--text-secondary); text-transform: uppercase; }
         .project-stack { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 16px; }
-        .project-stack-item { padding: 4px 12px; background: var(--background); border: 1px solid var(--border); border-radius: 100px; font-size: 12px; color: var(--text-secondary); }
+        .project-stack-item { padding: 4px 12px; background: var(--border); border-radius: 100px; font-size: 12px; color: var(--text-secondary); }
 
-        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 20px; }
+        .tools-section { background: var(--dark); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 20px; }
         .tool-item { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); transition: var(--transition); aspect-ratio: 1 / 1; }
         .tool-item:hover { transform: translateY(-4px); border-color: var(--primary); }
         .tool-icon { font-size: 32px; line-height: 1; }
         .tool-name { font-size: 14px; color: var(--text-secondary); text-align: center; }
-
+        
         .testimonial-card { max-width: 800px; margin: 0 auto; padding: 40px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
         .testimonial-text { font-size: 18px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 24px; font-style: italic; }
         .testimonial-stars { color: var(--accent); font-size: 18px; margin-bottom: 20px; }
         .testimonial-author { display: flex; align-items: center; gap: 16px; }
-        .testimonial-avatar { width: 48px; height: 48px; border-radius: 50%; background: var(--primary-light); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; color: var(--text-primary); }
-        .testimonial-name { font-weight: 600; font-size: 15px; color: var(--text-primary); }
+        .testimonial-avatar { width: 48px; height: 48px; border-radius: 50%; background: var(--primary); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; color: var(--text-primary); }
+        .testimonial-name { font-weight: 500; font-size: 15px; }
         .testimonial-role { font-size: 13px; color: var(--text-secondary); }
 
         .faq-section { background: var(--dark); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
@@ -141,16 +158,17 @@
         .faq-item { border-bottom: 1px solid var(--border); padding: 24px 0; cursor: pointer; }
         .faq-question { display: flex; justify-content: space-between; align-items: center; gap: 24px; }
         .faq-question h3 { font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 500; }
-        .faq-toggle { font-size: 24px; color: var(--primary); transition: transform 0.3s var(--transition); }
+        .faq-toggle { font-size: 24px; color: var(--primary); transition: transform 0.3s; }
         .faq-item.active .faq-toggle { transform: rotate(45deg); }
         .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-in-out; }
         .faq-answer p { padding-top: 16px; font-size: 16px; color: var(--text-secondary); }
-        .faq-item.active .faq-answer { max-height: 300px; }
+        .faq-item.active .faq-answer { max-height: 200px; }
 
         .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: flex-start; }
-        .contact-card { padding: 32px; }
+        .contact-card { padding: 32px; background: var(--surface); border-radius: var(--radius); border: 1px solid var(--border); }
         .contact-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 700; margin-bottom: 8px; }
         .contact-card p { color: var(--text-secondary); margin-bottom: 24px; }
+        #booking iframe { border-radius: 8px; }
         .form-group { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
         .form-group label { font-size: 14px; font-weight: 500; color: var(--text-secondary); }
         .form-group input, .form-group textarea { width: 100%; padding: 12px; background: var(--background); border: 1px solid var(--border); border-radius: 8px; color: var(--text-primary); font-family: 'Inter', sans-serif; font-size: 15px; }
@@ -166,26 +184,19 @@
 
         @media (max-width: 900px) {
             .hero-content, .project-card, .project-card:nth-child(even), .contact-grid { grid-template-columns: 1fr; direction: ltr; }
-            .hero-visual { grid-row: 1; min-height: 300px; }
-            .hero-text { grid-row: 2; }
+            .hero-visual { grid-row: 1; max-width: 350px; }
+            .hero-text { grid-row: 2; text-align: center; }
+            .hero-actions { justify-content: center; }
+            .hero-description { margin-left: auto; margin-right: auto; }
             .nav-links { display: none; }
             .menu-toggle { display: flex; }
             .section { padding: 80px 0; }
             nav { padding: 16px 0; }
             .footer-container { flex-direction: column; gap: 16px; }
         }
-        @media (max-width: 600px) {
-            body, body:hover { cursor: default; }
-            .cursor, .cursor-dot { display: none; }
-            .mobile-menu a { font-size: 32px; }
-        }
     </style>
 </head>
 <body>
-
-    <div class="cursor" id="cursor"></div>
-    <div class="cursor-dot" id="cursorDot"></div>
-
     <header>
         <nav id="nav" role="navigation" aria-label="Navigation principale">
             <div class="container nav-container">
@@ -198,7 +209,7 @@
                     <li><a href="#work" data-i18n="nav_work">Projets</a></li>
                     <li><a href="#testimonials" data-i18n="nav_testimonials">Avis</a></li>
                     <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
-                    <li><a href="#contact" class="btn btn-primary nav-cta" data-i18n="nav_cta">Contact</a></li>
+                    <li><a href="#contact" class="btn btn-primary nav-cta" data-i18n="nav_contact">Contact</a></li>
                 </ul>
                 <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">
                     <span></span><span></span><span></span>
@@ -219,16 +230,12 @@
         <section class="hero" id="hero">
             <div class="container hero-content">
                 <div class="hero-text">
-                    <div class="hero-badge">
-                        <span class="hero-badge-dot"></span>
-                        <span data-i18n="hero_badge">Disponible pour de nouveaux projets</span>
-                    </div>
                     <h1 class="hero-title">
                         <span data-i18n="hero_h1_line1">Automatisez vos processus,</span><br>
                         <span class="gradient-text" data-i18n="hero_h1_line2">récupérez votre temps</span>
                     </h1>
                     <p class="hero-description" data-i18n="hero_description">
-                        Expert n8n freelance, je transforme vos tâches manuelles en workflows intelligents et robustes. Libérez votre potentiel en éliminant les processus répétitifs.
+                        Expert n8n freelance, je transforme vos tâches manuelles en workflows intelligents et robustes. Libérez le potentiel de votre entreprise en éliminant les processus répétitifs.
                     </p>
                     <div class="hero-actions">
                         <a href="#contact" class="btn btn-primary">
@@ -271,17 +278,14 @@
                             <span data-i18n="about_greeting">Salut ! Je m'appelle Blong.</span> 👋
                         </h2>
                         <p data-i18n="about_p1">
-                            Je suis freelance expert en automatisation n8n. Ma mission est de transformer vos processus métier complexes en workflows <strong>clairs, robustes et faciles à maintenir</strong>.
-                        </p>
-                        <p data-i18n="about_p2">
-                            Je prends le temps de comprendre vos enjeux pour construire des solutions qui vous font réellement gagner du temps. De l'intégration CRM à la génération de documents par IA, je livre des automatisations fiables adaptées à votre réalité.
+                            Je suis freelance expert en automatisation n8n. Ma mission est de transformer vos processus métier complexes en workflows <strong>clairs, robustes et faciles à maintenir</strong>. Je prends le temps de comprendre vos enjeux pour construire des solutions qui vous font réellement gagner du temps, de l'intégration CRM à la génération de documents par IA.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section services-section" id="services" aria-labelledby="services-heading">
+        <section class="section" id="services" aria-labelledby="services-heading">
             <div class="container">
                  <div class="section-header">
                     <div class="section-label" data-i18n="services_label">Mes services</div>
@@ -309,7 +313,7 @@
             </div>
         </section>
 
-        <section class="section projects-section" id="work" aria-labelledby="work-heading">
+        <section class="section" id="work" aria-labelledby="work-heading">
             <div class="container">
                 <div class="section-header">
                     <div>
@@ -325,7 +329,7 @@
                     <div class="project-info">
                         <div class="project-tag" data-i18n="p1_tag">Finance</div>
                         <h3 data-i18n="p1_title">Automatisation de Souscription Financière</h3>
-                        <div class="project-section-content" data-i18n="p1_challenge">Automatiser entièrement le processus de souscription financière : extraction de données depuis multiples sources, identification des parties prenantes, calculs financiers complexes, et génération de documents contractuels conformes.</div>
+                        <div class="project-section-content" data-i18n="p1_challenge">Automatiser la génération de contrats de souscription complexes, impliquant l'extraction de données depuis des statuts, bilans et formulaires, avec des calculs financiers précis.</div>
                         <div class="project-stack"><span class="project-stack-item">n8n</span><span class="project-stack-item">GPT-4</span><span class="project-stack-item">Mistral OCR</span><span class="project-stack-item">API REST</span></div>
                     </div>
                 </article>
@@ -337,20 +341,8 @@
                     <div class="project-info">
                         <div class="project-tag" data-i18n="p2_tag">Juridique</div>
                         <h3 data-i18n="p2_title">Génération Automatisée de Documents Juridiques</h3>
-                        <div class="project-section-content" data-i18n="p2_challenge">Réduire drastiquement le temps de création de documents juridiques complexes pour un cabinet d'avocats, tout en garantissant la conformité réglementaire et la cohérence des informations.</div>
-                        <div class="project-stack"><span class="project-stack-item">n8n</span><span class="project-stack-item">GPT-4</span><span class="project-stack-item">Mistral OCR</span><span class="project-stack-item">API REST</span></div>
-                    </div>
-                </article>
-                
-                <article class="project-card" data-animate>
-                    <div class="project-visual">
-                        <img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/POUVOIR_FORMALITE.png" alt="Workflow n8n de génération automatique de mandats légaux" loading="lazy">
-                    </div>
-                    <div class="project-info">
-                        <div class="project-tag" data-i18n="p3_tag">Corporate</div>
-                        <h3 data-i18n="p3_title">Génération Intelligente de Mandats</h3>
-                        <div class="project-section-content" data-i18n="p3_challenge">Automatiser la création de mandats légaux (pouvoirs, formalités d'entreprise) en détectant automatiquement le type d'entité et en enrichissant les données depuis les registres officiels.</div>
-                        <div class="project-stack"><span class="project-stack-item">n8n</span><span class="project-stack-item">GPT-4</span><span class="project-stack-item">Mistral OCR</span><span class="project-stack-item">API REST</span></div>
+                        <div class="project-section-content" data-i18n="p2_challenge">Réduire drastiquement le temps de création de documents juridiques pour un cabinet d'avocats, en garantissant la conformité et la cohérence des informations.</div>
+                        <div class="project-stack"><span class="project-stack-item">n8n</span><span class="project-stack-item">GPT-4</span><span class="project-stack-item">Mistral OCR</span></div>
                     </div>
                 </article>
 
@@ -361,8 +353,8 @@
                     <div class="project-info">
                         <div class="project-tag" data-i18n="p4_tag">Data Pipeline</div>
                         <h3 data-i18n="p4_title">Pipeline de Traitement de Factures</h3>
-                        <div class="project-section-content" data-i18n="p4_challenge">Traiter automatiquement un volume élevé de factures (1000+/mois) : extraction, classification, normalisation, déduplication, et intégration en base de données — sans intervention humaine.</div>
-                        <div class="project-stack"><span class="project-stack-item">Google Gemini</span><span class="project-stack-item">Supabase</span><span class="project-stack-item">n8n</span><span class="project-stack-item">iLovePDF API</span></div>
+                        <div class="project-section-content" data-i18n="p4_challenge">Traiter un volume élevé de factures (+1000/mois) : extraction, classification, normalisation et intégration en base de données sans intervention humaine.</div>
+                        <div class="project-stack"><span class="project-stack-item">Google Gemini</span><span class="project-stack-item">Supabase</span><span class="project-stack-item">n8n</span></div>
                     </div>
                 </article>
             </div>
@@ -391,9 +383,7 @@
             <div class="container">
                 <div class="section-header centered-header">
                     <div class="section-label" data-i18n="testimonials_label">Avis</div>
-                    <h2 class="section-heading" id="testimonials-heading" data-i18n="testimonials_heading">
-                        Ce que disent mes clients
-                    </h2>
+                    <h2 class="section-heading" id="testimonials-heading" data-i18n="testimonials_heading">Ce que disent mes clients</h2>
                 </div>
                 <div class="testimonial-card" data-animate>
                     <div class="testimonial-stars">★★★★★</div>
@@ -415,9 +405,7 @@
             <div class="container">
                  <div class="section-header">
                     <div class="section-label" data-i18n="faq_label">FAQ</div>
-                    <h2 class="section-heading" id="faq-heading" data-i18n="faq_heading">
-                        Questions fréquentes
-                    </h2>
+                    <h2 class="section-heading" id="faq-heading" data-i18n="faq_heading">Questions fréquentes</h2>
                 </div>
                 <div class="faq-container">
                     <div class="faq-item" data-animate>
@@ -442,33 +430,34 @@
 
         <section class="section" id="contact" aria-labelledby="contact-heading">
             <div class="container">
-                 <div class="section-header centered-header">
+                <div class="section-header">
                     <div class="section-label" data-i18n="contact_label">Contact</div>
                     <h2 class="section-heading" id="contact-heading" data-i18n="contact_heading">Prêt à automatiser<br>vos processus ?</h2>
                 </div>
                 <div class="contact-grid">
                     <div class="card contact-card">
-                        <h3>Choisir un créneau</h3>
-                        <p>30 minutes pour analyser gratuitement vos besoins en automatisation.</p>
-                        <div style="width:100%;height:100%;overflow:scroll" data-cal-link="blong.yang/30min"></div>
+                        <h3 data-i18n="contact_cal_title">Choisir un créneau</h3>
+                        <p data-i18n="contact_cal_desc">30 minutes pour analyser gratuitement vos besoins en automatisation.</p>
+                        <iframe src="https://cal.com/blong.yang" style="width:100%;height:100%;min-height:500px;border:0;" frameborder="0"></iframe>
                     </div>
                      <div class="card contact-card">
-                        <h3>Envoyer un message</h3>
-                        <p>Quelques lignes suffisent. Je vous réponds sous 24h ouvrées.</p>
-                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <h3 data-i18n="contact_form_title">Envoyer un message</h3>
+                        <p data-i18n="contact_form_desc">Quelques lignes suffisent. Je vous réponds sous 24h ouvrées.</p>
+                        <!-- IMPORTANT: Remplacez l'URL ci-dessous par votre URL Formspree -->
+                        <form action="https://formspree.io/f/VOTRE_ID_DE_FORMULAIRE" method="POST">
                             <div class="form-group">
-                                <label for="name">Nom</label>
+                                <label for="name" data-i18n="form_name">Nom</label>
                                 <input type="text" id="name" name="name" required>
                             </div>
                             <div class="form-group">
-                                <label for="email">Email</label>
+                                <label for="email" data-i18n="form_email">Email</label>
                                 <input type="email" id="email" name="email" required>
                             </div>
                             <div class="form-group">
-                                <label for="message">Votre besoin</label>
+                                <label for="message" data-i18n="form_message">Votre besoin</label>
                                 <textarea id="message" name="message" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary" style="width:100%;">Envoyer ma demande</button>
+                            <button type="submit" class="btn btn-primary" style="width:100%;" data-i18n="form_submit">Envoyer ma demande</button>
                         </form>
                     </div>
                 </div>
@@ -481,22 +470,19 @@
             <p>© 2024 BY NODFLOWMATION — <span data-i18n="footer_rights">Tous droits réservés</span></p>
             <div class="footer-links">
                 <a href="https://www.malt.fr/profile/blongyang" target="_blank" rel="noopener noreferrer">Malt</a>
-                <a href="https://cal.eu/blong.yang" target="_blank" rel="noopener noreferrer">Calendly</a>
             </div>
         </div>
     </footer>
 
     <script>
     document.addEventListener('DOMContentLoaded', () => {
-        // --- TRANSLATIONS (ABRIDGED) ---
-        const translations = { fr: { nav_about: "À propos", nav_services: "Services", nav_work: "Projets", nav_testimonials: "Avis", nav_faq: "FAQ", nav_contact: "Contact", nav_cta: "Réserver un appel", hero_badge: "Disponible pour de nouveaux projets", hero_h1_line1: "Automatisez vos processus,", hero_h1_line2: "récupérez votre temps", hero_description: "Expert n8n freelance, je transforme vos tâches manuelles en workflows intelligents et robustes. Libérez votre potentiel en éliminant les processus répétitifs.", hero_btn_quote: "Discutons de votre projet", hero_btn_projects: "Voir mes projets", stat_projects: "Projets Livrés", stat_time: "Temps gagné (max)", stat_accuracy: "Fiabilité", about_greeting: "Salut ! Je m'appelle Blong.", about_p1: "Je suis freelance expert en automatisation n8n. Ma mission est de transformer vos processus métier complexes en workflows <strong>clairs, robustes et faciles à maintenir</strong>.", about_p2: "Je prends le temps de comprendre vos enjeux pour construire des solutions qui vous font réellement gagner du temps. De l'intégration CRM à la génération de documents par IA, je livre des automatisations fiables adaptées à votre réalité.", services_label: "Mes services", services_heading: "Ce que je peux automatiser pour vous", service_1_name: "Automatisation de Documents", service_1_desc: "Génération automatique de contrats, factures et rapports (PDF, Word) à partir de vos données (CRM, formulaires, bases de données).", service_2_name: "Intégration d'IA & OCR", service_2_desc: "Extraction intelligente de données depuis des PDF, classification de documents, et génération de contenu avec GPT-4, Mistral ou Gemini.", service_3_name: "Génération de Leads & Enrichissement", service_3_desc: "Construction de pipelines pour collecter des données publiques, enrichir vos listes de prospects, et les intégrer à votre CRM.", projects_label: "Études de cas", projects_heading: "Projets d'automatisation réalisés", p1_tag: "Finance", p1_title: "Automatisation de Souscription Financière", p1_challenge: "Automatiser entièrement le processus de souscription financière : extraction de données depuis multiples sources, identification des parties prenantes, calculs financiers complexes, et génération de documents contractuels conformes.", p1_solution: "Pipeline n8n robuste avec OCR Mistral pour l'extraction documentaire, GPT-4 pour l'identification contextuelle, calculs financiers imbriqués automatisés, et génération multi-formats avec validation juridique intégrée.", p2_tag: "Juridique", p2_title: "Génération Automatisée de Documents Juridiques", p2_challenge: "Réduire drastiquement le temps de création de documents juridiques complexes pour un cabinet d'avocats, tout en garantissant la conformité réglementaire et la cohérence des informations.", p2_solution: "Extraction intelligente via IA, détection contextuelle des informations clés, enrichissement automatique via API tierces (registres officiels), génération conforme avec validation multi-niveaux.", p3_tag: "Corporate", p3_title: "Génération Intelligente de Mandats", p3_challenge: "Automatiser la création de mandats légaux (pouvoirs, formalités d'entreprise) en détectant automatiquement le type d'entité et en enrichissant les données depuis les registres officiels.", p3_solution: "Détection intelligente du statut d'entité, extraction OCR, enrichissement automatique depuis bases de données publiques, génération conforme aux standards juridiques français.", p4_tag: "Data Pipeline", p4_title: "Pipeline de Traitement de Factures", p4_challenge: "Traiter automatiquement un volume élevé de factures (1000+/mois) : extraction, classification, normalisation, déduplication, et intégration en base de données — sans intervention humaine.", p4_solution: "Pipeline intelligent avec Gemini OCR pour l'extraction multi-pages, classification automatique par catégories, normalisation des formats, déduplication par hash, et intégration Supabase en temps réel.", metric_time: "Temps gagné", metric_month: "Par mois", tools_label: "Technologies maîtrisées", tools_heading: "Mon Écosystème d'Automatisation", testimonials_label: "Avis", testimonials_heading: "Ce que disent mes clients", testimonial_1_text: "\"J'ai confié à Blong l'automatisation d'un workflow complexe. Le livrable est solide, bien structuré et fonctionnel. Bon communicant, rigoureux, et surtout capable de comprendre rapidement les enjeux. Je referai appel à lui.\"", testimonial_1_name: "Alexis D.", testimonial_1_role: "CEO • Workflow Automation Lab", faq_label: "FAQ", faq_heading: "Questions fréquentes", faq_1_q: "Qu'est-ce que n8n ?", faq_1_a: "n8n est une plateforme d'automatisation qui permet de connecter différentes applications via des workflows intelligents. C'est une alternative puissante à Zapier, offrant plus de flexibilité pour automatiser vos processus métier.", faq_2_q: "Combien de temps faut-il pour créer un workflow ?", faq_2_a: "De quelques jours pour un workflow simple à plusieurs semaines pour des intégrations complexes avec IA. Je fournis toujours un devis détaillé et gratuit après analyse de vos besoins.", faq_3_q: "Pourquoi choisir n8n plutôt que Zapier ?", faq_3_a: "n8n offre plus de flexibilité, aucune limite sur le nombre d'opérations, et la possibilité d'auto-hébergement pour garder le contrôle de vos données. C'est l'idéal pour les workflows complexes et sur-mesure.", faq_5_q: "Proposez-vous de la maintenance après livraison ?", faq_5_a: "Oui, je propose des contrats de maintenance pour assurer le bon fonctionnement de vos workflows dans le temps. Je peux aussi former vos équipes pour qu'elles puissent gérer elles-mêmes les automatisations.", contact_label: "Contact", contact_heading: "Prêt à automatiser<br>vos processus ?", footer_rights: "Tous droits réservés" } };
+        const translations = { fr: { nav_about: "À propos", nav_services: "Services", nav_work: "Projets", nav_testimonials: "Avis", nav_faq: "FAQ", nav_contact: "Contact", nav_cta: "Contact", hero_badge: "Disponible pour de nouveaux projets", hero_h1_line1: "Automatisez vos processus,", hero_h1_line2: "récupérez votre temps", hero_description: "Expert n8n freelance, je transforme vos tâches manuelles en workflows intelligents et robustes. Libérez le potentiel de votre entreprise en éliminant les processus répétitifs.", hero_btn_quote: "Discutons de votre projet", hero_btn_projects: "Voir mes projets", about_greeting: "Salut ! Je m'appelle Blong.", about_p1: "Je suis freelance expert en automatisation n8n. Ma mission est de transformer vos processus métier complexes en workflows <strong>clairs, robustes et faciles à maintenir</strong>.", about_p2: "Je prends le temps de comprendre vos enjeux pour construire des solutions qui vous font réellement gagner du temps, de l'intégration CRM à la génération de documents par IA, je livre des automatisations fiables adaptées à votre réalité.", services_label: "Mes services", services_heading: "Ce que je peux automatiser pour vous", service_1_name: "Automatisation de Documents", service_1_desc: "Génération automatique de contrats, factures et rapports (PDF, Word) à partir de vos données (CRM, formulaires, bases de données).", service_2_name: "Intégration d'IA & OCR", service_2_desc: "Extraction intelligente de données depuis des PDF, classification de documents, et génération de contenu avec GPT-4, Mistral ou Gemini.", service_3_name: "Génération de Leads & Enrichissement", service_3_desc: "Construction de pipelines pour collecter des données publiques, enrichir vos listes de prospects, et les intégrer à votre CRM.", projects_label: "Études de cas", projects_heading: "Projets d'automatisation réalisés", p1_tag: "Finance", p1_title: "Automatisation de Souscription Financière", p1_challenge: "Automatiser la génération de contrats de souscription complexes, impliquant l'extraction de données depuis des statuts, bilans et formulaires, avec des calculs financiers précis.", p2_tag: "Juridique", p2_title: "Génération Automatisée de Documents Juridiques", p2_challenge: "Réduire drastiquement le temps de création de documents juridiques pour un cabinet d'avocats, en garantissant la conformité et la cohérence des informations.", p3_tag: "Corporate", p3_title: "Génération Intelligente de Mandats", p3_challenge: "Automatiser la création de mandats légaux (pouvoirs, formalités d'entreprise) en détectant automatiquement le type d'entité et en enrichissant les données depuis les registres officiels.", p4_tag: "Data Pipeline", p4_title: "Pipeline de Traitement de Factures", p4_challenge: "Traiter un volume élevé de factures (+1000/mois) : extraction, classification, normalisation et intégration en base de données sans intervention humaine.", tools_label: "Technologies maîtrisées", tools_heading: "Mon Écosystème d'Automatisation", testimonials_label: "Avis", testimonials_heading: "Ce que disent mes clients", testimonial_1_text: "\"J'ai confié à Blong l'automatisation d'un workflow complexe. Le livrable est solide, bien structuré et fonctionnel. Bon communicant, rigoureux, et surtout capable de comprendre rapidement les enjeux. Je referai appel à lui.\"", testimonial_1_name: "Alexis D.", testimonial_1_role: "CEO • Workflow Automation Lab", faq_label: "FAQ", faq_heading: "Questions fréquentes", faq_1_q: "Qu'est-ce que n8n ?", faq_1_a: "n8n est une plateforme d'automatisation qui permet de connecter différentes applications via des workflows intelligents. C'est une alternative puissante à Zapier, offrant plus de flexibilité pour automatiser vos processus métier.", faq_2_q: "Combien de temps faut-il pour créer un workflow ?", faq_2_a: "De quelques jours pour un workflow simple à plusieurs semaines pour des intégrations complexes avec IA. Je fournis toujours un devis détaillé et gratuit après analyse de vos besoins.", faq_3_q: "Pourquoi choisir n8n plutôt que Zapier ?", faq_3_a: "n8n offre plus de flexibilité, aucune limite sur le nombre d'opérations, et la possibilité d'auto-hébergement pour garder le contrôle de vos données. C'est l'idéal pour les workflows complexes et sur-mesure.", faq_5_q: "Proposez-vous de la maintenance après livraison ?", faq_5_a: "Oui, je propose des contrats de maintenance pour assurer le bon fonctionnement de vos workflows dans le temps. Je peux aussi former vos équipes pour qu'elles puissent gérer elles-mêmes les automatisations.", contact_label: "Contact", contact_heading: "Prêt à automatiser<br>vos processus ?", contact_cal_title: "Choisir un créneau", contact_cal_desc: "30 minutes pour analyser gratuitement vos besoins en automatisation.", contact_form_title: "Envoyer un message", contact_form_desc: "Quelques lignes suffisent. Je vous réponds sous 24h ouvrées.", form_name: "Nom", form_email: "Email", form_message: "Votre besoin", form_submit: "Envoyer ma demande", footer_rights: "Tous droits réservés" } };
         function setLanguage(lang) { document.documentElement.lang = lang; document.querySelectorAll('[data-i18n]').forEach(el => { const key = el.getAttribute('data-i18n'); if (translations[lang] && translations[lang][key]) { el.innerHTML = translations[lang][key]; } }); }
         setLanguage('fr');
 
         if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
             document.body.addEventListener('mousemove', (e) => { requestAnimationFrame(() => { document.body.style.setProperty('--mouse-x', `${e.clientX}px`); document.body.style.setProperty('--mouse-y', `${e.clientY}px`); }); });
-            const cursor = document.getElementById('cursor'); const cursorDot = document.getElementById('cursorDot'); let mouseX = 0, mouseY = 0; document.addEventListener('mousemove', (e) => { mouseX = e.clientX; mouseY = e.clientY; }); function animateCursor() { cursorDot.style.transform = `translate(${mouseX - 3}px, ${mouseY - 3}px)`; requestAnimationFrame(animateCursor); } animateCursor();
-        } else { document.body.style.cursor = 'default'; document.querySelectorAll('.cursor, .cursor-dot').forEach(el => el.style.display = 'none'); }
+        } else { document.body.style.cursor = 'default'; }
 
         const nav = document.getElementById('nav');
         window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 50));
