@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blong | Expert Automatisation n8n Freelance | BY NODFLOWMATION</title>
-    <meta name="description" content="Freelance expert en automatisation n8n. J'aide les startups, PME et indépendants à gagner du temps grâce à des workflows intelligents sur-mesure.">
+    <meta name="description" content="Freelance expert en automatisation n8n. J'aide les entreprises à gagner du temps grâce à des workflows intelligents sur-mesure.">
     <link rel="canonical" href="https://bynodflowmation.github.io/portfolio-n8n/">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -97,7 +97,7 @@
         .service-icon { font-size: 40px; margin-bottom: 20px; display: block; }
         .service-name { font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 600; color: var(--white); margin-bottom: 12px; }
         .service-desc { font-size: 14px; color: var(--gray-400); line-height: 1.6; }
-        .projects-section { background: var(--black); }
+        .projects-section { background: var(--black); border-top: 1px solid var(--dark-border); }
         .project-card { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-bottom: 2px; background: var(--dark); border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--dark-border); transition: all 0.6s var(--transition); opacity: 0; transform: translateY(60px); }
         .project-card.visible { opacity: 1; transform: translateY(0); }
         .project-card:hover { border-color: var(--gray-700); transform: translateY(-4px); box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4); }
@@ -199,7 +199,7 @@
         <div class="hero-content">
             <div class="hero-badge"><span class="hero-badge-dot"></span><span data-i18n="hero_badge">Disponible pour de nouveaux projets</span></div>
             <h1 class="hero-title">
-                <span data-i18n="hero_h1_line1">J'aide les startups et PME à</span><br>
+                <span data-i18n="hero_h1_line1">J'aide les entreprises à</span><br>
                 <span class="gradient-text" data-i18n="hero_h1_line2">gagner du temps</span><br>
                 <span data-i18n="hero_h1_line3">grâce à l'automatisation n8n</span>
             </h1>
@@ -246,7 +246,7 @@
         <div class="section-container">
             <div class="section-header" style="display: block; text-align: center;">
                 <h2 class="section-heading" style="margin: 0 auto;" data-i18n="projects_heading">Projets d'automatisation réalisés</h2>
-                <p class="section-subtitle" style="margin: 20px auto 0;" data-i18n="projects_subtitle">Découvrez comment j'ai aidé des entreprises à automatiser leurs processus métier.</p>
+                <p class="section-subtitle" style="margin: 20px auto 0; max-width: 700px;" data-i18n="projects_subtitle">Découvrez comment j'ai aidé des entreprises à automatiser leurs processus métier.</p>
             </div>
             
             <article class="project-card" data-animate>
@@ -384,7 +384,7 @@
         const translations = {
             fr: {
             nav_about: "À propos", nav_services: "Services", nav_work: "Projets", nav_testimonials: "Témoignages", nav_faq: "FAQ", nav_contact: "Contact", nav_cta: "Réserver un appel",
-            hero_badge: "Disponible pour de nouveaux projets", hero_h1_line1: "J'aide les startups et PME à", hero_h1_line2: "gagner du temps", hero_h1_line3: "grâce à l'automatisation n8n", hero_description: "Je conçois des workflows d'automatisation intelligents avec n8n et l'IA — transformant vos processus manuels (CRM, documents, emails, API) en systèmes automatisés robustes. Gagnez jusqu'à 96% de temps et supprimez les erreurs humaines.", hero_btn_quote: "Obtenir un devis gratuit", hero_btn_projects: "Voir mes projets", hero_btn_call: "Réserver un appel",
+            hero_badge: "Disponible pour de nouveaux projets", hero_h1_line1: "J'aide les entreprises à", hero_h1_line2: "gagner du temps", hero_h1_line3: "grâce à l'automatisation n8n", hero_description: "Je conçois des workflows d'automatisation intelligents avec n8n et l'IA — transformant vos processus manuels (CRM, documents, emails, API) en systèmes automatisés robustes. Gagnez jusqu'à 96% de temps et supprimez les erreurs humaines.", hero_btn_quote: "Obtenir un devis gratuit", hero_btn_projects: "Voir mes projets", hero_btn_call: "Réserver un appel",
             stat_projects: "Projets", stat_time: "Temps gagné", metric_month: "Factures/mois", stat_accuracy: "Automatisé",
             about_greeting: "Salut ! Je m'appelle Blong.", about_p1: "Je suis freelance expert en automatisation n8n. Je travaille de façon <strong>structurée et fiable</strong>, en prenant le temps de comprendre vos besoins métier afin de concevoir des workflows clairs, robustes et faciles à maintenir.",
             services_heading: "Ce que je peux automatiser pour vous",
@@ -409,7 +409,7 @@
             },
             en: {
                 nav_about: "About", nav_services: "Services", nav_work: "Projects", nav_testimonials: "Testimonials", nav_faq: "FAQ", nav_contact: "Contact", nav_cta: "Book a call",
-                hero_badge: "Available for new projects", hero_h1_line1: "I help startups and SMBs", hero_h1_line2: "save time", hero_h1_line3: "with n8n automation", hero_description: "I design intelligent automation workflows with n8n and AI—transforming your manual processes (CRM, documents, emails, APIs) into robust automated systems. Save up to 96% of time and eliminate human errors.", hero_btn_quote: "Get a free quote", hero_btn_projects: "See my projects", hero_btn_call: "Book a call",
+                hero_badge: "Available for new projects", hero_h1_line1: "I help companies", hero_h1_line2: "save time", hero_h1_line3: "with n8n automation", hero_description: "I design intelligent automation workflows with n8n and AI—transforming your manual processes (CRM, documents, emails, APIs) into robust automated systems. Save up to 96% of time and eliminate human errors.", hero_btn_quote: "Get a free quote", hero_btn_projects: "See my projects", hero_btn_call: "Book a call",
                 stat_projects: "Projects", stat_time: "Time Saved", metric_month: "Invoices/month", stat_accuracy: "Automated",
                 about_greeting: "Hi! I'm Blong.", about_p1: "I am a freelance n8n automation expert. I work in a <strong>structured and reliable</strong> way, taking the time to understand your business needs to design clear, robust, and easy-to-maintain workflows.",
                 services_heading: "What I can automate for you",
