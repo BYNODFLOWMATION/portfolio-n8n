@@ -359,15 +359,15 @@
         </div>
     </section>
 
-    <!-- SECTION CAL.COM CORRIGÉE -->
+    <!-- SECTION CAL.EU CORRIGÉE -->
     <section class="cal-section" id="cal">
         <div class="section-container">
             <h2 class="section-heading" style="text-align: center; margin: 0 auto 80px;" data-i18n="cal_heading">Discutons de votre projet</h2>
             <div class="cal-container">
                 <!-- Version Française -->
-                <iframe id="cal-fr" src="https://cal.com/blong.yang?lang=fr" style="width:100%; height:700px; border:none;" frameborder="0"></iframe>
+                <iframe id="cal-fr" src="https://cal.eu/blong.yang?lang=fr" style="width:100%; height:700px; border:none;" frameborder="0"></iframe>
                 <!-- Version Anglaise (initialement cachée) -->
-                <iframe id="cal-en" src="https://cal.com/blong.yang?lang=en" style="width:100%; height:700px; border:none;" frameborder="0" class="hidden"></iframe>
+                <iframe id="cal-en" src="https://cal.eu/blong.yang?lang=en" style="width:100%; height:700px; border:none;" frameborder="0" class="hidden"></iframe>
             </div>
         </div>
     </section>
@@ -467,7 +467,7 @@
                 el.innerHTML = (translations[lang] && translations[lang][key]) || translations.fr[key];
             });
 
-            // Affichage des iframes Tally et Cal.com
+            // Affichage des iframes Tally et Cal.eu
             const elements = ['tally', 'cal'];
             elements.forEach(type => {
                 const el_fr = document.getElementById(`${type}-fr`);
