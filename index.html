@@ -15,243 +15,169 @@
     <meta property="og:description" content="Je transforme vos processus manuels en systèmes automatisés robustes avec n8n et l'IA. Gagnez en productivité et concentrez-vous sur votre croissance.">
     <meta property="og:url" content="https://bynodflowmation.github.io/portfolio-n8n/">
     <meta property="og:image" content="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/LOGOBYNODFLOWMATION_WHITE.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="fr_FR">
-    <meta property="og:site_name" content="BY NODFLOWMATION">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Blong | Expert Automatisation n8n & IA Freelance">
-    <meta name="twitter:description" content="Workflows intelligents avec n8n et IA. Jusqu'à 96% de temps gagné pour votre entreprise.">
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/LOGOBYNODFLOWMATION_WHITE.png">
 
     <link rel="canonical" href="https://bynodflowmation.github.io/portfolio-n8n/">
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/LOGOBYNODFLOWMATION_WHITE.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-    <script type="application/ld+json">
-    { "@context": "https://schema.org", "@type": "Person", "name": "Blong Yang", "alternateName": "BY NODFLOWMATION", "url": "https://bynodflowmation.github.io/portfolio-n8n/", "image": "https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/PHOTO_MALT.jpg", "sameAs": ["https://www.malt.fr/profile/blongyang"], "jobTitle": "Freelance Automation Expert", "worksFor": { "@type": "Organization", "name": "BY NODFLOWMATION" }, "description": "Expert freelance en automatisation n8n, spécialisé dans l'intégration d'IA et l'automatisation de processus métier", "email": "blong@bynodflowmation.com", "knowsAbout": ["n8n", "Zapier", "Workflow Automation", "AI Integration", "OCR", "API Integration", "Baserow", "Apify"] }
-    </script>
-    <script type="application/ld+json">
-    { "@context": "https://schema.org", "@type": "ProfessionalService", "name": "BY NODFLOWMATION", "description": "Expert freelance en automatisation n8n et intégration IA pour PME, startups et agences", "url": "https://bynodflowmation.github.io/portfolio-n8n/", "logo": "https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/LOGOBYNODFLOWMATION_WHITE.png", "sameAs": ["https://www.malt.fr/profile/blongyang"], "email": "blong@bynodflowmation.com", "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "1" } }
-    </script>
-    <script type="application/ld+json">
-    { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [ { "@type": "Question", "name": "Qu'est-ce que n8n ?", "acceptedAnswer": { "@type": "Answer", "text": "n8n est une plateforme d'automatisation qui permet de connecter différentes applications via des workflows intelligents. Alternative puissante à Zapier, elle offre plus de flexibilité et de contrôle pour automatiser vos processus métier." } }, { "@type": "Question", "name": "Pourquoi choisir n8n plutôt que Zapier ?", "acceptedAnswer": { "@type": "Answer", "text": "n8n offre plus de flexibilité, aucune limite sur le nombre d'opérations, et la possibilité d'auto-hébergement. C'est idéal pour les workflows complexes et sur-mesure qui nécessitent un contrôle total des données." } } ] }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <script async src="https://cal.com/embed.js"></script>
 
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
         :root {
-            --black: #0B0B1C;
-            --dark: #10131C;
-            --dark-surface: #1a1a1a;
-            --dark-border: #2a2a2a;
-            --gray-500: #737373;
-            --gray-400: #a3a3a3;
-            --white: #ffffff;
-            --accent: #6366f1;
-            --accent-light: #818cf8;
-            --accent-glow: rgba(99, 102, 241, 0.1);
-            --orange: #ed782b;
-            --cyan: #06b6d4;
+            --background: #0B0B1C;
+            --surface: #1a1625;
+            --border: #2a2a3a;
+            --text-primary: #ffffff;
+            --text-secondary: #a3a3b2;
+            --primary: #7C3AED;
+            --primary-light: #A855F7;
+            --accent: #ed782b;
             --radius: 12px;
-            --transition: cubic-bezier(0.16, 1, 0.3, 1);
-            --spotlight-size: 400px;
-            --mouse-x: 50%;
-            --mouse-y: 50%;
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
 
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
-
+        
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: var(--black);
-            color: var(--white);
+            font-family: 'Inter', sans-serif;
+            background: var(--background);
+            color: var(--text-primary);
             line-height: 1.6;
             overflow-x: hidden;
-            cursor: none;
-        }
-        
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            pointer-events: none;
-            z-index: -1;
-            background: radial-gradient(
-                circle var(--spotlight-size) at var(--mouse-x) var(--mouse-y),
-                rgba(99, 102, 241, 0.08),
-                transparent 50%
-            );
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
-        ::selection { background: var(--accent); color: white; }
+        ::selection { background: var(--primary); color: var(--text-primary); }
 
-        .cursor { width: 20px; height: 20px; border: 2px solid var(--accent-light); border-radius: 50%; position: fixed; pointer-events: none; z-index: 10000; transition: transform 0.15s var(--transition), background 0.2s; transform: translate(-50%, -50%); mix-blend-mode: difference; }
-        .cursor-dot { width: 6px; height: 6px; background: var(--accent); border-radius: 50%; position: fixed; pointer-events: none; z-index: 10001; transform: translate(-50%, -50%); transition: transform 0.08s; }
-        .cursor.hover { transform: translate(-50%, -50%) scale(2.5); border-color: var(--accent); background: rgba(99, 102, 241, 0.1); }
-
-        nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 24px 48px; display: flex; justify-content: space-between; align-items: center; transition: all 0.5s var(--transition); }
-        nav.scrolled { padding: 16px 48px; background: rgba(11, 11, 28, 0.8); backdrop-filter: blur(20px) saturate(180%); border-bottom: 1px solid var(--dark-border); }
-        .nav-logo-img { height: 64px; transition: opacity 0.3s; }
-        .nav-logo-img:hover { opacity: 0.8; }
-        .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
-        .nav-links a { color: var(--gray-400); text-decoration: none; font-size: 14px; font-weight: 500; position: relative; transition: color 0.3s; }
-        .nav-links a::after { content: ''; position: absolute; bottom: -4px; left: 50%; transform: translateX(-50%); width: 0; height: 2px; background: var(--accent); transition: width 0.3s var(--transition); }
-        .nav-links a:hover { color: var(--white); }
-        .nav-links a:hover::after { width: 100%; }
-        .nav-cta { padding: 8px 18px !important; background: var(--accent); color: var(--white) !important; border-radius: 100px; font-weight: 600 !important; font-size: 12px !important; transition: all 0.3s var(--transition) !important; border: 1px solid transparent; }
-        .nav-cta::after { display: none !important; }
-        .nav-cta:hover { background: transparent !important; border-color: var(--accent); color: var(--accent-light) !important; transform: scale(1.05); }
-        .menu-toggle { display: none; flex-direction: column; gap: 6px; cursor: pointer; z-index: 1001; background: none; border: none; padding: 8px; }
-        .menu-toggle span { width: 28px; height: 2px; background: var(--white); transition: all 0.3s var(--transition); display: block; }
-        .menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translateY(5.5px); }
-        .menu-toggle.active span:nth-child(2) { opacity: 0; }
-        .menu-toggle.active span:nth-child(3) { transform: rotate(-45deg) translateY(-5.5px); }
-        .mobile-menu { position: fixed; inset: 0; background: var(--black); z-index: 999; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 32px; opacity: 0; visibility: hidden; transition: all 0.5s var(--transition); }
-        .mobile-menu.active { opacity: 1; visibility: visible; }
-        .mobile-menu a { font-family: 'Space Grotesk', sans-serif; font-size: 40px; font-weight: 600; color: var(--white); text-decoration: none; transition: color 0.3s; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
         
-        .hero { min-height: 100vh; display: grid; place-items: center; grid-template-areas: "content"; position: relative; overflow: hidden; padding: 140px 48px 100px; }
-        .hero > * { grid-area: content; }
-        .hero-content { position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; width: 100%; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 48px; }
-        .hero-visual { position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; min-height: 400px; }
-        .hero-visual svg { width: 90%; max-width: 500px; height: auto; overflow: visible; }
-        .node-circle { animation: pulse 3s ease-in-out infinite alternate; transform-origin: center; }
-        .node-circle:nth-child(2) { animation-delay: 0.5s; }
-        .node-circle:nth-child(3) { animation-delay: 1s; }
-        .node-line { stroke-dasharray: 100; stroke-dashoffset: 100; animation: draw 5s ease-in-out infinite alternate; }
-        .node-line:nth-child(even) { animation-delay: 1.5s; }
-        @keyframes pulse { to { transform: scale(1.1); } }
-        @keyframes draw { to { stroke-dashoffset: 0; } }
-        .hero-text { z-index: 3; }
-        .hero-badge { display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px; background: var(--dark-surface); border: 1px solid var(--dark-border); border-radius: 100px; margin-bottom: 24px; font-size: 13px; color: var(--gray-400); }
-        .hero-badge-dot { width: 8px; height: 8px; background: var(--green); border-radius: 50%; animation: pulse-dot 2s ease-in-out infinite; box-shadow: 0 0 8px rgba(34, 197, 94, 0.5); }
-        @keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
-        .hero-title { font-family: 'Space Grotesk', sans-serif; font-size: clamp(36px, 5vw, 64px); font-weight: 700; line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 24px; }
-        .hero-title .gradient-text { background: linear-gradient(135deg, var(--accent-light), var(--cyan), var(--orange)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; background-size: 200% auto; animation: shimmer 4s ease-in-out infinite alternate; }
-        @keyframes shimmer { to { background-position: 200% center; } }
-        .hero-description { font-size: 18px; color: var(--gray-400); max-width: 500px; line-height: 1.7; margin-bottom: 40px; }
-        .hero-actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-        .btn-primary { display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; background: var(--white); color: var(--black); border-radius: 100px; font-size: 14px; font-weight: 600; text-decoration: none; transition: all 0.4s var(--transition); border: none; cursor: pointer; }
-        .btn-primary:hover { background: var(--accent); color: var(--white); transform: translateY(-3px); box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3); }
-        .btn-primary .arrow { transition: transform 0.3s var(--transition); }
-        .btn-primary:hover .arrow { transform: translateX(4px); }
-        .btn-secondary { display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; background: transparent; color: var(--white); border: 1px solid var(--dark-border); border-radius: 100px; font-size: 14px; font-weight: 500; text-decoration: none; transition: all 0.4s var(--transition); cursor: pointer; }
-        .btn-secondary:hover { border-color: var(--gray-500); background: var(--dark-surface); }
+        .section { padding: 100px 0; position: relative; }
         
-        .section { padding: 120px 48px; position: relative; }
-        .section-container { max-width: 1200px; margin: 0 auto; }
         .section-header { margin-bottom: 64px; }
-        .section-label { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--orange); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px; }
+        .section-label { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px; }
         .section-heading { font-family: 'Space Grotesk', sans-serif; font-size: clamp(32px, 4vw, 56px); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; max-width: 800px; }
         .centered-header { text-align: center; }
-
-        .about-section { background: var(--dark); padding: 120px 48px; border-top: 1px solid var(--dark-border); }
-        .about-content { max-width: 900px; margin: 0 auto; text-align: center; }
-        .about-avatar { width: 120px; height: 120px; border-radius: 50%; border: 3px solid var(--accent); margin: 0 auto 32px; }
-        .about-avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
-        .about-text h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(28px, 4vw, 40px); font-weight: 700; margin-bottom: 24px; line-height: 1.2; }
-        .about-text p { font-size: 18px; color: var(--gray-400); line-height: 1.8; margin-bottom: 16px; max-width: 700px; margin-left: auto; margin-right: auto; }
         
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; }
-        .service-card { padding: 32px; background: var(--dark-surface); border: 1px solid var(--dark-border); border-radius: var(--radius); transition: all 0.4s var(--transition); }
-        .service-card:hover { border-color: var(--accent); transform: translateY(-5px); background: var(--accent-glow); }
-        .service-icon { font-size: 32px; margin-bottom: 16px; display: block; }
-        .service-name { font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 600; color: var(--white); margin-bottom: 12px; }
-        .service-desc { font-size: 14px; color: var(--gray-400); line-height: 1.6; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 24px; border-radius: 100px; font-size: 14px; font-weight: 500; text-decoration: none; transition: var(--transition); border: 1px solid transparent; cursor: pointer; }
+        .btn-primary { background: var(--primary); color: var(--text-primary); }
+        .btn-primary:hover { background: var(--primary-light); transform: translateY(-2px); }
+        .btn-secondary { background: transparent; color: var(--text-primary); border-color: var(--border); }
+        .btn-secondary:hover { background: var(--surface); border-color: var(--primary); }
 
-        .project-card { display: grid; grid-template-columns: 1fr 1fr; gap: 0; background: var(--dark-surface); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--dark-border); transition: all 0.4s var(--transition); opacity: 0; transform: translateY(40px) scale(0.98); }
-        .project-card.visible { opacity: 1; transform: translateY(0) scale(1); }
-        .project-card:hover { border-color: var(--gray-700); transform: translateY(-5px); box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3); }
+        nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 16px 0; transition: all 0.3s ease; }
+        nav.scrolled { background: rgba(11, 11, 28, 0.8); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo-img { height: 56px; }
+        .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+        .nav-links a { color: var(--text-secondary); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--text-primary); }
+        .nav-cta { padding: 8px 18px; }
+        .menu-toggle { display: none; background: none; border: none; cursor: pointer; }
+        .menu-toggle span { display: block; width: 24px; height: 2px; background: var(--text-primary); margin: 5px 0; transition: all 0.3s; }
+        .menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .menu-toggle.active span:nth-child(2) { opacity: 0; }
+        .menu-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+        .mobile-menu { display: none; }
+
+        .hero { min-height: 100vh; display: flex; align-items: center; text-align: center; }
+        .hero-content { z-index: 1; }
+        .hero-title { font-family: 'Space Grotesk', sans-serif; font-size: clamp(40px, 7vw, 80px); font-weight: 700; line-height: 1.1; letter-spacing: -0.03em; margin: 24px 0; }
+        .hero-title .gradient-text { background: linear-gradient(135deg, var(--primary-light), var(--accent)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .hero-description { font-size: 18px; color: var(--text-secondary); max-width: 600px; margin: 0 auto 40px; }
+        .hero-actions { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+        .about-section { background: var(--dark); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+        .about-content { max-width: 800px; margin: 0 auto; text-align: center; }
+        .about-avatar { width: 120px; height: 120px; border-radius: 50%; border: 3px solid var(--primary); margin: 0 auto 24px; }
+        .about-avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+        .about-text h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(28px, 4vw, 40px); font-weight: 700; margin-bottom: 16px; line-height: 1.2; }
+        .about-text p { font-size: 18px; color: var(--text-secondary); line-height: 1.7; }
+
+        .card { background: var(--surface); border-radius: var(--radius); border: 1px solid var(--border); transition: var(--transition); padding: 32px; }
+        .card:hover { transform: translateY(-5px); border-color: var(--primary); box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; }
+        .service-icon { font-size: 32px; margin-bottom: 16px; }
+        .service-name { font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+        .service-desc { color: var(--text-secondary); font-size: 15px; }
+
+        .project-card { display: grid; grid-template-columns: 1fr 1fr; background: var(--surface); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); opacity: 0; transform: translateY(40px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .project-card.visible { opacity: 1; transform: translateY(0); }
         .project-card + .project-card { margin-top: 32px; }
         .project-card:nth-child(even) { direction: rtl; }
         .project-card:nth-child(even) > * { direction: ltr; }
-        .project-visual { position: relative; min-height: 450px; overflow: hidden; background: var(--black); padding: 24px; display: flex; align-items: center; justify-content: center; }
-        .project-visual img { width: 100%; height: 100%; object-fit: contain; transition: transform 0.6s var(--transition); }
-        .project-card:hover .project-visual img { transform: scale(1.05); }
-        .project-info { padding: 48px; }
-        .project-tag { display: inline-block; padding: 4px 12px; background: rgba(237, 120, 43, 0.1); border-radius: 100px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--orange); text-transform: uppercase; margin-bottom: 24px; }
-        .project-info h3 { font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; line-height: 1.2; margin-bottom: 16px; }
-        .project-section-title { font-size: 13px; color: var(--accent-light); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; margin-bottom: 8px; font-family: 'JetBrains Mono', monospace; }
-        .project-section-content { font-size: 15px; color: var(--gray-400); line-height: 1.7; margin-bottom: 20px; }
+        .project-visual { min-height: 400px; padding: 24px; display: flex; align-items: center; justify-content: center; background: var(--background); }
+        .project-visual img { max-width: 100%; height: auto; object-fit: contain; }
+        .project-info { padding: 40px; display: flex; flex-direction: column; justify-content: center; }
+        .project-tag { display: inline-block; padding: 4px 12px; background: rgba(237, 120, 43, 0.1); border-radius: 100px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--accent); text-transform: uppercase; margin-bottom: 24px; }
+        .project-info h3 { font-family: 'Space Grotesk', sans-serif; font-size: 24px; font-weight: 700; line-height: 1.2; margin-bottom: 16px; }
+        .project-section-title { font-size: 13px; color: var(--primary-light); text-transform: uppercase; font-weight: 600; margin-bottom: 8px; font-family: 'JetBrains Mono', monospace; }
+        .project-section-content { font-size: 15px; color: var(--text-secondary); margin-bottom: 20px; }
         .project-metrics { display: flex; gap: 32px; margin: 24px 0; }
-        .project-metric-value { font-family: 'Space Grotesk', sans-serif; font-size: 24px; font-weight: 700; color: var(--white); }
-        .project-metric-label { font-size: 11px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.1em; }
-        .project-stack { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
-        .project-stack-item { padding: 4px 12px; background: var(--dark-border); border-radius: 100px; font-size: 12px; color: var(--gray-400); }
+        .project-metric-value { font-family: 'Space Grotesk', sans-serif; font-size: 24px; font-weight: 700; color: var(--text-primary); }
+        .project-metric-label { font-size: 11px; color: var(--text-secondary); text-transform: uppercase; }
+        .project-stack { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 16px; }
+        .project-stack-item { padding: 4px 12px; background: var(--background); border: 1px solid var(--border); border-radius: 100px; font-size: 12px; color: var(--text-secondary); }
 
-        .tools-section { background: var(--dark); padding: 100px 48px; border-top: 1px solid var(--dark-border); border-bottom: 1px solid var(--dark-border); }
-        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto; }
-        .tool-item { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 24px; background: var(--dark-surface); border: 1px solid var(--dark-border); border-radius: var(--radius); transition: all 0.3s var(--transition); aspect-ratio: 1 / 1; }
-        .tool-item:hover { border-color: var(--accent); transform: translateY(-4px); background: var(--accent-glow); }
+        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 20px; }
+        .tool-item { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); transition: var(--transition); aspect-ratio: 1 / 1; }
+        .tool-item:hover { transform: translateY(-4px); border-color: var(--primary); }
         .tool-icon { font-size: 32px; line-height: 1; }
-        .tool-name { font-size: 14px; color: var(--gray-300); font-weight: 500; text-align: center; }
+        .tool-name { font-size: 14px; color: var(--text-secondary); text-align: center; }
 
-        .testimonials-section { background: var(--black); }
-        .testimonial-card { max-width: 800px; margin: 0 auto; padding: 40px; background: var(--dark-surface); border: 1px solid var(--dark-border); border-radius: var(--radius); }
-        .testimonial-text { font-size: 18px; color: var(--gray-300); line-height: 1.7; margin-bottom: 24px; font-style: italic; }
-        .testimonial-stars { color: var(--orange); font-size: 18px; margin-bottom: 20px; }
+        .testimonial-card { max-width: 800px; margin: 0 auto; padding: 40px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
+        .testimonial-text { font-size: 18px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 24px; font-style: italic; }
+        .testimonial-stars { color: var(--accent); font-size: 18px; margin-bottom: 20px; }
         .testimonial-author { display: flex; align-items: center; gap: 16px; }
-        .testimonial-avatar { width: 48px; height: 48px; border-radius: 50%; background: var(--accent-glow); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; color: var(--accent-light); }
-        .testimonial-info { display: flex; flex-direction: column; gap: 2px; }
-        .testimonial-name { font-weight: 600; font-size: 15px; color: var(--white); }
-        .testimonial-role { font-size: 13px; color: var(--gray-500); }
+        .testimonial-avatar { width: 48px; height: 48px; border-radius: 50%; background: var(--primary-light); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; color: var(--text-primary); }
+        .testimonial-name { font-weight: 600; font-size: 15px; color: var(--text-primary); }
+        .testimonial-role { font-size: 13px; color: var(--text-secondary); }
 
-        .faq-section { background: var(--dark); border-top: 1px solid var(--dark-border); }
+        .faq-section { background: var(--dark); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
         .faq-container { max-width: 800px; margin: 0 auto; }
-        .faq-item { border-bottom: 1px solid var(--dark-border); padding: 24px 0; cursor: pointer; }
+        .faq-item { border-bottom: 1px solid var(--border); padding: 24px 0; cursor: pointer; }
         .faq-question { display: flex; justify-content: space-between; align-items: center; gap: 24px; }
         .faq-question h3 { font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 500; }
-        .faq-toggle { font-size: 24px; color: var(--accent); transition: transform 0.3s var(--transition); }
+        .faq-toggle { font-size: 24px; color: var(--primary); transition: transform 0.3s var(--transition); }
         .faq-item.active .faq-toggle { transform: rotate(45deg); }
         .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-in-out; }
-        .faq-answer p { padding-top: 16px; font-size: 16px; color: var(--gray-400); line-height: 1.8; }
+        .faq-answer p { padding-top: 16px; font-size: 16px; color: var(--text-secondary); }
         .faq-item.active .faq-answer { max-height: 300px; }
 
-        .contact-section { text-align: center; }
-        .contact-email { display: inline-flex; align-items: center; gap: 16px; font-family: 'Space Grotesk', sans-serif; font-size: clamp(20px, 3.5vw, 32px); font-weight: 600; color: var(--white); text-decoration: none; padding: 20px 0; border-bottom: 2px solid var(--gray-700); transition: all 0.4s var(--transition); }
-        .contact-email:hover { border-color: var(--accent); color: var(--accent-light); }
-        .contact-links { display: flex; align-items: center; justify-content: center; gap: 24px; margin-top: 48px; }
-        .contact-link { display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; background: var(--dark-surface); border: 1px solid var(--dark-border); border-radius: 100px; color: var(--white); text-decoration: none; font-size: 14px; font-weight: 500; transition: all 0.3s var(--transition); }
-        .contact-link:hover { border-color: var(--accent); background: var(--accent-glow); }
-        .contact-link svg { stroke: var(--white); fill: transparent; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: flex-start; }
+        .contact-card { padding: 32px; }
+        .contact-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+        .contact-card p { color: var(--text-secondary); margin-bottom: 24px; }
+        .form-group { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+        .form-group label { font-size: 14px; font-weight: 500; color: var(--text-secondary); }
+        .form-group input, .form-group textarea { width: 100%; padding: 12px; background: var(--background); border: 1px solid var(--border); border-radius: 8px; color: var(--text-primary); font-family: 'Inter', sans-serif; font-size: 15px; }
+        .form-group textarea { resize: vertical; min-height: 120px; }
+        .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--primary); }
 
-        footer { padding: 40px 48px; border-top: 1px solid var(--dark-border); display: flex; justify-content: space-between; align-items: center; background: var(--black); }
+        footer { padding: 40px 0; border-top: 1px solid var(--border); }
+        .footer-container { display: flex; justify-content: space-between; align-items: center; }
         footer p { font-size: 13px; color: var(--gray-500); }
-        .footer-back-top { width: 44px; height: 44px; border: 1px solid var(--dark-border); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--gray-500); text-decoration: none; font-size: 18px; transition: all 0.3s var(--transition); }
-        .footer-back-top:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-3px); }
+        .footer-links { display: flex; gap: 24px; }
+        .footer-links a { color: var(--text-secondary); text-decoration: none; transition: color 0.3s; }
+        .footer-links a:hover { color: var(--text-primary); }
 
         @media (max-width: 900px) {
-            .hero-content { grid-template-columns: 1fr; text-align: center; }
-            .hero-visual { grid-row: 1; min-height: 300px; margin-bottom: 40px; }
+            .hero-content, .project-card, .project-card:nth-child(even), .contact-grid { grid-template-columns: 1fr; direction: ltr; }
+            .hero-visual { grid-row: 1; min-height: 300px; }
             .hero-text { grid-row: 2; }
-            .hero-actions, .hero-stats { justify-content: center; }
-            .hero-description { margin-left: auto; margin-right: auto; }
-            .project-card, .project-card:nth-child(even) { grid-template-columns: 1fr; direction: ltr; }
             .nav-links { display: none; }
             .menu-toggle { display: flex; }
-            .section { padding: 100px 28px; }
-            nav { padding: 20px 28px; }
-            footer { padding: 32px 28px; }
-            .contact-links { flex-direction: column; }
+            .section { padding: 80px 0; }
+            nav { padding: 16px 0; }
+            .footer-container { flex-direction: column; gap: 16px; }
         }
         @media (max-width: 600px) {
-            body { cursor: default; }
-            .cursor, .cursor-dot, body::before { display: none; }
-            .section { padding: 80px 20px; }
-            nav { padding: 16px 20px; }
-            .nav-logo-img { height: 56px; }
-            .hero-actions { flex-direction: column; align-items: stretch; }
-            .btn-primary, .btn-secondary { justify-content: center; }
-            .services-grid, .testimonials-grid { grid-template-columns: 1fr; }
-            .tools-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
-            footer { flex-direction: column; gap: 20px; }
+            body, body:hover { cursor: default; }
+            .cursor, .cursor-dot { display: none; }
+            .mobile-menu a { font-size: 32px; }
         }
     </style>
 </head>
@@ -262,23 +188,22 @@
 
     <header>
         <nav id="nav" role="navigation" aria-label="Navigation principale">
-            <a href="#" class="nav-logo" aria-label="BY NODFLOWMATION - Accueil">
-                <img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/LOGOBYNODFLOWMATION_WHITE.png" alt="Logo BY NODFLOWMATION" class="nav-logo-img">
-            </a>
-            <ul class="nav-links">
-                <li><a href="#about" data-i18n="nav_about">À propos</a></li>
-                <li><a href="#services" data-i18n="nav_services">Services</a></li>
-                <li><a href="#work" data-i18n="nav_work">Projets</a></li>
-                <li><a href="#testimonials" data-i18n="nav_testimonials">Avis</a></li>
-                <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
-                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
-                <li>
-                    <a href="https://cal.eu/blong.yang" target="_blank" rel="noopener noreferrer" class="nav-cta" data-i18n="nav_cta">Réserver un appel</a>
-                </li>
-            </ul>
-            <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
+            <div class="container nav-container">
+                <a href="#" class="nav-logo" aria-label="BY NODFLOWMATION - Accueil">
+                    <img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/LOGOBYNODFLOWMATION_WHITE.png" alt="Logo BY NODFLOWMATION" class="nav-logo-img">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#about" data-i18n="nav_about">À propos</a></li>
+                    <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                    <li><a href="#work" data-i18n="nav_work">Projets</a></li>
+                    <li><a href="#testimonials" data-i18n="nav_testimonials">Avis</a></li>
+                    <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+                    <li><a href="#contact" class="btn btn-primary nav-cta" data-i18n="nav_cta">Contact</a></li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </nav>
         <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation mobile">
             <a href="#about" class="mobile-link" data-i18n="nav_about">À propos</a>
@@ -292,29 +217,24 @@
 
     <main>
         <section class="hero" id="hero">
-            <div class="hero-grid"></div>
-            <div class="hero-content">
+            <div class="container hero-content">
                 <div class="hero-text">
                     <div class="hero-badge">
                         <span class="hero-badge-dot"></span>
                         <span data-i18n="hero_badge">Disponible pour de nouveaux projets</span>
                     </div>
-
                     <h1 class="hero-title">
                         <span data-i18n="hero_h1_line1">Automatisez vos processus,</span><br>
                         <span class="gradient-text" data-i18n="hero_h1_line2">récupérez votre temps</span>
                     </h1>
-
                     <p class="hero-description" data-i18n="hero_description">
-                        Expert n8n freelance, je transforme vos tâches manuelles en workflows intelligents et robustes. Libérez le potentiel de votre entreprise en éliminant les processus répétitifs.
+                        Expert n8n freelance, je transforme vos tâches manuelles en workflows intelligents et robustes. Libérez votre potentiel en éliminant les processus répétitifs.
                     </p>
-
                     <div class="hero-actions">
-                        <a href="#contact" class="btn-primary">
-                            <span data-i18n="hero_btn_quote">Obtenir un devis gratuit</span>
-                            <span class="arrow">→</span>
+                        <a href="#contact" class="btn btn-primary">
+                            <span data-i18n="hero_btn_quote">Discutons de votre projet</span>
                         </a>
-                        <a href="#work" class="btn-secondary" data-i18n="hero_btn_projects">
+                        <a href="#work" class="btn btn-secondary" data-i18n="hero_btn_projects">
                             Voir mes projets
                         </a>
                     </div>
@@ -323,14 +243,14 @@
                      <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-                                <stop offset="0%" style="stop-color:var(--accent-light);stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:var(--accent-dark);stop-opacity:1" />
+                                <stop offset="0%" style="stop-color:var(--primary-light);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:var(--primary);stop-opacity:1" />
                             </radialGradient>
                         </defs>
-                        <line class="node-line" x1="80" y1="150" x2="180" y2="80" stroke="var(--dark-border)" stroke-width="2"/>
-                        <line class="node-line" x1="180" y1="80" x2="320" y2="150" stroke="var(--dark-border)" stroke-width="2"/>
-                        <line class="node-line" x1="80" y1="150" x2="180" y2="220" stroke="var(--dark-border)" stroke-width="2"/>
-                        <line class="node-line" x1="180" y1="220" x2="320" y2="150" stroke="var(--dark-border)" stroke-width="2"/>
+                        <line class="node-line" x1="80" y1="150" x2="180" y2="80" stroke="var(--border)" stroke-width="2"/>
+                        <line class="node-line" x1="180" y1="80" x2="320" y2="150" stroke="var(--border)" stroke-width="2"/>
+                        <line class="node-line" x1="80" y1="150" x2="180" y2="220" stroke="var(--border)" stroke-width="2"/>
+                        <line class="node-line" x1="180" y1="220" x2="320" y2="150" stroke="var(--border)" stroke-width="2"/>
                         <circle class="node-circle" cx="80" cy="150" r="20" fill="url(#grad1)" />
                         <circle class="node-circle" cx="180" cy="80" r="15" fill="url(#grad1)" />
                         <circle class="node-circle" cx="180" cy="220" r="15" fill="url(#grad1)" />
@@ -339,9 +259,9 @@
                 </div>
             </div>
         </section>
-
+        
         <section class="about-section" id="about" aria-labelledby="about-heading">
-            <div class="section-container">
+            <div class="container">
                 <div class="about-content">
                     <div class="about-avatar">
                         <img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/PHOTO_MALT.jpg" alt="Photo de Blong Yang, expert freelance en automatisation n8n">
@@ -362,26 +282,26 @@
         </section>
 
         <section class="section services-section" id="services" aria-labelledby="services-heading">
-            <div class="section-container">
-                 <div class="section-header centered-header">
+            <div class="container">
+                 <div class="section-header">
                     <div class="section-label" data-i18n="services_label">Mes services</div>
                     <h2 class="section-heading" data-i18n="services_heading">
                         Ce que je peux automatiser pour vous
                     </h2>
                 </div>
                 <div class="services-grid">
-                    <div class="service-card" data-animate>
-                        <span class="service-icon">📄</span>
+                    <div class="card service-card" data-animate>
+                        <div class="service-icon">📄</div>
                         <h3 class="service-name" data-i18n="service_1_name">Automatisation de Documents</h3>
                         <p class="service-desc" data-i18n="service_1_desc">Génération automatique de contrats, factures et rapports (PDF, Word) à partir de vos données (CRM, formulaires, bases de données).</p>
                     </div>
-                    <div class="service-card" data-animate>
-                        <span class="service-icon">🤖</span>
+                    <div class="card service-card" data-animate>
+                        <div class="service-icon">🤖</div>
                         <h3 class="service-name" data-i18n="service_2_name">Intégration d'IA & OCR</h3>
                         <p class="service-desc" data-i18n="service_2_desc">Extraction intelligente de données depuis des PDF, classification de documents, et génération de contenu avec GPT-4, Mistral ou Gemini.</p>
                     </div>
-                    <div class="service-card" data-animate>
-                        <span class="service-icon">🎯</span>
+                    <div class="card service-card" data-animate>
+                        <div class="service-icon">🎯</div>
                         <h3 class="service-name" data-i18n="service_3_name">Génération de Leads & Enrichissement</h3>
                         <p class="service-desc" data-i18n="service_3_desc">Construction de pipelines pour collecter des données publiques, enrichir vos listes de prospects, et les intégrer à votre CRM.</p>
                     </div>
@@ -390,7 +310,7 @@
         </section>
 
         <section class="section projects-section" id="work" aria-labelledby="work-heading">
-            <div class="section-container">
+            <div class="container">
                 <div class="section-header">
                     <div>
                         <div class="section-label" data-i18n="projects_label">Études de cas</div>
@@ -405,18 +325,7 @@
                     <div class="project-info">
                         <div class="project-tag" data-i18n="p1_tag">Finance</div>
                         <h3 data-i18n="p1_title">Automatisation de Souscription Financière</h3>
-                        <div class="project-section">
-                            <div class="project-section-title" data-i18n="project_challenge">Défi</div>
-                            <p class="project-section-content" data-i18n="p1_challenge">Automatiser entièrement le processus de souscription financière : extraction de données depuis multiples sources, identification des parties prenantes, calculs financiers complexes, et génération de documents contractuels conformes.</p>
-                        </div>
-                        <div class="project-section">
-                            <div class="project-section-title" data-i18n="project_solution">Solution</div>
-                            <p class="project-section-content" data-i18n="p1_solution">Pipeline n8n robuste avec OCR Mistral pour l'extraction documentaire, GPT-4 pour l'identification contextuelle, calculs financiers imbriqués automatisés, et génération multi-formats avec validation juridique intégrée.</p>
-                        </div>
-                        <div class="project-metrics">
-                            <div class="project-metric"><div class="project-metric-value">96%</div><div class="project-metric-label" data-i18n="metric_time">Temps gagné</div></div>
-                            <div class="project-metric"><div class="project-metric-value">42</div><div class="project-metric-label">Nodes</div></div>
-                        </div>
+                        <div class="project-section-content" data-i18n="p1_challenge">Automatiser entièrement le processus de souscription financière : extraction de données depuis multiples sources, identification des parties prenantes, calculs financiers complexes, et génération de documents contractuels conformes.</div>
                         <div class="project-stack"><span class="project-stack-item">n8n</span><span class="project-stack-item">GPT-4</span><span class="project-stack-item">Mistral OCR</span><span class="project-stack-item">API REST</span></div>
                     </div>
                 </article>
@@ -428,18 +337,7 @@
                     <div class="project-info">
                         <div class="project-tag" data-i18n="p2_tag">Juridique</div>
                         <h3 data-i18n="p2_title">Génération Automatisée de Documents Juridiques</h3>
-                        <div class="project-section">
-                            <div class="project-section-title" data-i18n="project_challenge">Défi</div>
-                            <p class="project-section-content" data-i18n="p2_challenge">Réduire drastiquement le temps de création de documents juridiques complexes pour un cabinet d'avocats, tout en garantissant la conformité réglementaire et la cohérence des informations.</p>
-                        </div>
-                        <div class="project-section">
-                            <div class="project-section-title" data-i18n="project_solution">Solution</div>
-                            <p class="project-section-content" data-i18n="p2_solution">Extraction intelligente via IA, détection contextuelle des informations clés, enrichissement automatique via API tierces (registres officiels), génération conforme avec validation multi-niveaux.</p>
-                        </div>
-                        <div class="project-metrics">
-                            <div class="project-metric"><div class="project-metric-value">87%</div><div class="project-metric-label" data-i18n="metric_time">Temps gagné</div></div>
-                            <div class="project-metric"><div class="project-metric-value">20</div><div class="project-metric-label">Nodes</div></div>
-                        </div>
+                        <div class="project-section-content" data-i18n="p2_challenge">Réduire drastiquement le temps de création de documents juridiques complexes pour un cabinet d'avocats, tout en garantissant la conformité réglementaire et la cohérence des informations.</div>
                         <div class="project-stack"><span class="project-stack-item">n8n</span><span class="project-stack-item">GPT-4</span><span class="project-stack-item">Mistral OCR</span><span class="project-stack-item">API REST</span></div>
                     </div>
                 </article>
@@ -451,18 +349,7 @@
                     <div class="project-info">
                         <div class="project-tag" data-i18n="p3_tag">Corporate</div>
                         <h3 data-i18n="p3_title">Génération Intelligente de Mandats</h3>
-                        <div class="project-section">
-                            <div class="project-section-title" data-i18n="project_challenge">Défi</div>
-                            <p class="project-section-content" data-i18n="p3_challenge">Automatiser la création de mandats légaux (pouvoirs, formalités d'entreprise) en détectant automatiquement le type d'entité et en enrichissant les données depuis les registres officiels.</p>
-                        </div>
-                        <div class="project-section">
-                            <div class="project-section-title" data-i18n="project_solution">Solution</div>
-                            <p class="project-section-content" data-i18n="p3_solution">Détection intelligente du statut d'entité, extraction OCR, enrichissement automatique depuis bases de données publiques, génération conforme aux standards juridiques français.</p>
-                        </div>
-                        <div class="project-metrics">
-                            <div class="project-metric"><div class="project-metric-value">92%</div><div class="project-metric-label" data-i18n="metric_time">Temps gagné</div></div>
-                            <div class="project-metric"><div class="project-metric-value">18</div><div class="project-metric-label">Nodes</div></div>
-                        </div>
+                        <div class="project-section-content" data-i18n="p3_challenge">Automatiser la création de mandats légaux (pouvoirs, formalités d'entreprise) en détectant automatiquement le type d'entité et en enrichissant les données depuis les registres officiels.</div>
                         <div class="project-stack"><span class="project-stack-item">n8n</span><span class="project-stack-item">GPT-4</span><span class="project-stack-item">Mistral OCR</span><span class="project-stack-item">API REST</span></div>
                     </div>
                 </article>
@@ -474,18 +361,7 @@
                     <div class="project-info">
                         <div class="project-tag" data-i18n="p4_tag">Data Pipeline</div>
                         <h3 data-i18n="p4_title">Pipeline de Traitement de Factures</h3>
-                        <div class="project-section">
-                            <div class="project-section-title" data-i18n="project_challenge">Défi</div>
-                            <p class="project-section-content" data-i18n="p4_challenge">Traiter automatiquement un volume élevé de factures (1000+/mois) : extraction, classification, normalisation, déduplication, et intégration en base de données — sans intervention humaine.</p>
-                        </div>
-                        <div class="project-section">
-                            <div class="project-section-title" data-i18n="project_solution">Solution</div>
-                            <p class="project-section-content" data-i18n="p4_solution">Pipeline intelligent avec Gemini OCR pour l'extraction multi-pages, classification automatique par catégories, normalisation des formats, déduplication par hash, et intégration Supabase en temps réel.</p>
-                        </div>
-                        <div class="project-metrics">
-                            <div class="project-metric"><div class="project-metric-value">1K+</div><div class="project-metric-label" data-i18n="metric_month">Par mois</div></div>
-                            <div class="project-metric"><div class="project-metric-value">38</div><div class="project-metric-label">Nodes</div></div>
-                        </div>
+                        <div class="project-section-content" data-i18n="p4_challenge">Traiter automatiquement un volume élevé de factures (1000+/mois) : extraction, classification, normalisation, déduplication, et intégration en base de données — sans intervention humaine.</div>
                         <div class="project-stack"><span class="project-stack-item">Google Gemini</span><span class="project-stack-item">Supabase</span><span class="project-stack-item">n8n</span><span class="project-stack-item">iLovePDF API</span></div>
                     </div>
                 </article>
@@ -493,7 +369,7 @@
         </section>
         
         <section class="tools-section" aria-labelledby="tools-heading">
-            <div class="section-container">
+            <div class="container">
                 <div class="section-header centered-header">
                     <div class="section-label" data-i18n="tools_label">Technologies maîtrisées</div>
                     <h2 class="section-heading" id="tools-heading" data-i18n="tools_heading">Mon Écosystème d'Automatisation</h2>
@@ -512,7 +388,7 @@
         </section>
 
         <section class="section testimonials-section" id="testimonials" aria-labelledby="testimonials-heading">
-            <div class="section-container">
+            <div class="container">
                 <div class="section-header centered-header">
                     <div class="section-label" data-i18n="testimonials_label">Avis</div>
                     <h2 class="section-heading" id="testimonials-heading" data-i18n="testimonials_heading">
@@ -536,14 +412,12 @@
         </section>
 
         <section class="faq-section" id="faq" aria-labelledby="faq-heading">
-            <div class="section-container">
+            <div class="container">
                  <div class="section-header">
-                    <div>
-                        <div class="section-label" data-i18n="faq_label">FAQ</div>
-                        <h2 class="section-heading" id="faq-heading" data-i18n="faq_heading">
-                            Questions fréquentes
-                        </h2>
-                    </div>
+                    <div class="section-label" data-i18n="faq_label">FAQ</div>
+                    <h2 class="section-heading" id="faq-heading" data-i18n="faq_heading">
+                        Questions fréquentes
+                    </h2>
                 </div>
                 <div class="faq-container">
                     <div class="faq-item" data-animate>
@@ -566,119 +440,78 @@
             </div>
         </section>
 
-        <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
-            <div class="section-container contact-content">
-                <div class="section-header centered-header">
-                    <div>
-                        <div class="section-label" style="justify-content: center;" data-i18n="contact_label">Contact</div>
-                        <h2 class="section-heading" id="contact-heading" data-i18n="contact_heading">Prêt à automatiser<br>vos processus ?</h2>
-                    </div>
+        <section class="section" id="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                 <div class="section-header centered-header">
+                    <div class="section-label" data-i18n="contact_label">Contact</div>
+                    <h2 class="section-heading" id="contact-heading" data-i18n="contact_heading">Prêt à automatiser<br>vos processus ?</h2>
                 </div>
-                <p class="contact-sub" data-i18n="contact_sub">
-                    Discutons de votre projet. Le premier appel de découverte et le devis sont gratuits.
-                </p>
-                <a href="mailto:blong@bynodflowmation.com" class="contact-email" aria-label="Envoyer un email à blong@bynodflowmation.com">
-                    blong@bynodflowmation.com
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-                </a>
-                <div class="contact-links">
-                     <a href="https://cal.eu/blong.yang" target="_blank" rel="noopener noreferrer" class="contact-link">
-                       <svg width="20" height="20" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                        <span data-i18n="contact_cal">Réserver un appel</span>
-                    </a>
-                    <a href="https://www.malt.fr/profile/blongyang" target="_blank" rel="noopener noreferrer" class="contact-link">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.5,3H4.5A1.5,1.5,0,0,0,3,4.5v15A1.5,1.5,0,0,0,4.5,21h15A1.5,1.5,0,0,0,21,19.5V4.5A1.5,1.5,0,0,0,19.5,3ZM8,18H6V11H8Zm-1-8.5A1.5,1.5,0,1,1,8.5,8,1.5,1.5,0,0,1,7,9.5ZM18,18H16V14.5c0-2-1-3-2-3s-2,1-2,3V18H10V11h2v1.5c.5-1,1.5-1.5,2.5-1.5S18,12,18,14.5Z"/></svg>
-                        <span data-i18n="contact_malt">Profil Malt</span>
-                    </a>
+                <div class="contact-grid">
+                    <div class="card contact-card">
+                        <h3>Choisir un créneau</h3>
+                        <p>30 minutes pour analyser gratuitement vos besoins en automatisation.</p>
+                        <div style="width:100%;height:100%;overflow:scroll" data-cal-link="blong.yang/30min"></div>
+                    </div>
+                     <div class="card contact-card">
+                        <h3>Envoyer un message</h3>
+                        <p>Quelques lignes suffisent. Je vous réponds sous 24h ouvrées.</p>
+                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                            <div class="form-group">
+                                <label for="name">Nom</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Votre besoin</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width:100%;">Envoyer ma demande</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     
     <footer role="contentinfo">
-        <p>© 2024 BY NODFLOWMATION — <span data-i18n="footer_rights">Tous droits réservés</span></p>
-        <a href="#hero" class="footer-back-top" aria-label="Retour en haut">↑</a>
+        <div class="container footer-container">
+            <p>© 2024 BY NODFLOWMATION — <span data-i18n="footer_rights">Tous droits réservés</span></p>
+            <div class="footer-links">
+                <a href="https://www.malt.fr/profile/blongyang" target="_blank" rel="noopener noreferrer">Malt</a>
+                <a href="https://cal.eu/blong.yang" target="_blank" rel="noopener noreferrer">Calendly</a>
+            </div>
+        </div>
     </footer>
 
     <script>
     document.addEventListener('DOMContentLoaded', () => {
-        const translations = { fr: { nav_about: "À propos", nav_services: "Services", nav_work: "Projets", nav_testimonials: "Avis", nav_faq: "FAQ", nav_contact: "Contact", nav_cta: "Réserver un appel", hero_badge: "Disponible pour de nouveaux projets", hero_h1_line1: "Automatisez vos processus,", hero_h1_line2: "récupérez votre temps", hero_description: "Expert n8n freelance, je transforme vos tâches manuelles en workflows intelligents et robustes. Libérez le potentiel de votre entreprise en éliminant les processus répétitifs.", hero_btn_quote: "Obtenir un devis gratuit", hero_btn_projects: "Voir mes projets", stat_projects: "Projets Livrés", stat_time: "Temps gagné (max)", stat_accuracy: "Fiabilité", about_greeting: "Salut ! Je m'appelle Blong.", about_p1: "Je suis freelance expert en automatisation n8n. Ma mission est de transformer vos processus métier complexes en workflows <strong>clairs, robustes et faciles à maintenir</strong>.", about_p2: "Je prends le temps de comprendre vos enjeux pour construire des solutions qui vous font réellement gagner du temps. De l'intégration CRM à la génération de documents par IA, je livre des automatisations fiables adaptées à votre réalité.", services_label: "Mes services", services_heading: "Ce que je peux automatiser pour vous", service_1_name: "Automatisation de Documents", service_1_desc: "Génération automatique de contrats, factures et rapports (PDF, Word) à partir de vos données (CRM, formulaires, bases de données).", service_2_name: "Intégration d'IA & OCR", service_2_desc: "Extraction intelligente de données depuis des PDF, classification de documents, et génération de contenu avec GPT-4, Mistral ou Gemini.", service_3_name: "Génération de Leads & Enrichissement", service_3_desc: "Construction de pipelines pour collecter des données publiques, enrichir vos listes de prospects, et les intégrer à votre CRM.", projects_label: "Études de cas", projects_heading: "Projets d'automatisation réalisés", p1_tag: "Finance", p1_title: "Automatisation de Souscription Financière", p1_challenge: "Automatiser entièrement le processus de souscription financière : extraction de données depuis multiples sources, identification des parties prenantes, calculs financiers complexes, et génération de documents contractuels conformes.", p1_solution: "Pipeline n8n robuste avec OCR Mistral pour l'extraction documentaire, GPT-4 pour l'identification contextuelle, calculs financiers imbriqués automatisés, et génération multi-formats avec validation juridique intégrée.", p2_tag: "Juridique", p2_title: "Génération Automatisée de Documents Juridiques", p2_challenge: "Réduire drastiquement le temps de création de documents juridiques complexes pour un cabinet d'avocats, tout en garantissant la conformité réglementaire et la cohérence des informations.", p2_solution: "Extraction intelligente via IA, détection contextuelle des informations clés, enrichissement automatique via API tierces (registres officiels), génération conforme avec validation multi-niveaux.", p3_tag: "Corporate", p3_title: "Génération Intelligente de Mandats", p3_challenge: "Automatiser la création de mandats légaux (pouvoirs, formalités d'entreprise) en détectant automatiquement le type d'entité et en enrichissant les données depuis les registres officiels.", p3_solution: "Détection intelligente du statut d'entité, extraction OCR, enrichissement automatique depuis bases de données publiques, génération conforme aux standards juridiques français.", p4_tag: "Data Pipeline", p4_title: "Pipeline de Traitement de Factures", p4_challenge: "Traiter automatiquement un volume élevé de factures (1000+/mois) : extraction, classification, normalisation, déduplication, et intégration en base de données — sans intervention humaine.", p4_solution: "Pipeline intelligent avec Gemini OCR pour l'extraction multi-pages, classification automatique par catégories, normalisation des formats, déduplication par hash, et intégration Supabase en temps réel.", metric_time: "Temps gagné", metric_month: "Par mois", tools_label: "Technologies maîtrisées", tools_heading: "Mon Écosystème d'Automatisation", testimonials_label: "Avis", testimonials_heading: "Ce que disent mes clients", testimonial_1_text: "\"J'ai confié à Blong l'automatisation d'un workflow complexe. Le livrable est solide, bien structuré et fonctionnel. Bon communicant, rigoureux, et surtout capable de comprendre rapidement les enjeux. Je referai appel à lui.\"", testimonial_1_name: "Alexis D.", testimonial_1_role: "CEO • Workflow Automation Lab", faq_label: "FAQ", faq_heading: "Questions fréquentes", faq_1_q: "Qu'est-ce que n8n ?", faq_1_a: "n8n est une plateforme d'automatisation qui permet de connecter différentes applications via des workflows intelligents. C'est une alternative puissante à Zapier, offrant plus de flexibilité pour automatiser vos processus métier.", faq_2_q: "Combien de temps faut-il pour créer un workflow ?", faq_2_a: "De quelques jours pour un workflow simple à plusieurs semaines pour des intégrations complexes avec IA. Je fournis toujours un devis détaillé et gratuit après analyse de vos besoins.", faq_3_q: "Pourquoi choisir n8n plutôt que Zapier ?", faq_3_a: "n8n offre plus de flexibilité, aucune limite sur le nombre d'opérations, et la possibilité d'auto-hébergement pour garder le contrôle de vos données. C'est l'idéal pour les workflows complexes et sur-mesure.", faq_5_q: "Proposez-vous de la maintenance après livraison ?", faq_5_a: "Oui, je propose des contrats de maintenance pour assurer le bon fonctionnement de vos workflows dans le temps. Je peux aussi former vos équipes pour qu'elles puissent gérer elles-mêmes les automatisations.", contact_label: "Contact", contact_heading: "Prêt à automatiser<br>vos processus ?", contact_sub: "Discutons de votre projet. Le premier appel de découverte et le devis sont gratuits.", contact_cal: "Réserver un appel", contact_malt: "Profil Malt", footer_rights: "Tous droits réservés" } };
-        
-        function setLanguage(lang) {
-            document.documentElement.lang = lang;
-            document.querySelectorAll('[data-i18n]').forEach(el => {
-                const key = el.getAttribute('data-i18n');
-                if (translations[lang] && translations[lang][key]) { el.innerHTML = translations[lang][key]; }
-            });
-        }
+        // --- TRANSLATIONS (ABRIDGED) ---
+        const translations = { fr: { nav_about: "À propos", nav_services: "Services", nav_work: "Projets", nav_testimonials: "Avis", nav_faq: "FAQ", nav_contact: "Contact", nav_cta: "Réserver un appel", hero_badge: "Disponible pour de nouveaux projets", hero_h1_line1: "Automatisez vos processus,", hero_h1_line2: "récupérez votre temps", hero_description: "Expert n8n freelance, je transforme vos tâches manuelles en workflows intelligents et robustes. Libérez votre potentiel en éliminant les processus répétitifs.", hero_btn_quote: "Discutons de votre projet", hero_btn_projects: "Voir mes projets", stat_projects: "Projets Livrés", stat_time: "Temps gagné (max)", stat_accuracy: "Fiabilité", about_greeting: "Salut ! Je m'appelle Blong.", about_p1: "Je suis freelance expert en automatisation n8n. Ma mission est de transformer vos processus métier complexes en workflows <strong>clairs, robustes et faciles à maintenir</strong>.", about_p2: "Je prends le temps de comprendre vos enjeux pour construire des solutions qui vous font réellement gagner du temps. De l'intégration CRM à la génération de documents par IA, je livre des automatisations fiables adaptées à votre réalité.", services_label: "Mes services", services_heading: "Ce que je peux automatiser pour vous", service_1_name: "Automatisation de Documents", service_1_desc: "Génération automatique de contrats, factures et rapports (PDF, Word) à partir de vos données (CRM, formulaires, bases de données).", service_2_name: "Intégration d'IA & OCR", service_2_desc: "Extraction intelligente de données depuis des PDF, classification de documents, et génération de contenu avec GPT-4, Mistral ou Gemini.", service_3_name: "Génération de Leads & Enrichissement", service_3_desc: "Construction de pipelines pour collecter des données publiques, enrichir vos listes de prospects, et les intégrer à votre CRM.", projects_label: "Études de cas", projects_heading: "Projets d'automatisation réalisés", p1_tag: "Finance", p1_title: "Automatisation de Souscription Financière", p1_challenge: "Automatiser entièrement le processus de souscription financière : extraction de données depuis multiples sources, identification des parties prenantes, calculs financiers complexes, et génération de documents contractuels conformes.", p1_solution: "Pipeline n8n robuste avec OCR Mistral pour l'extraction documentaire, GPT-4 pour l'identification contextuelle, calculs financiers imbriqués automatisés, et génération multi-formats avec validation juridique intégrée.", p2_tag: "Juridique", p2_title: "Génération Automatisée de Documents Juridiques", p2_challenge: "Réduire drastiquement le temps de création de documents juridiques complexes pour un cabinet d'avocats, tout en garantissant la conformité réglementaire et la cohérence des informations.", p2_solution: "Extraction intelligente via IA, détection contextuelle des informations clés, enrichissement automatique via API tierces (registres officiels), génération conforme avec validation multi-niveaux.", p3_tag: "Corporate", p3_title: "Génération Intelligente de Mandats", p3_challenge: "Automatiser la création de mandats légaux (pouvoirs, formalités d'entreprise) en détectant automatiquement le type d'entité et en enrichissant les données depuis les registres officiels.", p3_solution: "Détection intelligente du statut d'entité, extraction OCR, enrichissement automatique depuis bases de données publiques, génération conforme aux standards juridiques français.", p4_tag: "Data Pipeline", p4_title: "Pipeline de Traitement de Factures", p4_challenge: "Traiter automatiquement un volume élevé de factures (1000+/mois) : extraction, classification, normalisation, déduplication, et intégration en base de données — sans intervention humaine.", p4_solution: "Pipeline intelligent avec Gemini OCR pour l'extraction multi-pages, classification automatique par catégories, normalisation des formats, déduplication par hash, et intégration Supabase en temps réel.", metric_time: "Temps gagné", metric_month: "Par mois", tools_label: "Technologies maîtrisées", tools_heading: "Mon Écosystème d'Automatisation", testimonials_label: "Avis", testimonials_heading: "Ce que disent mes clients", testimonial_1_text: "\"J'ai confié à Blong l'automatisation d'un workflow complexe. Le livrable est solide, bien structuré et fonctionnel. Bon communicant, rigoureux, et surtout capable de comprendre rapidement les enjeux. Je referai appel à lui.\"", testimonial_1_name: "Alexis D.", testimonial_1_role: "CEO • Workflow Automation Lab", faq_label: "FAQ", faq_heading: "Questions fréquentes", faq_1_q: "Qu'est-ce que n8n ?", faq_1_a: "n8n est une plateforme d'automatisation qui permet de connecter différentes applications via des workflows intelligents. C'est une alternative puissante à Zapier, offrant plus de flexibilité pour automatiser vos processus métier.", faq_2_q: "Combien de temps faut-il pour créer un workflow ?", faq_2_a: "De quelques jours pour un workflow simple à plusieurs semaines pour des intégrations complexes avec IA. Je fournis toujours un devis détaillé et gratuit après analyse de vos besoins.", faq_3_q: "Pourquoi choisir n8n plutôt que Zapier ?", faq_3_a: "n8n offre plus de flexibilité, aucune limite sur le nombre d'opérations, et la possibilité d'auto-hébergement pour garder le contrôle de vos données. C'est l'idéal pour les workflows complexes et sur-mesure.", faq_5_q: "Proposez-vous de la maintenance après livraison ?", faq_5_a: "Oui, je propose des contrats de maintenance pour assurer le bon fonctionnement de vos workflows dans le temps. Je peux aussi former vos équipes pour qu'elles puissent gérer elles-mêmes les automatisations.", contact_label: "Contact", contact_heading: "Prêt à automatiser<br>vos processus ?", footer_rights: "Tous droits réservés" } };
+        function setLanguage(lang) { document.documentElement.lang = lang; document.querySelectorAll('[data-i18n]').forEach(el => { const key = el.getAttribute('data-i18n'); if (translations[lang] && translations[lang][key]) { el.innerHTML = translations[lang][key]; } }); }
         setLanguage('fr');
 
-        const cursor = document.getElementById('cursor');
-        const cursorDot = document.getElementById('cursorDot');
         if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
-            document.body.addEventListener('mousemove', (e) => {
-                requestAnimationFrame(() => {
-                    cursorDot.style.transform = `translate(${e.clientX - 3}px, ${e.clientY - 3}px)`;
-                    cursor.style.transform = `translate(${e.clientX - 10}px, ${e.clientY - 10}px)`;
-                });
-            });
-            document.querySelectorAll('a, button, [role="button"], .project-card, .tool-tag, .testimonial-card, .service-card, .faq-item, .contact-link').forEach(el => {
-                el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
-                el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
-            });
-        } else {
-            if(cursor) cursor.style.display = 'none';
-            if(cursorDot) cursorDot.style.display = 'none';
-            document.body.style.cursor = 'default';
-        }
+            document.body.addEventListener('mousemove', (e) => { requestAnimationFrame(() => { document.body.style.setProperty('--mouse-x', `${e.clientX}px`); document.body.style.setProperty('--mouse-y', `${e.clientY}px`); }); });
+            const cursor = document.getElementById('cursor'); const cursorDot = document.getElementById('cursorDot'); let mouseX = 0, mouseY = 0; document.addEventListener('mousemove', (e) => { mouseX = e.clientX; mouseY = e.clientY; }); function animateCursor() { cursorDot.style.transform = `translate(${mouseX - 3}px, ${mouseY - 3}px)`; requestAnimationFrame(animateCursor); } animateCursor();
+        } else { document.body.style.cursor = 'default'; document.querySelectorAll('.cursor, .cursor-dot').forEach(el => el.style.display = 'none'); }
 
         const nav = document.getElementById('nav');
         window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 50));
 
         const menuToggle = document.getElementById('menuToggle');
         const mobileMenu = document.getElementById('mobileMenu');
-        menuToggle.addEventListener('click', () => {
-            const isActive = menuToggle.classList.toggle('active');
-            mobileMenu.classList.toggle('active');
-            menuToggle.setAttribute('aria-expanded', isActive);
-            document.body.style.overflow = isActive ? 'hidden' : '';
-        });
-        document.querySelectorAll('.mobile-link').forEach(link => {
-            link.addEventListener('click', () => {
-                menuToggle.classList.remove('active');
-                mobileMenu.classList.remove('active');
-                menuToggle.setAttribute('aria-expanded', 'false');
-                document.body.style.overflow = '';
-            });
-        });
+        menuToggle.addEventListener('click', () => { const isActive = menuToggle.classList.toggle('active'); mobileMenu.classList.toggle('active'); document.body.style.overflow = isActive ? 'hidden' : ''; });
+        document.querySelectorAll('.mobile-link').forEach(link => { link.addEventListener('click', () => { menuToggle.classList.remove('active'); mobileMenu.classList.remove('active'); document.body.style.overflow = ''; }); });
 
-        document.querySelectorAll('.faq-item').forEach(item => {
-            item.addEventListener('click', () => {
-                const wasActive = item.classList.contains('active');
-                document.querySelectorAll('.faq-item').forEach(other => other.classList.remove('active'));
-                if (!wasActive) { item.classList.add('active'); }
-            });
-        });
+        document.querySelectorAll('.faq-item').forEach(item => { item.addEventListener('click', () => { const wasActive = item.classList.contains('active'); document.querySelectorAll('.faq-item').forEach(other => other.classList.remove('active')); if (!wasActive) { item.classList.add('active'); } }); });
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } }); }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
         document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
         
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    e.preventDefault();
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function(e) { const target = document.querySelector(this.getAttribute('href')); if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });
     });
     </script>
 </body>
