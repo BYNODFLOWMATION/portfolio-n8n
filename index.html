@@ -1,493 +1,60 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- SEO Primary -->
-    <title>Blong | Expert Automatisation n8n Freelance | BY NODFLOWMATION</title>
-    <meta name="description" content="Freelance expert en automatisation n8n. J'aide les startups, PME et indépendants à gagner du temps grâce à des workflows intelligents sur-mesure. Intégration IA, CRM, scraping, enrichissement de données. Devis gratuit.">
-    <meta name="keywords" content="n8n automation, automatisation workflow, expert n8n, freelance automation, intégration IA, GPT-4, Mistral, OCR, traitement documents, API integration, workflow automation France, n8n expert France, automatisation processus, no-code automation, alternative Zapier, consultant n8n, automatisation CRM, synchronisation données, automatisation Google Sheets, lead generation, web scraping, data enrichment">
-    <meta name="author" content="Blong Yang - BY NODFLOWMATION">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Blong | Expert Automatisation n8n Freelance">
-    <meta property="og:description" content="J'aide les startups et PME à gagner du temps grâce à des automatisations n8n simples et efficaces. Workflows intelligents, IA, CRM, documents.">
-    <meta property="og:url" content="https://bynodflowmation.github.io/portfolio-n8n/">
-    <meta property="og:image" content="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/LOGOBYNODFLOWMATION_WHITE.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="fr_FR">
-    <meta property="og:site_name" content="BY NODFLOWMATION">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Blong | Expert Automatisation n8n Freelance">
-    <meta name="twitter:description" content="Workflows intelligents avec n8n et IA. Jusqu'à 96% de temps gagné pour votre entreprise.">
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/LOGOBYNODFLOWMATION_WHITE.png">
-
-    <!-- Canonical -->
-    <link rel="canonical" href="https://bynodflowmation.github.io/portfolio-n8n/">
-
-    <!-- Alternate languages -->
-    <link rel="alternate" hreflang="fr" href="https://bynodflowmation.github.io/portfolio-n8n/?lang=fr">
-    <link rel="alternate" hreflang="en" href="https://bynodflowmation.github.io/portfolio-n8n/?lang=en">
-    <link rel="alternate" hreflang="x-default" href="https://bynodflowmation.github.io/portfolio-n8n/">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/LOGOBYNODFLOWMATION_WHITE.png">
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-    <!-- JSON-LD Schemas -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org", "@type": "Person", "name": "Blong Yang", "alternateName": "BY NODFLOWMATION",
-      "url": "https://bynodflowmation.github.io/portfolio-n8n/", "image": "https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/PHOTO_MALT.jpg",
-      "sameAs": ["https://www.malt.fr/profile/blongyang"], "jobTitle": "Freelance Automation Expert",
-      "worksFor": { "@type": "Organization", "name": "BY NODFLOWMATION" },
-      "description": "Expert freelance en automatisation n8n, spécialisé dans l'intégration d'IA, le scraping et l'enrichissement de données pour PME.",
-      "email": "blong@bynodflowmation.com", "knowsAbout": ["n8n", "Workflow Automation", "AI Integration", "OCR", "API Integration", "Process Automation", "Web Scraping", "Data Enrichment"]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org", "@type": "ProfessionalService", "name": "BY NODFLOWMATION",
-      "description": "Expert freelance en automatisation n8n, intégration IA et pipelines de données pour PME, startups et agences",
-      "url": "https://bynodflowmation.github.io/portfolio-n8n/", "logo": "https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/LOGOBYNODFLOWMATION_WHITE.png",
-      "image": "https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/LOGOBYNODFLOWMATION_WHITE.png",
-      "sameAs": ["https://www.malt.fr/profile/blongyang"], "address": { "@type": "PostalAddress", "addressCountry": "FR" },
-      "areaServed": { "@type": "Place", "name": "Worldwide" }, "priceRange": "$$", "email": "blong@bynodflowmation.com",
-      "openingHours": "Mo-Fr 09:00-18:00",
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog", "name": "Services d'automatisation",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Création de workflows n8n", "description": "Conception et développement de workflows d'automatisation sur mesure avec n8n" }},
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Intégration IA et OCR", "description": "Intégration de modèles d'IA (GPT-4, Mistral, Gemini) et OCR intelligent" }},
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Automatisation CRM", "description": "Synchronisation et automatisation de vos outils CRM et bases de données" }},
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Automatisation de documents", "description": "Génération automatisée de documents PDF, Word, PowerPoint" }},
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pipeline de Données & Scraping", "description": "Automatisation de la collecte (scraping), du nettoyage, de l'enrichissement et de la vérification de données." }}
-        ]
-      },
-      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "3" }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org", "@type": "FAQPage",
-      "mainEntity": [
-        {"@type": "Question","name": "Qu'est-ce que n8n ?","acceptedAnswer": {"@type": "Answer","text": "n8n est une plateforme d'automatisation open-source qui permet de connecter différentes applications et services via des workflows intelligents. Alternative puissante à Zapier, elle offre plus de flexibilité et de contrôle pour automatiser vos processus métier."}},
-        {"@type": "Question","name": "Combien de temps faut-il pour créer un workflow ?","acceptedAnswer": {"@type": "Answer","text": "La durée varie selon la complexité : de quelques jours pour un workflow simple à plusieurs semaines pour des intégrations complexes avec IA et multi-systèmes. Je fournis toujours une estimation détaillée et un devis gratuit après analyse de vos besoins."}},
-        {"@type": "Question","name": "Quels types d'entreprises bénéficient de l'automatisation n8n ?","acceptedAnswer": {"@type": "Answer","text": "PME, startups, agences marketing, services financiers - toute organisation avec des processus répétitifs ou une forte volumétrie de documents peut gagner jusqu'à 96% de temps grâce à l'automatisation."}},
-        {"@type": "Question","name": "Pourquoi choisir n8n plutôt que Zapier ?","acceptedAnswer": {"@type": "Answer","text": "n8n offre plus de flexibilité, aucune limite d'opérations, la possibilité d'auto-hébergement, et un meilleur rapport qualité-prix pour des workflows complexes. C'est idéal pour les entreprises qui veulent garder le contrôle de leurs données et automatisations."}}
-      ]
-    }
-    </script>
-    
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        :root {
-            --black: #0a0a0a; --dark: #111111; --dark-surface: #1a1a1a; --dark-border: #2a2a2a;
-            --gray-900: #171717; --gray-800: #262626; --gray-700: #404040; --gray-600: #525252;
-            --gray-500: #737373; --gray-400: #a3a3a3; --gray-300: #d4d4d4; --white: #ffffff;
-            --accent: #6366f1; --accent-light: #818cf8; --accent-dark: #4f46e5;
-            --accent-glow: rgba(99, 102, 241, 0.15); --green: #22c55e; --orange: #f59e0b;
-            --cyan: #06b6d4; --radius: 16px; --radius-sm: 8px; --radius-lg: 24px;
-            --transition: cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--black); color: var(--white); line-height: 1.6; overflow-x: hidden; cursor: none; }
-        ::selection { background: var(--accent); color: white; }
-        .cursor { width: 20px; height: 20px; border: 2px solid var(--accent-light); border-radius: 50%; position: fixed; pointer-events: none; z-index: 10000; transition: transform 0.15s var(--transition), opacity 0.15s; transform: translate(-50%, -50%); mix-blend-mode: difference; }
-        .cursor-dot { width: 6px; height: 6px; background: var(--accent); border-radius: 50%; position: fixed; pointer-events: none; z-index: 10001; transform: translate(-50%, -50%); transition: transform 0.08s; }
-        .cursor.hover { transform: translate(-50%, -50%) scale(2.5); border-color: var(--accent); background: rgba(99, 102, 241, 0.1); }
-        nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 24px 48px; display: flex; justify-content: space-between; align-items: center; transition: all 0.5s var(--transition); }
-        nav.scrolled { padding: 16px 48px; background: rgba(10, 10, 10, 0.85); backdrop-filter: blur(20px) saturate(180%); border-bottom: 1px solid var(--dark-border); }
-        .nav-logo-img { height: 72px; width: auto; object-fit: contain; transition: opacity 0.3s; }
-        .nav-logo-img:hover { opacity: 0.8; }
-        .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
-        .nav-links a { color: var(--gray-400); text-decoration: none; font-size: 14px; font-weight: 500; letter-spacing: 0.05em; transition: color 0.3s; position: relative; }
-        .nav-links a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--accent); transition: width 0.3s var(--transition); }
-        .nav-links a:hover { color: var(--white); }
-        .nav-links a:hover::after { width: 100%; }
-        .nav-cta { padding: 7px 16px !important; background: var(--white); color: var(--black) !important; border-radius: 100px; font-weight: 600 !important; font-size: 11px !important; letter-spacing: 0.02em !important; transition: all 0.3s var(--transition) !important; }
-        .nav-cta::after { display: none !important; }
-        .nav-cta:hover { background: var(--accent) !important; color: var(--white) !important; transform: scale(1.05); }
-        .lang-switch { display: flex; align-items: center; gap: 4px; background: var(--dark-surface); border: 1px solid var(--dark-border); border-radius: 100px; padding: 3px; margin-left: 8px; }
-        .lang-btn { padding: 5px 12px; border-radius: 100px; border: none; background: transparent; color: var(--gray-500); font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.3s var(--transition); font-family: 'Inter', sans-serif; letter-spacing: 0.05em; }
-        .lang-btn.active { background: var(--accent); color: var(--white); }
-        .lang-btn:hover:not(.active) { color: var(--white); }
-        .menu-toggle { display: none; flex-direction: column; gap: 6px; cursor: pointer; z-index: 1001; background: none; border: none; padding: 8px; }
-        .menu-toggle span { width: 28px; height: 2px; background: var(--white); transition: all 0.3s var(--transition); display: block; }
-        .menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translateY(5.5px); }
-        .menu-toggle.active span:nth-child(2) { opacity: 0; }
-        .menu-toggle.active span:nth-child(3) { transform: rotate(-45deg) translateY(-5.5px); }
-        .mobile-menu { position: fixed; inset: 0; background: var(--black); z-index: 999; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 32px; opacity: 0; visibility: hidden; transition: all 0.5s var(--transition); }
-        .mobile-menu.active { opacity: 1; visibility: visible; }
-        .mobile-menu a { font-family: 'Space Grotesk', sans-serif; font-size: 48px; font-weight: 600; color: var(--white); text-decoration: none; transition: color 0.3s; }
-        .mobile-menu a:hover { color: var(--accent); }
-        .hero { min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden; padding: 140px 48px 100px; }
-        .hero-bg { position: absolute; inset: 0; z-index: 0; }
-        .hero-gradient { position: absolute; top: -30%; right: -20%; width: 900px; height: 900px; background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%); animation: floatGradient 15s ease-in-out infinite; }
-        @keyframes floatGradient { 0%, 100% { transform: translate(0, 0) scale(1); } 33% { transform: translate(30px, -50px) scale(1.1); } 66% { transform: translate(-20px, 30px) scale(0.95); } }
-        .hero-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 80px 80px; mask-image: radial-gradient(ellipse 60% 60% at 50% 50%, black 20%, transparent 70%); }
-        .hero-content { position: relative; z-index: 1; max-width: 1400px; margin: 0 auto; width: 100%; }
-        .hero-badge { display: inline-flex; align-items: center; gap: 10px; padding: 8px 20px 8px 8px; background: var(--dark-surface); border: 1px solid var(--dark-border); border-radius: 100px; margin-bottom: 48px; font-size: 13px; color: var(--gray-400); font-weight: 500; }
-        .hero-badge-dot { width: 8px; height: 8px; background: var(--green); border-radius: 50%; animation: pulse 2s ease-in-out infinite; box-shadow: 0 0 8px rgba(34, 197, 94, 0.5); }
-        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
-        .hero-title { font-family: 'Space Grotesk', sans-serif; font-size: clamp(40px, 6vw, 80px); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 32px; }
-        .hero-title .gradient-text { background: linear-gradient(135deg, var(--accent-light), var(--cyan), var(--accent)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; background-size: 200% auto; animation: shimmer 3s ease-in-out infinite; }
-        @keyframes shimmer { 0%, 100% { background-position: 0% center; } 50% { background-position: 100% center; } }
-        .hero-description { font-size: 20px; color: var(--gray-400); max-width: 720px; line-height: 1.7; font-weight: 400; margin-bottom: 56px; }
-        .hero-actions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
-        .btn-primary { display: inline-flex; align-items: center; gap: 12px; padding: 18px 36px; background: var(--white); color: var(--black); border-radius: 100px; font-size: 15px; font-weight: 600; text-decoration: none; transition: all 0.4s var(--transition); border: none; cursor: pointer; }
-        .btn-primary:hover { background: var(--accent); color: var(--white); transform: translateY(-2px); box-shadow: 0 20px 40px rgba(99, 102, 241, 0.3); }
-        .btn-primary .arrow { transition: transform 0.3s var(--transition); }
-        .btn-primary:hover .arrow { transform: translateX(4px); }
-        .btn-secondary { display: inline-flex; align-items: center; gap: 10px; padding: 18px 36px; background: transparent; color: var(--white); border: 1px solid var(--dark-border); border-radius: 100px; font-size: 15px; font-weight: 500; text-decoration: none; transition: all 0.4s var(--transition); cursor: pointer; }
-        .btn-secondary:hover { border-color: var(--gray-500); background: var(--dark-surface); }
-        .hero-stats { display: flex; gap: 64px; margin-top: 100px; padding-top: 48px; border-top: 1px solid var(--dark-border); }
-        .hero-stat { display: flex; flex-direction: column; gap: 8px; }
-        .hero-stat-value { font-family: 'Space Grotesk', sans-serif; font-size: 48px; font-weight: 700; line-height: 1; background: linear-gradient(135deg, var(--white), var(--gray-400)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
-        .hero-stat-label { font-size: 13px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.12em; font-weight: 500; }
-        .section { padding: 160px 48px; position: relative; }
-        .section-container { max-width: 1400px; margin: 0 auto; }
-        .section-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 80px; gap: 40px; flex-wrap: wrap; }
-        .section-label { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--accent-light); text-transform: uppercase; letter-spacing: 0.15em; font-weight: 500; margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
-        .section-label::before { content: ''; width: 32px; height: 1px; background: var(--accent); }
-        .section-heading { font-family: 'Space Grotesk', sans-serif; font-size: clamp(36px, 4.5vw, 64px); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; max-width: 700px; }
-        .section-subtitle { font-size: 18px; color: var(--gray-500); max-width: 400px; line-height: 1.7; }
-        .about-section { background: var(--dark); padding: 140px 48px; border-top: 1px solid var(--dark-border); }
-        .about-content { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: auto 1fr; gap: 48px; align-items: center; }
-        .about-avatar { width: 120px; height: 120px; border-radius: 50%; border: 3px solid var(--accent); overflow: hidden; flex-shrink: 0; background: var(--dark-surface); }
-        .about-avatar img { width: 100%; height: 100%; object-fit: cover; }
-        .about-text h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(32px, 4vw, 48px); font-weight: 700; margin-bottom: 24px; line-height: 1.2; }
-        .about-text p { font-size: 18px; color: var(--gray-400); line-height: 1.8; margin-bottom: 16px; }
-        .services-section { background: var(--black); padding: 140px 48px; }
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; max-width: 1400px; margin: 0 auto; }
-        .service-card { padding: 36px; background: var(--dark-surface); border: 1px solid var(--dark-border); border-radius: var(--radius); transition: all 0.4s var(--transition); position: relative; overflow: hidden; }
-        .service-card:hover { border-color: var(--accent); transform: translateY(-4px); background: var(--accent-glow); }
-        .service-icon { font-size: 40px; margin-bottom: 20px; display: block; }
-        .service-name { font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 600; color: var(--white); margin-bottom: 12px; }
-        .service-desc { font-size: 14px; color: var(--gray-400); line-height: 1.6; }
-        .projects-section { background: var(--black); }
-        .project-card { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-bottom: 2px; background: var(--dark); border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--dark-border); transition: all 0.6s var(--transition); opacity: 0; transform: translateY(60px); }
-        .project-card.visible { opacity: 1; transform: translateY(0); }
-        .project-card:hover { border-color: var(--gray-700); transform: translateY(-4px); box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4); }
-        .project-card + .project-card { margin-top: 32px; }
-        .project-card:nth-child(even) { direction: rtl; }
-        .project-card:nth-child(even) > * { direction: ltr; }
-        .project-visual { position: relative; min-height: 500px; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #1a1a1a; padding: 24px; }
-        .project-visual img { width: 100%; height: 100%; object-fit: contain; object-position: center; transition: transform 0.8s var(--transition); }
-        .project-card:hover .project-visual img { transform: scale(1.05); }
-        .project-visual-number { position: absolute; top: 24px; left: 24px; z-index: 2; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: rgba(255,255,255,0.3); letter-spacing: 0.1em; }
-        .project-info { padding: 56px; display: flex; flex-direction: column; justify-content: center; }
-        .project-tag { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; background: var(--accent-glow); border: 1px solid rgba(99, 102, 241, 0.2); border-radius: 100px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--accent-light); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500; margin-bottom: 24px; width: fit-content; }
-        .project-info h3 { font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 700; line-height: 1.2; margin-bottom: 24px; letter-spacing: -0.01em; }
-        .project-desc { font-size: 16px; color: var(--gray-400); line-height: 1.7; margin-bottom: 32px; }
-        .project-metrics { display: flex; gap: 32px; margin-top: auto; padding-top: 24px; flex-wrap: wrap; }
-        .project-metric { display: flex; flex-direction: column; gap: 4px; }
-        .project-metric-value { font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: var(--white); }
-        .project-metric-label { font-size: 12px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.1em; }
-        .project-stack { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
-        .project-stack-item { padding: 6px 14px; background: var(--dark-surface); border: 1px solid var(--dark-border); border-radius: 100px; font-size: 12px; color: var(--gray-300); font-weight: 500; }
-        .tools-section { background: var(--dark); padding: 100px 48px; border-top: 1px solid var(--dark-border); border-bottom: 1px solid var(--dark-border); }
-        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 24px; max-width: 1400px; margin: 0 auto; }
-        .tool-item { display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 32px 24px; background: var(--dark-surface); border: 1px solid var(--dark-border); border-radius: var(--radius); transition: all 0.3s var(--transition); text-align: center; }
-        .tool-item:hover { border-color: var(--accent); transform: translateY(-4px); background: var(--accent-glow); }
-        .tool-icon { font-size: 48px; filter: grayscale(1); opacity: 0.7; transition: all 0.3s; }
-        .tool-item:hover .tool-icon { filter: grayscale(0); opacity: 1; }
-        .tool-name { font-size: 14px; color: var(--gray-300); font-weight: 600; }
-        .testimonials-section { background: var(--black); padding: 120px 48px; }
-        .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; max-width: 1400px; margin: 0 auto; }
-        .testimonial-card { padding: 40px; background: var(--dark-surface); border: 1px solid var(--dark-border); border-radius: var(--radius-lg); transition: all 0.4s var(--transition); }
-        .testimonial-card:hover { border-color: var(--gray-700); transform: translateY(-8px); box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4); }
-        .testimonial-stars { color: var(--orange); font-size: 18px; margin-bottom: 20px; }
-        .testimonial-text { font-size: 16px; color: var(--gray-300); line-height: 1.8; margin-bottom: 28px; font-style: italic; }
-        .testimonial-author { display: flex; align-items: center; gap: 16px; }
-        .testimonial-avatar { width: 52px; height: 52px; border-radius: 50%; background: var(--accent-glow); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 20px; color: var(--accent-light); }
-        .faq-section { background: var(--dark); padding: 120px 48px; border-top: 1px solid var(--dark-border); }
-        .faq-container { max-width: 900px; margin: 0 auto; }
-        .faq-item { border-bottom: 1px solid var(--dark-border); padding: 32px 0; cursor: pointer; transition: all 0.3s var(--transition); }
-        .faq-item:hover { background: var(--accent-glow); padding-left: 20px; }
-        .faq-question { display: flex; justify-content: space-between; align-items: center; gap: 24px; }
-        .faq-question h3 { font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 600; color: var(--white); }
-        .faq-toggle { font-size: 24px; color: var(--accent); transition: transform 0.3s var(--transition); flex-shrink: 0; }
-        .faq-item.active .faq-toggle { transform: rotate(45deg); }
-        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s var(--transition); }
-        .faq-item.active .faq-answer { max-height: 500px; }
-        .faq-answer p { padding-top: 16px; font-size: 16px; color: var(--gray-400); line-height: 1.8; }
-        .cal-section { background: var(--dark); padding: 120px 48px; border-top: 1px solid var(--dark-border); }
-        .cal-container { max-width: 1000px; margin: 0 auto; background: var(--black); border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--dark-border); }
-        .contact-section { background: var(--black); border-top: 1px solid var(--dark-border); text-align: center; position: relative; overflow: hidden; }
-        .contact-content { position: relative; z-index: 1; }
-        .contact-heading { font-family: 'Space Grotesk', sans-serif; font-size: clamp(40px, 6vw, 80px); font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 28px; }
-        .contact-sub { font-size: 20px; color: var(--gray-300); max-width: 600px; margin: 0 auto 56px; line-height: 1.7; }
-        .tally-form-container { max-width: 700px; margin: 0 auto 48px; --tally-font-color: #ffffff; --tally-placeholder-color: #a3a3a3; }
-        .contact-links { display: flex; align-items: center; justify-content: center; gap: 24px; margin-top: 48px; }
-        .contact-link { display: inline-flex; align-items: center; gap: 10px; padding: 14px; background: var(--dark-surface); border: 1px solid var(--dark-border); border-radius: 100px; color: var(--gray-300); text-decoration: none; font-size: 14px; font-weight: 500; transition: all 0.3s var(--transition); }
-        .contact-link:hover { border-color: var(--accent); background: var(--accent-glow); color: var(--white); }
-        .contact-link img { height: 24px; width: auto; filter: invert(0.8); }
-        footer { padding: 40px 48px; border-top: 1px solid var(--dark-border); display: flex; justify-content: space-between; align-items: center; background: var(--black); }
-        footer p { font-size: 13px; color: var(--gray-600); }
-        .footer-back-top { width: 44px; height: 44px; border: 1px solid var(--dark-border); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--gray-500); text-decoration: none; font-size: 18px; transition: all 0.3s var(--transition); }
-        .footer-back-top:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-3px); }
-        @media (max-width: 1100px) { .project-card { grid-template-columns: 1fr; } .project-card:nth-child(even) { direction: ltr; } .about-content { grid-template-columns: 1fr; text-align: center; } .about-avatar { margin: 0 auto; } }
-        @media (max-width: 900px) { .section, .about-section, .tools-section, .testimonials-section, .faq-section, .cal-section { padding: 100px 28px; } nav { padding: 20px 28px; } nav.scrolled { padding: 16px 28px; } .nav-links { display: none; } .menu-toggle { display: flex; } .project-info { padding: 36px 28px; } footer { padding: 32px 28px; } .contact-links { flex-direction: column; } }
-        @media (max-width: 600px) { .section, .about-section, .services-section, .tools-section, .testimonials-section, .faq-section, .cal-section { padding: 80px 20px; } nav { padding: 16px 20px; } .hero-actions { flex-direction: column; align-items: stretch; } .btn-primary, .btn-secondary { justify-content: center; } .project-info h3 { font-size: 24px; } footer { flex-direction: column; gap: 20px; text-align: center; } .cursor, .cursor-dot { display: none; } .nav-logo-img { height: 56px; } .tools-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; } .testimonials-grid, .services-grid { grid-template-columns: 1fr; } .about-avatar { width: 100px; height: 100px; } }
-    </style>
-</head>
-<body>
-
-    <div class="cursor" id="cursor"></div>
-    <div class="cursor-dot" id="cursorDot"></div>
-
-    <nav id="nav" role="navigation">
-        <a href="#" class="nav-logo"><img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/LOGOBYNODFLOWMATION_WHITE.png" alt="BY NODFLOWMATION Logo" class="nav-logo-img"></a>
-        <ul class="nav-links">
-            <li><a href="#about" data-i18n="nav_about">À propos</a></li>
-            <li><a href="#services" data-i18n="nav_services">Services</a></li>
-            <li><a href="#work" data-i18n="nav_work">Projets</a></li>
-            <li><a href="#testimonials" data-i18n="nav_testimonials">Témoignages</a></li>
-            <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
-            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
-            <li><a href="#cal" class="nav-cta" data-i18n="nav_cta">Réserver un appel</a></li>
-            <li><div class="lang-switch"><button class="lang-btn active" data-lang="fr">FR</button><button class="lang-btn" data-lang="en">EN</button></div></li>
-        </ul>
-        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </nav>
-
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="#about" class="mobile-link" data-i18n="nav_about">À propos</a>
-        <a href="#services" class="mobile-link" data-i18n="nav_services">Services</a>
-        <a href="#work" class="mobile-link" data-i18n="nav_work">Projets</a>
-        <a href="#testimonials" class="mobile-link" data-i18n="nav_testimonials">Témoignages</a>
-        <a href="#faq" class="mobile-link" data-i18n="nav_faq">FAQ</a>
-        <a href="#contact" class="mobile-link">Contact</a>
-        <div class="lang-switch" style="margin-top: 24px;"><button class="lang-btn active" data-lang="fr">FR</button><button class="lang-btn" data-lang="en">EN</button></div>
-    </div>
-
-    <section class="hero" id="hero">
-        <div class="hero-bg"><div class="hero-gradient"></div><div class="hero-gradient-2"></div><div class="hero-grid"></div></div>
-        <div class="hero-content">
-            <div class="hero-badge"><span class="hero-badge-dot"></span><span data-i18n="hero_badge">Disponible pour de nouveaux projets</span></div>
-            <h1 class="hero-title">
-                <span data-i18n="hero_h1_line1">J'aide les startups et PME à</span><br>
-                <span class="gradient-text" data-i18n="hero_h1_line2">gagner du temps</span><br>
-                <span data-i18n="hero_h1_line3">grâce à l'automatisation n8n</span>
-            </h1>
-            <p class="hero-description" data-i18n="hero_description">Je conçois des workflows d'automatisation intelligents avec n8n et l'IA — transformant vos processus manuels (CRM, documents, emails, API) en systèmes automatisés robustes. Gagnez jusqu'à 96% de temps et supprimez les erreurs humaines.</p>
-            <div class="hero-actions">
-                <a href="#contact" class="btn-primary"><span data-i18n="hero_btn_quote">Obtenir un devis gratuit</span><span class="arrow">→</span></a>
-                <a href="#work" class="btn-secondary" data-i18n="hero_btn_projects">Voir mes projets</a>
-                <a href="#cal" class="btn-secondary" data-i18n="hero_btn_call">Réserver un appel</a>
-            </div>
-            <div class="hero-stats">
-                <div class="hero-stat"><div class="hero-stat-value">3</div><div class="hero-stat-label" data-i18n="stat_projects">Projets</div></div>
-                <div class="hero-stat"><div class="hero-stat-value">96%</div><div class="hero-stat-label" data-i18n="stat_time">Temps gagné</div></div>
-                <div class="hero-stat"><div class="hero-stat-value">1K+</div><div class="hero-stat-label" data-i18n="metric_month">Factures/mois</div></div>
-                <div class="hero-stat"><div class="hero-stat-value">100%</div><div class="hero-stat-label" data-i18n="stat_accuracy">Automatisé</div></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="about-section" id="about">
-        <div class="section-container">
-            <div class="about-content">
-                <div class="about-avatar"><img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/PHOTO_MALT.jpg" alt="Photo de Blong Yang"></div>
-                <div>
-                    <h2 data-i18n="about_greeting">Salut ! Je m'appelle Blong.</h2>
-                    <p data-i18n="about_p1">Je suis freelance expert en automatisation n8n. Je travaille de façon <strong>structurée et fiable</strong>, en prenant le temps de comprendre vos besoins métier afin de concevoir des workflows clairs, robustes et faciles à maintenir.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="services-section" id="services">
-        <div class="section-container">
-            <h2 class="section-heading" style="text-align: center; margin: 0 auto 80px;" data-i18n="services_heading">Ce que je peux automatiser pour vous</h2>
-            <div class="services-grid">
-                <div class="service-card" data-animate><span class="service-icon">📄</span><h3 class="service-name" data-i18n="service_1_name">Automatisation de Documents</h3><p class="service-desc" data-i18n="service_1_desc">Génération automatique de PDF, Word, PowerPoint à partir de vos données (CRM, formulaires, bases de données).</p></div>
-                <div class="service-card" data-animate><span class="service-icon">👥</span><h3 class="service-name" data-i18n="service_2_name">Intégration CRM</h3><p class="service-desc" data-i18n="service_2_desc">Synchronisation automatique entre vos outils (HubSpot, Pipedrive, Airtable, Notion) pour une vue unifiée de vos données clients.</p></div>
-                <div class="service-card" data-animate><span class="service-icon">🤖</span><h3 class="service-name" data-i18n="service_5_name">Traitement par IA</h3><p class="service-desc" data-i18n="service_5_desc">Extraction intelligente de données (OCR), classification de documents, génération de contenu avec GPT-4, Mistral ou Gemini.</p></div>
-                <div class="service-card" data-animate><span class="service-icon">🔍</span><h3 class="service-name" data-i18n="service_7_name">Pipeline de Génération de Leads</h3><p class="service-desc" data-i18n="service_7_desc">Automatisation du scraping, nettoyage, enrichissement (recherche d'emails) et vérification de prospects pour alimenter votre CRM.</p></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section projects-section" id="work">
-        <div class="section-container">
-            <div class="section-header">
-                <div>
-                    <h2 class="section-heading" data-i18n="projects_heading">Projets d'automatisation réalisés</h2>
-                </div>
-                <p class="section-subtitle" data-i18n="projects_subtitle">Découvrez comment j'ai aidé des entreprises à automatiser leurs processus métier.</p>
-            </div>
-            
-            <article class="project-card" data-animate>
-                <div class="project-visual"><div class="project-visual-number">01</div><img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/BSA_AIR.png" alt="Workflow n8n de souscription financière" loading="lazy"></div>
-                <div class="project-info">
-                    <div class="project-tag" data-i18n="p1_tag">Finance</div>
-                    <h3 data-i18n="p1_title">Automatisation de Souscription Financière</h3>
-                    <p class="project-desc" data-i18n="p1_desc">Automatisation complète du processus de souscription, de l'extraction de données (OCR) à la génération de documents contractuels, en passant par des calculs complexes.</p>
-                    <div class="project-metrics">
-                        <div class="project-metric"><div class="project-metric-value">96%</div><div class="project-metric-label" data-i18n="metric_time">Temps gagné</div></div>
-                        <div class="project-metric"><div class="project-metric-value">42</div><div class="project-metric-label">Nodes</div></div>
-                    </div>
-                    <div class="project-stack"><span class="project-stack-item">n8n</span><span class="project-stack-item">GPT-4</span><span class="project-stack-item">Mistral OCR</span><span class="project-stack-item">API REST</span></div>
-                </div>
-            </article>
-
-            <article class="project-card" data-animate>
-                <div class="project-visual"><div class="project-visual-number">02</div><img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/AGGREGATION_FACTURE.png" alt="Pipeline n8n de traitement de factures" loading="lazy"></div>
-                <div class="project-info">
-                    <div class="project-tag" data-i18n="p4_tag">Data Pipeline</div>
-                    <h3 data-i18n="p4_title">Pipeline de Traitement de Factures</h3>
-                    <p class="project-desc" data-i18n="p4_desc">Mise en place d'un pipeline pour traiter +1000 factures/mois. Le système automatise l'extraction (Gemini OCR), la classification, la déduplication et l'intégration en temps réel dans Supabase.</p>
-                    <div class="project-metrics">
-                        <div class="project-metric"><div class="project-metric-value">1K+</div><div class="project-metric-label" data-i18n="metric_month">Par mois</div></div>
-                        <div class="project-metric"><div class="project-metric-value">38</div><div class="project-metric-label">Nodes</div></div>
-                    </div>
-                    <div class="project-stack"><span class="project-stack-item">Google Gemini</span><span class="project-stack-item">Supabase</span><span class="project-stack-item">ILovePDF</span><span class="project-stack-item">n8n</span></div>
-                </div>
-            </article>
-            
-            <article class="project-card" data-animate>
-                <div class="project-visual"><div class="project-visual-number">03</div><img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/APIFY.png" alt="Pipeline de génération de prospects B2B" loading="lazy"></div>
-                <div class="project-info">
-                    <div class="project-tag" data-i18n="p5_tag">Lead Generation</div>
-                    <h3 data-i18n="p5_title">Pipeline de Génération de Prospects B2B</h3>
-                    <p class="project-desc" data-i18n="p5_desc">Pipeline 100% automatisé qui déclenche un scraping (Apify), puis nettoie, enrichit (recherche d'emails), valide les données et les synchronise avec une base de prospects (Baserow).</p>
-                    <div class="project-metrics">
-                        <div class="project-metric"><div class="project-metric-value">100%</div><div class="project-metric-label" data-i18n="metric_automated">Automatisé</div></div>
-                        <div class="project-metric"><div class="project-metric-value">95%</div><div class="project-metric-label" data-i18n="metric_quality">Qualité données</div></div>
-                    </div>
-                    <div class="project-stack"><span class="project-stack-item">n8n</span><span class="project-stack-item">Apify</span><span class="project-stack-item">Baserow</span><span class="project-stack-item">Anymail Finder</span></div>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <section class="tools-section" aria-labelledby="tools-heading">
-        <div class="section-container">
-            <h2 class="section-heading" id="tools-heading" style="text-align: center; margin: 0 auto 80px;" data-i18n="tools_heading">Écosystème d'automatisation</h2>
-            <div class="tools-grid">
-                <div class="tool-item"><div class="tool-icon">⚡</div><div class="tool-name">n8n</div></div>
-                <div class="tool-item"><div class="tool-icon">🕷️</div><div class="tool-name">Apify</div></div>
-                <div class="tool-item"><div class="tool-icon">🤖</div><div class="tool-name">GPT-4</div></div>
-                <div class="tool-item"><div class="tool-icon">🔮</div><div class="tool-name">Mistral AI</div></div>
-                <div class="tool-item"><div class="tool-icon">💎</div><div class="tool-name">Google Gemini</div></div>
-                <div class="tool-item"><div class="tool-icon">🗂️</div><div class="tool-name">Baserow</div></div>
-                <div class="tool-item"><div class="tool-icon">📊</div><div class="tool-name">Airtable</div></div>
-                <div class="tool-item"><div class="tool-icon">🗄️</div><div class="tool-name">Supabase</div></div>
-                <div class="tool-item"><div class="tool-icon">✉️</div><div class="tool-name">Anymail Finder</div></div>
-                <div class="tool-item"><div class="tool-icon">✅</div><div class="tool-name">Million Verifier</div></div>
-                <div class="tool-item"><div class="tool-icon">🪄</div><div class="tool-name">Zapier</div></div>
-                <div class="tool-item"><div class="tool-icon">🔗</div><div class="tool-name">API REST</div></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section testimonials-section" id="testimonials">
-        <div class="section-container">
-            <h2 class="section-heading" style="text-align: center; margin: 0 auto 80px;" data-i18n="testimonials_heading">Ce que disent mes clients</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card" data-animate>
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text" data-i18n="testimonial_1_text">"J'ai confié à Blong l'automatisation d'un workflow complexe. Le livrable est solide, bien structuré et fonctionnel. Bon communicant, rigoureux, et surtout capable de comprendre rapidement les enjeux. Je referai appel à lui."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">AD</div>
-                        <div>
-                            <div class="testimonial-name" data-i18n="testimonial_1_name">Alexis D.</div>
-                            <div class="testimonial-role" data-i18n="testimonial_1_role">CEO • Workflow Automation Lab</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="faq-section" id="faq">
-        <div class="section-container">
-            <h2 class="section-heading" style="text-align: center; margin: 0 auto 80px;" data-i18n="faq_heading">Questions fréquentes</h2>
-            <div class="faq-container">
-                <div class="faq-item" data-animate><div class="faq-question"><h3 data-i18n="faq_1_q">Qu'est-ce que n8n ?</h3><span class="faq-toggle">+</span></div><div class="faq-answer"><p data-i18n="faq_1_a">n8n est une plateforme d'automatisation open-source qui permet de connecter différentes applications et services via des workflows intelligents. Alternative puissante à Zapier, elle offre plus de flexibilité et de contrôle pour automatiser vos processus métier.</p></div></div>
-                <div class="faq-item" data-animate><div class="faq-question"><h3 data-i18n="faq_2_q">Combien de temps faut-il pour créer un workflow ?</h3><span class="faq-toggle">+</span></div><div class="faq-answer"><p data-i18n="faq_2_a">La durée varie selon la complexité : de quelques jours pour un workflow simple à plusieurs semaines pour des intégrations complexes avec IA et multi-systèmes. Je fournis toujours une estimation détaillée et un devis gratuit après analyse de vos besoins.</p></div></div>
-                <div class="faq-item" data-animate><div class="faq-question"><h3 data-i18n="faq_4_q">Pourquoi choisir n8n plutôt que Zapier ?</h3><span class="faq-toggle">+</span></div><div class="faq-answer"><p data-i18n="faq_4_a">n8n offre plus de flexibilité, aucune limite d'opérations, la possibilité d'auto-hébergement, et un meilleur rapport qualité-prix pour des workflows complexes. C'est idéal pour les entreprises qui veulent garder le contrôle de leurs données et automatisations.</p></div></div>
-                <div class="faq-item" data-animate><div class="faq-question"><h3 data-i18n="faq_5_q">Proposez-vous de la maintenance après livraison ?</h3><span class="faq-toggle">+</span></div><div class="faq-answer"><p data-i18n="faq_5_a">Oui, je propose des contrats de maintenance et de support pour assurer le bon fonctionnement de vos workflows dans le temps. Vous pouvez aussi opter pour une formation pour gérer vous-même les automatisations simples.</p></div></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="cal-section" id="cal">
-        <div class="section-container">
-            <h2 class="section-heading" style="text-align: center; margin: 0 auto 80px;" data-i18n="cal_heading">Discutons de votre projet</h2>
-            <div class="cal-container"><iframe src="https://cal.eu/blong.yang" style="width:100%; height:700px; border:none;" frameborder="0"></iframe></div>
-        </div>
-    </section>
-
-    <section class="section contact-section" id="contact">
-        <div class="section-container contact-content">
-            <h2 class="contact-heading" data-i18n="contact_heading">Prêt à automatiser<br>vos processus ?</h2>
-            <p class="contact-sub" data-i18n="contact_sub">Vous avez un projet d'automatisation ? Remplissez ce formulaire ou réservez un appel pour discuter de la manière dont nous pouvons transformer vos workflows manuels en systèmes intelligents.</p>
-            <div class="tally-form-container">
-                <iframe data-tally-src="https://tally.so/embed/dWA1yd?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="379" frameborder="0" marginheight="0" marginwidth="0" title="PRISE DE CONTACT"></iframe>
-            </div>
-            <div class="contact-links">
-                <a href="https://www.malt.fr/profile/blongyang" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Profil Malt">
-                    <img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/malt-logo.webp" alt="Malt Logo">
-                </a>
-                <a href="#cal" class="contact-link">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                    <span data-i18n="contact_cal">Réserver un appel</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2026 BY NODFLOWMATION — <span data-i18n="footer_rights">Tous droits réservés</span></p>
-        <a href="#hero" class="footer-back-top" aria-label="Back to top">↑</a>
-    </footer>
-
-    <script>
+<script>
     const translations = {
-        fr: {
-            nav_about: "À propos", nav_services: "Services", nav_work: "Projets", nav_testimonials: "Témoignages", nav_faq: "FAQ", nav_contact: "Contact", nav_cta: "Réserver un appel",
-            hero_badge: "Disponible pour de nouveaux projets", hero_h1_line1: "J'aide les startups et PME à", hero_h1_line2: "gagner du temps", hero_h1_line3: "grâce à l'automatisation n8n", hero_description: "Je conçois des workflows d'automatisation intelligents avec n8n et l'IA — transformant vos processus manuels (CRM, documents, emails, API) en systèmes automatisés robustes. Gagnez jusqu'à 96% de temps et supprimez les erreurs humaines.", hero_btn_quote: "Obtenir un devis gratuit", hero_btn_projects: "Voir mes projets", hero_btn_call: "Réserver un appel",
-            stat_projects: "Projets", stat_time: "Temps gagné",
-            about_greeting: "Salut ! Je m'appelle Blong.", about_p1: "Je suis freelance expert en automatisation n8n. Je travaille de façon <strong>structurée et fiable</strong>, en prenant le temps de comprendre vos besoins métier afin de concevoir des workflows clairs, robustes et faciles à maintenir.",
-            services_heading: "Ce que je peux automatiser pour vous",
-            service_1_name: "Automatisation de Documents", service_1_desc: "Génération automatique de PDF, Word, PowerPoint à partir de vos données (CRM, formulaires, bases de données).",
-            service_2_name: "Intégration CRM", service_2_desc: "Synchronisation automatique entre vos outils (HubSpot, Pipedrive, Airtable, Notion) pour une vue unifiée de vos données clients.",
-            service_5_name: "Traitement par IA", service_5_desc: "Extraction intelligente de données (OCR), classification de documents, génération de contenu avec GPT-4, Mistral ou Gemini.",
-            service_7_name: "Pipeline de Génération de Leads", service_7_desc: "Automatisation du scraping, nettoyage, enrichissement (recherche d'emails) et vérification de prospects pour alimenter votre CRM.",
-            projects_heading: "Projets d'automatisation réalisés", projects_subtitle: "Découvrez comment j'ai aidé des entreprises à automatiser leurs processus métier.",
-            p1_tag: "Finance", p1_title: "Automatisation de Souscription Financière", p1_desc: "Automatisation complète du processus de souscription, de l'extraction de données (OCR) à la génération de documents contractuels, en passant par des calculs complexes.",
-            p4_tag: "Data Pipeline", p4_title: "Pipeline de Traitement de Factures", p4_desc: "Mise en place d'un pipeline pour traiter +1000 factures/mois. Le système automatise l'extraction (Gemini OCR), la classification, la déduplication et l'intégration en temps réel dans Supabase.",
-            p5_tag: "Lead Generation", p5_title: "Pipeline de Génération de Prospects B2B", p5_desc: "Pipeline 100% automatisé qui déclenche un scraping (Apify), puis nettoie, enrichit (recherche d'emails), valide les données et les synchronise avec une base de prospects (Baserow).",
-            metric_time: "Temps gagné", metric_month: "Par mois", metric_automated: "Automatisé", metric_quality: "Qualité Données",
-            testimonials_heading: "Ce que disent mes clients", testimonial_1_text: "\"J'ai confié à Blong l'automatisation d'un workflow complexe. Le livrable est solide, bien structuré et fonctionnel. Bon communicant, rigoureux, et surtout capable de comprendre rapidement les enjeux. Je referai appel à lui.\"", testimonial_1_name: "Alexis D.", testimonial_1_role: "CEO • Workflow Automation Lab",
-            faq_heading: "Questions fréquentes",
-            faq_1_q: "Qu'est-ce que n8n ?", faq_1_a: "n8n est une plateforme d'automatisation open-source qui permet de connecter différentes applications et services via des workflows intelligents. Alternative puissante à Zapier, elle offre plus de flexibilité et de contrôle pour automatiser vos processus métier.",
-            faq_2_q: "Combien de temps faut-il pour créer un workflow ?", faq_2_a: "La durée varie selon la complexité : de quelques jours pour un workflow simple à plusieurs semaines pour des intégrations complexes avec IA et multi-systèmes. Je fournis toujours une estimation détaillée et un devis gratuit après analyse de vos besoins.",
-            faq_4_q: "Pourquoi choisir n8n plutôt que Zapier ?", faq_4_a: "n8n offre plus de flexibilité, aucune limite d'opérations, la possibilité d'auto-hébergement, et un meilleur rapport qualité-prix pour des workflows complexes. C'est idéal pour les entreprises qui veulent garder le contrôle de leurs données et automatisations.",
-            faq_5_q: "Proposez-vous de la maintenance après livraison ?", faq_5_a: "Oui, je propose des contrats de maintenance et de support pour assurer le bon fonctionnement de vos workflows dans le temps. Vous pouvez aussi opter pour une formation pour gérer vous-même les automatisations simples.",
-            cal_heading: "Discutons de votre projet",
-            contact_heading: "Prêt à automatiser<br>vos processus ?", contact_sub: "Vous avez un projet d'automatisation ? Remplissez ce formulaire ou réservez un appel pour discuter de la manière dont nous pouvons transformer vos workflows manuels en systèmes intelligents.", contact_cal: "Réserver un appel",
-            footer_rights: "Tous droits réservés"
-        },
-        en: {}
+        // ... votre objet de traductions existant ...
+        // Je ne l'inclus pas ici pour la lisibilité, mais ne le supprimez pas !
     };
-    </script>
-    <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
-    <script>
-    let currentLang=localStorage.getItem("lang")||(navigator.language.startsWith("fr")?"fr":"en");function setLanguage(e){currentLang=e,localStorage.setItem("lang",e),document.documentElement.lang=e;const t=document.querySelector('meta[name="description"]'),o=document.querySelector("title");"fr"===e?(t.content="Freelance expert en automatisation n8n. J'aide les startups, PME et indépendants à gagner du temps grâce à des workflows intelligents sur-mesure. Intégration IA, CRM, documents, API. Devis gratuit.",o.textContent="Blong | Expert Automatisation n8n Freelance | BY NODFLOWMATION"):(t.content="Freelance n8n automation expert. I help startups, SMBs and freelancers save time with intelligent custom workflows. AI integration, CRM, documents, APIs. Free quote.",o.textContent="Blong | Freelance n8n Automation Expert | BY NODFLOWMATION"),document.querySelectorAll("[data-i18n]").forEach(t=>{const o=t.getAttribute("data-i18n");translations[e]&&translations[e][o]?t.innerHTML=translations[e][o]:translations.fr[o]&&(t.innerHTML=translations.fr[o])}),document.querySelectorAll(".lang-btn").forEach(t=>{t.classList.toggle("active",t.dataset.lang===e)})}document.querySelectorAll(".lang-btn").forEach(e=>{e.addEventListener("click",()=>setLanguage(e.dataset.lang))}),document.addEventListener("DOMContentLoaded",()=>setLanguage(currentLang));const cursor=document.getElementById("cursor"),cursorDot=document.getElementById("cursorDot");let mouseX=0,mouseY=0,cursorX=0,cursorY=0;function animateCursor(){cursorX+=.15*(mouseX-cursorX),cursorY+=.15*(mouseY-cursorY),cursor.style.left=cursorX+"px",cursor.style.top=cursorY+"px",requestAnimationFrame(animateCursor)}document.addEventListener("mousemove",e=>{mouseX=e.clientX,mouseY=e.clientY,cursorDot.style.left=mouseX+"px",cursorDot.style.top=mouseY+"px"}),animateCursor(),document.querySelectorAll("a, button, .btn-primary, .btn-secondary, .nav-cta, .project-card, .lang-btn, .contact-link, .tool-item, .testimonial-card, .service-card, .faq-item").forEach(e=>{e.addEventListener("mouseenter",()=>cursor.classList.add("hover")),e.addEventListener("mouseleave",()=>cursor.classList.remove("hover"))});const nav=document.getElementById("nav");window.addEventListener("scroll",()=>{nav.classList.toggle("scrolled",window.scrollY>60)});const menuToggle=document.getElementById("menuToggle"),mobileMenu=document.getElementById("mobileMenu");menuToggle.addEventListener("click",()=>{const e=menuToggle.classList.toggle("active");mobileMenu.classList.toggle("active"),menuToggle.setAttribute("aria-expanded",e),document.body.style.overflow=e?"hidden":""}),document.querySelectorAll(".mobile-link").forEach(e=>{e.addEventListener("click",()=>{menuToggle.classList.remove("active"),mobileMenu.classList.remove("active"),menuToggle.setAttribute("aria-expanded","false"),document.body.style.overflow=""})}),document.querySelectorAll(".faq-item").forEach(e=>{e.addEventListener("click",()=>{const t=e.classList.contains("active");document.querySelectorAll(".faq-item").forEach(e=>{e.classList.remove("active")}),t||e.classList.add("active")})});const observer=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting&&(e.target.classList.add("visible"),observer.unobserve(e.target))})},{threshold:.1,rootMargin:"0px 0px -50px 0px"});document.querySelectorAll("[data-animate]").forEach(e=>{observer.observe(e)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){const o=document.querySelector(this.getAttribute("href"));o&&(t.preventDefault(),o.scrollIntoView({behavior:"smooth",block:"start"}))})});
-    </script>
-</body>
-</html>
+
+    // AJOUT : Stocker les URLs des iframes pour chaque langue
+    const formUrls = {
+        fr: {
+            tally: "https://tally.so/embed/dWA1yd?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1",
+            cal: "https://cal.eu/blong.yang" // Mettez ici votre lien Cal.eu pour le français
+        },
+        en: {
+            // REMPLACEZ CECI par l'URL de votre formulaire Tally anglais
+            tally: "https://tally.so/embed/VOTRE_ID_TALLY_ANGLAIS?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1",
+            // REMPLACEZ CECI par l'URL de votre page Cal.eu anglaise
+            cal: "https://cal.eu/blong.yang/english-meeting" 
+        }
+    };
+
+    let currentLang = localStorage.getItem("lang") || (navigator.language.startsWith("fr") ? "fr" : "en");
+
+    function setLanguage(e) {
+        currentLang = e, localStorage.setItem("lang", e), document.documentElement.lang = e;
+        const t = document.querySelector('meta[name="description"]'),
+            o = document.querySelector("title");
+        "fr" === e ? (t.content = "Freelance expert en automatisation n8n. J'aide les startups, PME et indépendants à gagner du temps grâce à des workflows intelligents sur-mesure. Intégration IA, CRM, documents, API. Devis gratuit.", o.textContent = "Blong | Expert Automatisation n8n Freelance | BY NODFLOWMATION") : (t.content = "Freelance n8n automation expert. I help startups, SMBs and freelancers save time with intelligent custom workflows. AI integration, CRM, documents, APIs. Free quote.", o.textContent = "Blong | Freelance n8n Automation Expert | BY NODFLOWMATION"), document.querySelectorAll("[data-i18n]").forEach(t => {
+            const o = t.getAttribute("data-i18n");
+            translations[e] && translations[e][o] ? t.innerHTML = translations[e][o] : translations.fr[o] && (t.innerHTML = translations.fr[o])
+        });
+
+        // --- DÉBUT DE LA MODIFICATION ---
+        
+        // 1. Sélectionner les iframes par leur nouvel ID
+        const tallyIframe = document.getElementById('tally-iframe');
+        const calIframe = document.getElementById('cal-iframe');
+        const tallyTitle = "en" === e ? "CONTACT FORM" : "PRISE DE CONTACT";
+
+        // 2. Mettre à jour les sources des iframes en fonction de la langue
+        if (tallyIframe && calIframe) {
+            tallyIframe.dataset.tallySrc = formUrls[e].tally;
+            tallyIframe.title = tallyTitle; // Met à jour le titre pour l'accessibilité
+            calIframe.src = formUrls[e].cal;
+
+            // 3. Forcer Tally à recharger le formulaire avec la nouvelle source
+            // Cette fonction est fournie par le script d'intégration Tally
+            if (typeof Tally !== 'undefined') {
+                Tally.loadEmbeds();
+            }
+        }
+        
+        // --- FIN DE LA MODIFICATION ---
+
+        document.querySelectorAll(".lang-btn").forEach(t => {
+            t.classList.toggle("active", t.dataset.lang === e)
+        })
+    }
+    
+    // ... Le reste de votre script (gestion du curseur, scroll, menu, etc.) reste identique ...
+</script>
