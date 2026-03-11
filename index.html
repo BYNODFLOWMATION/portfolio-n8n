@@ -427,7 +427,6 @@
     <section class="cal-section" id="cal">
         <div class="section-container">
             <h2 class="section-heading" style="text-align: center; margin: 0 auto 80px;" data-i18n="cal_heading">Discutons de votre projet</h2>
-            <!-- MODIFICATION : Remplacement de l'iframe par une div pour le script Cal.com -->
             <div class="cal-container">
                 <div id="cal-embed-container" style="width:100%; height:700px;"></div>
             </div>
@@ -439,7 +438,6 @@
             <h2 class="contact-heading" data-i18n="contact_heading">Prêt à automatiser<br>vos processus ?</h2>
             <p class="contact-sub" data-i18n="contact_sub">Vous avez un projet d'automatisation ? Remplissez ce formulaire ou réservez un appel pour discuter de la manière dont nous pouvons transformer vos workflows manuels en systèmes intelligents.</p>
             <div class="tally-form-container">
-                <!-- MODIFICATION : Ajout d'un ID pour le ciblage JS -->
                 <iframe id="tally-iframe" data-tally-src="https://tally.so/embed/dWA1yd?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="379" frameborder="0" marginheight="0" marginwidth="0" title="PRISE DE CONTACT"></iframe>
             </div>
             <div class="contact-links">
@@ -459,12 +457,17 @@
         <a href="#hero" class="footer-back-top" aria-label="Back to top">↑</a>
     </footer>
 
+    <!-- Scripts des services externes -->
+    <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+    <script src="https://app.cal.com/embed/embed.js"></script>
+
+    <!-- Script principal du site (tout est ici) -->
     <script>
     const translations = {
         fr: {
             nav_about: "À propos", nav_services: "Services", nav_work: "Projets", nav_testimonials: "Témoignages", nav_faq: "FAQ", nav_contact: "Contact", nav_cta: "Réserver un appel",
             hero_badge: "Disponible pour de nouveaux projets", hero_h1_line1: "J'aide les startups et PME à", hero_h1_line2: "gagner du temps", hero_h1_line3: "grâce à l'automatisation n8n", hero_description: "Je conçois des workflows d'automatisation intelligents avec n8n et l'IA — transformant vos processus manuels (CRM, documents, emails, API) en systèmes automatisés robustes. Gagnez jusqu'à 96% de temps et supprimez les erreurs humaines.", hero_btn_quote: "Obtenir un devis gratuit", hero_btn_projects: "Voir mes projets", hero_btn_call: "Réserver un appel",
-            stat_projects: "Projets", stat_time: "Temps gagné",
+            stat_projects: "Projets", stat_time: "Temps gagné", metric_month: "Factures/mois", stat_accuracy: "Automatisé",
             about_greeting: "Salut ! Je m'appelle Blong.", about_p1: "Je suis freelance expert en automatisation n8n. Je travaille de façon <strong>structurée et fiable</strong>, en prenant le temps de comprendre vos besoins métier afin de concevoir des workflows clairs, robustes et faciles à maintenir.",
             services_heading: "Ce que je peux automatiser pour vous",
             service_1_name: "Automatisation de Documents", service_1_desc: "Génération automatique de PDF, Word, PowerPoint à partir de vos données (CRM, formulaires, bases de données).",
@@ -472,10 +475,10 @@
             service_5_name: "Traitement par IA", service_5_desc: "Extraction intelligente de données (OCR), classification de documents, génération de contenu avec GPT-4, Mistral ou Gemini.",
             service_7_name: "Pipeline de Génération de Leads", service_7_desc: "Automatisation du scraping, nettoyage, enrichissement (recherche d'emails) et vérification de prospects pour alimenter votre CRM.",
             projects_heading: "Projets d'automatisation réalisés", projects_subtitle: "Découvrez comment j'ai aidé des entreprises à automatiser leurs processus métier.",
-            p1_tag: "Finance", p1_title: "Automatisation de Souscription Financière", p1_desc: "Automatisation complète du processus de souscription, de l'extraction de données (OCR) à la génération de documents contractuels, en passant par des calculs complexes.",
+            p1_tag: "Finance", p1_title: "Automatisation de Souscription Financière", p1_desc: "Automatisation complète du processus de souscription, de l'extraction de données (OCR) à la génération de documents contractuels, en passant par des calculs complexes.", metric_time: "Temps gagné",
             p4_tag: "Data Pipeline", p4_title: "Pipeline de Traitement de Factures", p4_desc: "Mise en place d'un pipeline pour traiter +1000 factures/mois. Le système automatise l'extraction (Gemini OCR), la classification, la déduplication et l'intégration en temps réel dans Supabase.",
-            p5_tag: "Lead Generation", p5_title: "Pipeline de Génération de Prospects B2B", p5_desc: "Pipeline 100% automatisé qui déclenche un scraping (Apify), puis nettoie, enrichit (recherche d'emails), valide les données et les synchronise avec une base de prospects (Baserow).",
-            metric_time: "Temps gagné", metric_month: "Par mois", metric_automated: "Automatisé", metric_quality: "Qualité Données",
+            p5_tag: "Lead Generation", p5_title: "Pipeline de Génération de Prospects B2B", p5_desc: "Pipeline 100% automatisé qui déclenche un scraping (Apify), puis nettoie, enrichit (recherche d'emails), valide les données et les synchronise avec une base de prospects (Baserow).", metric_automated: "Automatisé", metric_quality: "Qualité données",
+            tools_heading: "Écosystème d'automatisation",
             testimonials_heading: "Ce que disent mes clients", testimonial_1_text: "\"J'ai confié à Blong l'automatisation d'un workflow complexe. Le livrable est solide, bien structuré et fonctionnel. Bon communicant, rigoureux, et surtout capable de comprendre rapidement les enjeux. Je referai appel à lui.\"", testimonial_1_name: "Alexis D.", testimonial_1_role: "CEO • Workflow Automation Lab",
             faq_heading: "Questions fréquentes",
             faq_1_q: "Qu'est-ce que n8n ?", faq_1_a: "n8n est une plateforme d'automatisation open-source qui permet de connecter différentes applications et services via des workflows intelligents. Alternative puissante à Zapier, elle offre plus de flexibilité et de contrôle pour automatiser vos processus métier.",
@@ -486,60 +489,86 @@
             contact_heading: "Prêt à automatiser<br>vos processus ?", contact_sub: "Vous avez un projet d'automatisation ? Remplissez ce formulaire ou réservez un appel pour discuter de la manière dont nous pouvons transformer vos workflows manuels en systèmes intelligents.", contact_cal: "Réserver un appel",
             footer_rights: "Tous droits réservés"
         },
-        en: { /* Pensez à ajouter vos traductions anglaises ici */ }
-    };
-    </script>
-    
-    <!-- Scripts des services externes -->
-    <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
-    <script src="https://app.cal.com/embed/embed.js"></script>
-
-    <!-- Script principal du site -->
-    <script>
-    // URLs des formulaires Tally pour chaque langue
-    const formUrls = {
-        fr: {
-            tally: "https://tally.so/embed/dWA1yd?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-        },
         en: {
-            tally: "https://tally.so/embed/ODPeaK?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            nav_about: "About", nav_services: "Services", nav_work: "Projects", nav_testimonials: "Testimonials", nav_faq: "FAQ", nav_contact: "Contact", nav_cta: "Book a call",
+            hero_badge: "Available for new projects", hero_h1_line1: "I help startups and SMBs", hero_h1_line2: "save time", hero_h1_line3: "with n8n automation", hero_description: "I design intelligent automation workflows with n8n and AI—transforming your manual processes (CRM, documents, emails, APIs) into robust automated systems. Save up to 96% of time and eliminate human errors.", hero_btn_quote: "Get a free quote", hero_btn_projects: "See my projects", hero_btn_call: "Book a call",
+            stat_projects: "Projects", stat_time: "Time Saved", metric_month: "Invoices/month", stat_accuracy: "Automated",
+            about_greeting: "Hi! I'm Blong.", about_p1: "I am a freelance n8n automation expert. I work in a <strong>structured and reliable</strong> way, taking the time to understand your business needs to design clear, robust, and easy-to-maintain workflows.",
+            services_heading: "What I can automate for you",
+            service_1_name: "Document Automation", service_1_desc: "Automatic generation of PDF, Word, PowerPoint from your data (CRM, forms, databases).",
+            service_2_name: "CRM Integration", service_2_desc: "Automatic synchronization between your tools (HubSpot, Pipedrive, Airtable, Notion) for a unified view of your customer data.",
+            service_5_name: "AI Processing", service_5_desc: "Intelligent data extraction (OCR), document classification, content generation with GPT-4, Mistral, or Gemini.",
+            service_7_name: "Lead Generation Pipeline", service_7_desc: "Automation of scraping, cleaning, enriching (email lookup), and verifying prospects to feed your CRM.",
+            projects_heading: "Completed automation projects", projects_subtitle: "Discover how I have helped companies automate their business processes.",
+            p1_tag: "Finance", p1_title: "Financial Subscription Automation", p1_desc: "Complete automation of the subscription process, from data extraction (OCR) to the generation of contractual documents, including complex calculations.", metric_time: "Time Saved",
+            p4_tag: "Data Pipeline", p4_title: "Invoice Processing Pipeline", p4_desc: "Implementation of a pipeline to process +1000 invoices/month. The system automates extraction (Gemini OCR), classification, deduplication, and real-time integration into Supabase.",
+            p5_tag: "Lead Generation", p5_title: "B2B Lead Generation Pipeline", p5_desc: "A 100% automated pipeline that triggers scraping (Apify), then cleans, enriches (email lookup), validates data, and syncs it with a prospect database (Baserow).", metric_automated: "Automated", metric_quality: "Data Quality",
+            tools_heading: "Automation Ecosystem",
+            testimonials_heading: "What my clients say", testimonial_1_text: "\"I entrusted Blong with automating a complex workflow. The deliverable is solid, well-structured, and functional. A good communicator, rigorous, and above all, able to quickly understand the challenges. I will call on him again.\"", testimonial_1_name: "Alexis D.", testimonial_1_role: "CEO • Workflow Automation Lab",
+            faq_heading: "Frequently Asked Questions",
+            faq_1_q: "What is n8n?", faq_1_a: "n8n is an open-source automation platform that allows connecting different applications and services via intelligent workflows. A powerful alternative to Zapier, it offers more flexibility and control to automate your business processes.",
+            faq_2_q: "How long does it take to create a workflow?", faq_2_a: "The duration varies depending on complexity: from a few days for a simple workflow to several weeks for complex integrations with AI and multi-systems. I always provide a detailed estimate and a free quote after analyzing your needs.",
+            faq_4_q: "Why choose n8n over Zapier?", faq_4_a: "n8n offers more flexibility, no operation limits, the possibility of self-hosting, and a better value for complex workflows. It is ideal for companies that want to maintain control over their data and automations.",
+            faq_5_q: "Do you offer maintenance after delivery?", faq_5_a: "Yes, I offer maintenance and support contracts to ensure the smooth operation of your workflows over time. You can also opt for training to manage simple automations yourself.",
+            cal_heading: "Let's discuss your project",
+            contact_heading: "Ready to automate<br>your processes?", contact_sub: "Have an automation project? Fill out this form or book a call to discuss how we can transform your manual workflows into intelligent systems.", contact_cal: "Book a call",
+            footer_rights: "All rights reserved"
         }
+    };
+
+    const formUrls = {
+        fr: { tally: "https://tally.so/embed/dWA1yd?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" },
+        en: { tally: "https://tally.so/embed/ODPeaK?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" }
     };
 
     let currentLang=localStorage.getItem("lang")||(navigator.language.startsWith("fr")?"fr":"en");
 
-    function setLanguage(e){
-        currentLang=e,localStorage.setItem("lang",e),document.documentElement.lang=e;
-        const t=document.querySelector('meta[name="description"]'),o=document.querySelector("title");
-        "fr"===e?(t.content="Freelance expert en automatisation n8n. J'aide les startups, PME et indépendants à gagner du temps grâce à des workflows intelligents sur-mesure. Intégration IA, CRM, documents, API. Devis gratuit.",o.textContent="Blong | Expert Automatisation n8n Freelance | BY NODFLOWMATION"):(t.content="Freelance n8n automation expert. I help startups, SMBs and freelancers save time with intelligent custom workflows. AI integration, CRM, documents, APIs. Free quote.",o.textContent="Blong | Freelance n8n Automation Expert | BY NODFLOWMATION"),document.querySelectorAll("[data-i18n]").forEach(t=>{const o=t.getAttribute("data-i18n");translations[e]&&translations[e][o]?t.innerHTML=translations[e][o]:translations.fr[o]&&(t.innerHTML=translations.fr[o])});
-
-        // Mise à jour du formulaire Tally
-        const tallyIframe=document.getElementById("tally-iframe"),tallyTitle="en"===e?"CONTACT FORM":"PRISE DE CONTACT";
-        if (tallyIframe) {
-            tallyIframe.dataset.tallySrc=formUrls[e].tally;
-            tallyIframe.title=tallyTitle;
-            if (typeof Tally !== 'undefined') Tally.loadEmbeds();
-        }
-
-        // Mise à jour du calendrier Cal.com
-        const calContainer = document.getElementById("cal-embed-container");
-        if (calContainer && typeof Cal !== 'undefined') {
-            calContainer.innerHTML = ''; // Vider le conteneur pour recharger
-            Cal("init", { origin: "https://cal.com" });
-            Cal("inline", {
-                elementOrSelector: "#cal-embed-container",
-                calLink: "blong.yang",
-                config: { locale: e } // 'fr' ou 'en'
-            });
+    function setLanguage(lang){
+        currentLang=lang;
+        localStorage.setItem("lang",lang);
+        document.documentElement.lang=lang;
+        
+        const metaDesc=document.querySelector('meta[name="description"]');
+        const title=document.querySelector("title");
+        
+        if(lang==="fr"){
+            metaDesc.content="Freelance expert en automatisation n8n. J'aide les startups, PME et indépendants à gagner du temps grâce à des workflows intelligents sur-mesure. Intégration IA, CRM, scraping, enrichissement de données. Devis gratuit.";
+            title.textContent="Blong | Expert Automatisation n8n Freelance | BY NODFLOWMATION";
+        } else {
+            metaDesc.content="Freelance n8n automation expert. I help startups, SMBs and freelancers save time with intelligent custom workflows. AI integration, CRM, documents, APIs. Free quote.";
+            title.textContent="Blong | Freelance n8n Automation Expert | BY NODFLOWMATION";
         }
         
-        document.querySelectorAll(".lang-btn").forEach(t=>{t.classList.toggle("active",t.dataset.lang===e)})
+        document.querySelectorAll("[data-i18n]").forEach(el=>{
+            const key=el.getAttribute("data-i18n");
+            if(translations[lang] && translations[lang][key]){
+                el.innerHTML = translations[lang][key];
+            } else if (translations.fr[key]) {
+                 el.innerHTML = translations.fr[key];
+            }
+        });
+        
+        const tallyIframe=document.getElementById("tally-iframe");
+        if(tallyIframe){
+            tallyIframe.dataset.tallySrc=formUrls[lang].tally;
+            tallyIframe.title=lang==="en"?"CONTACT FORM":"PRISE DE CONTACT";
+            if(typeof Tally!=="undefined") Tally.loadEmbeds();
+        }
+
+        const calContainer=document.getElementById("cal-embed-container");
+        if(calContainer && typeof Cal!=="undefined"){
+            calContainer.innerHTML = '';
+            Cal("init",{origin:"https://cal.com"});
+            Cal("inline",{elementOrSelector:"#cal-embed-container",calLink:"blong.yang",config:{locale:lang}});
+        }
+        
+        document.querySelectorAll(".lang-btn").forEach(btn=>{btn.classList.toggle("active",btn.dataset.lang===lang)});
     }
     
-    document.querySelectorAll(".lang-btn").forEach(e=>{e.addEventListener("click",()=>setLanguage(e.dataset.lang))});
     document.addEventListener("DOMContentLoaded",()=>{setLanguage(currentLang)});
-
-    // Le reste de vos scripts pour les animations et la navigation
+    document.querySelectorAll(".lang-btn").forEach(e=>{e.addEventListener("click",()=>setLanguage(e.dataset.lang))});
+    
+    // Animations and navigation scripts
     const cursor=document.getElementById("cursor"),cursorDot=document.getElementById("cursorDot");let mouseX=0,mouseY=0,cursorX=0,cursorY=0;function animateCursor(){cursorX+=.15*(mouseX-cursorX),cursorY+=.15*(mouseY-cursorY),cursor.style.left=cursorX+"px",cursor.style.top=cursorY+"px",requestAnimationFrame(animateCursor)}document.addEventListener("mousemove",e=>{mouseX=e.clientX,mouseY=e.clientY,cursorDot.style.left=mouseX+"px",cursorDot.style.top=mouseY+"px"}),animateCursor(),document.querySelectorAll("a, button, .btn-primary, .btn-secondary, .nav-cta, .project-card, .lang-btn, .contact-link, .tool-item, .testimonial-card, .service-card, .faq-item").forEach(e=>{e.addEventListener("mouseenter",()=>cursor.classList.add("hover")),e.addEventListener("mouseleave",()=>cursor.classList.remove("hover"))});const nav=document.getElementById("nav");window.addEventListener("scroll",()=>{nav.classList.toggle("scrolled",window.scrollY>60)});const menuToggle=document.getElementById("menuToggle"),mobileMenu=document.getElementById("mobileMenu");menuToggle.addEventListener("click",()=>{const e=menuToggle.classList.toggle("active");mobileMenu.classList.toggle("active"),menuToggle.setAttribute("aria-expanded",e),document.body.style.overflow=e?"hidden":""}),document.querySelectorAll(".mobile-link").forEach(e=>{e.addEventListener("click",()=>{menuToggle.classList.remove("active"),mobileMenu.classList.remove("active"),menuToggle.setAttribute("aria-expanded","false"),document.body.style.overflow=""})}),document.querySelectorAll(".faq-item").forEach(e=>{e.addEventListener("click",()=>{const t=e.classList.contains("active");document.querySelectorAll(".faq-item").forEach(e=>{e.classList.remove("active")}),t||e.classList.add("active")})});const observer=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting&&(e.target.classList.add("visible"),observer.unobserve(e.target))})},{threshold:.1,rootMargin:"0px 0px -50px 0px"});document.querySelectorAll("[data-animate]").forEach(e=>{observer.observe(e)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){const o=document.querySelector(this.getAttribute("href"));o&&(t.preventDefault(),o.scrollIntoView({behavior:"smooth",block:"start"}))})});
     </script>
 </body>
