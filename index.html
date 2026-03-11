@@ -3,20 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- SEO & Meta Tags (inchangés) -->
     <title>Blong | Expert Automatisation n8n Freelance | BY NODFLOWMATION</title>
     <meta name="description" content="Freelance expert en automatisation n8n. J'aide les startups, PME et indépendants à gagner du temps grâce à des workflows intelligents sur-mesure.">
     <link rel="canonical" href="https://bynodflowmation.github.io/portfolio-n8n/">
-    <!-- ... autres meta tags ... -->
-
-    <!-- Fonts -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     
     <style>
-        /* CSS (inchangé, mais avec un ajout important) */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
             --black: #0a0a0a; --dark: #111111; --dark-surface: #1a1a1a; --dark-border: #2a2a2a;
@@ -29,14 +24,7 @@
         }
         html { scroll-behavior: smooth; }
         body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--black); color: var(--white); line-height: 1.6; overflow-x: hidden; cursor: none; }
-        
-        /* ... tout votre CSS existant reste ici ... */
-
-        /* NOUVELLE RÈGLE CSS POUR CACHER/AFFICHER LES ÉLÉMENTS */
-        .hidden {
-            display: none !important;
-        }
-
+        .hidden { display: none !important; }
         .cursor { width: 20px; height: 20px; border: 2px solid var(--accent-light); border-radius: 50%; position: fixed; pointer-events: none; z-index: 10000; transition: transform 0.15s var(--transition), opacity 0.15s; transform: translate(-50%, -50%); mix-blend-mode: difference; }
         .cursor-dot { width: 6px; height: 6px; background: var(--accent); border-radius: 50%; position: fixed; pointer-events: none; z-index: 10001; transform: translate(-50%, -50%); transition: transform 0.08s; }
         .cursor.hover { transform: translate(-50%, -50%) scale(2.5); border-color: var(--accent); background: rgba(99, 102, 241, 0.1); }
@@ -178,7 +166,6 @@
 </head>
 <body>
     
-    <!-- ... votre HTML de début de body ... -->
     <div class="cursor" id="cursor"></div>
     <div class="cursor-dot" id="cursorDot"></div>
 
@@ -257,11 +244,9 @@
 
     <section class="section projects-section" id="work">
         <div class="section-container">
-            <div class="section-header">
-                <div>
-                    <h2 class="section-heading" data-i18n="projects_heading">Projets d'automatisation réalisés</h2>
-                </div>
-                <p class="section-subtitle" data-i18n="projects_subtitle">Découvrez comment j'ai aidé des entreprises à automatiser leurs processus métier.</p>
+            <div class="section-header" style="display: block; text-align: center;">
+                <h2 class="section-heading" style="margin: 0 auto;" data-i18n="projects_heading">Projets d'automatisation réalisés</h2>
+                <p class="section-subtitle" style="margin: 20px auto 0;" data-i18n="projects_subtitle">Découvrez comment j'ai aidé des entreprises à automatiser leurs processus métier.</p>
             </div>
             
             <article class="project-card" data-animate>
@@ -359,28 +344,22 @@
         </div>
     </section>
 
-    <!-- SECTION CAL.EU CORRIGÉE -->
     <section class="cal-section" id="cal">
         <div class="section-container">
             <h2 class="section-heading" style="text-align: center; margin: 0 auto 80px;" data-i18n="cal_heading">Discutons de votre projet</h2>
             <div class="cal-container">
-                <!-- Version Française -->
                 <iframe id="cal-fr" src="https://cal.eu/blong.yang?lang=fr" style="width:100%; height:700px; border:none;" frameborder="0"></iframe>
-                <!-- Version Anglaise (initialement cachée) -->
                 <iframe id="cal-en" src="https://cal.eu/blong.yang?lang=en" style="width:100%; height:700px; border:none;" frameborder="0" class="hidden"></iframe>
             </div>
         </div>
     </section>
 
-    <!-- SECTION CONTACT CORRIGÉE -->
     <section class="section contact-section" id="contact">
         <div class="section-container contact-content">
             <h2 class="contact-heading" data-i18n="contact_heading">Prêt à automatiser<br>vos processus ?</h2>
             <p class="contact-sub" data-i18n="contact_sub">Vous avez un projet d'automatisation ? Remplissez ce formulaire ou réservez un appel pour discuter de la manière dont nous pouvons transformer vos workflows manuels en systèmes intelligents.</p>
             <div class="tally-form-container">
-                <!-- Version Française (liens corrigés) -->
                 <iframe id="tally-fr" src="https://tally.so/embed/dWA1yd?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="379" frameborder="0" marginheight="0" marginwidth="0" title="PRISE DE CONTACT"></iframe>
-                <!-- Version Anglaise (initialement cachée) -->
                 <iframe id="tally-en" src="https://tally.so/embed/ODPeaK?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="379" frameborder="0" marginheight="0" marginwidth="0" title="CONTACT FORM" class="hidden"></iframe>
             </div>
             <div class="contact-links">
@@ -400,10 +379,8 @@
         <a href="#hero" class="footer-back-top" aria-label="Back to top">↑</a>
     </footer>
 
-    <!-- SCRIPT SIMPLIFIÉ ET CORRIGÉ -->
     <script>
     document.addEventListener("DOMContentLoaded", () => {
-
         const translations = {
             fr: {
             nav_about: "À propos", nav_services: "Services", nav_work: "Projets", nav_testimonials: "Témoignages", nav_faq: "FAQ", nav_contact: "Contact", nav_cta: "Réserver un appel",
@@ -461,13 +438,11 @@
             localStorage.setItem("lang", lang);
             document.documentElement.lang = lang;
 
-            // Traduction du contenu texte
             document.querySelectorAll("[data-i18n]").forEach(el => {
                 const key = el.getAttribute("data-i18n");
                 el.innerHTML = (translations[lang] && translations[lang][key]) || translations.fr[key];
             });
 
-            // Affichage des iframes Tally et Cal.eu
             const elements = ['tally', 'cal'];
             elements.forEach(type => {
                 const el_fr = document.getElementById(`${type}-fr`);
@@ -478,22 +453,18 @@
                 }
             });
 
-            // Mise à jour des boutons de langue actifs
             document.querySelectorAll(".lang-btn").forEach(btn => {
                 btn.classList.toggle("active", btn.dataset.lang === lang);
             });
         };
 
-        // Initialisation
         let currentLang = localStorage.getItem("lang") || (navigator.language.startsWith("fr") ? "fr" : "en");
         setLanguage(currentLang);
 
-        // Ajout des écouteurs d'événements
         document.querySelectorAll(".lang-btn").forEach(btn => {
             btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
         });
 
-        // Le reste de vos scripts pour les animations et la navigation
         const cursor=document.getElementById("cursor"),cursorDot=document.getElementById("cursorDot");let mouseX=0,mouseY=0,cursorX=0,cursorY=0;function animateCursor(){cursorX+=.15*(mouseX-cursorX),cursorY+=.15*(mouseY-cursorY),cursor.style.left=cursorX+"px",cursor.style.top=cursorY+"px",requestAnimationFrame(animateCursor)}document.addEventListener("mousemove",e=>{mouseX=e.clientX,mouseY=e.clientY,cursorDot.style.left=mouseX+"px",cursorDot.style.top=mouseY+"px"}),animateCursor(),document.querySelectorAll("a, button, .btn-primary, .btn-secondary, .nav-cta, .project-card, .lang-btn, .contact-link, .tool-item, .testimonial-card, .service-card, .faq-item").forEach(e=>{e.addEventListener("mouseenter",()=>cursor.classList.add("hover")),e.addEventListener("mouseleave",()=>cursor.classList.remove("hover"))});const nav=document.getElementById("nav");window.addEventListener("scroll",()=>{nav.classList.toggle("scrolled",window.scrollY>60)});const menuToggle=document.getElementById("menuToggle"),mobileMenu=document.getElementById("mobileMenu");menuToggle.addEventListener("click",()=>{const e=menuToggle.classList.toggle("active");mobileMenu.classList.toggle("active"),menuToggle.setAttribute("aria-expanded",e),document.body.style.overflow=e?"hidden":""}),document.querySelectorAll(".mobile-link").forEach(e=>{e.addEventListener("click",()=>{menuToggle.classList.remove("active"),mobileMenu.classList.remove("active"),menuToggle.setAttribute("aria-expanded","false"),document.body.style.overflow=""})}),document.querySelectorAll(".faq-item").forEach(e=>{e.addEventListener("click",()=>{const t=e.classList.contains("active");document.querySelectorAll(".faq-item").forEach(e=>{e.classList.remove("active")}),t||e.classList.add("active")})});const observer=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting&&(e.target.classList.add("visible"),observer.unobserve(e.target))})},{threshold:.1,rootMargin:"0px 0px -50px 0px"});document.querySelectorAll("[data-animate]").forEach(e=>{observer.observe(e)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){const o=document.querySelector(this.getAttribute("href"));o&&(t.preventDefault(),o.scrollIntoView({behavior:"smooth",block:"start"}))})});
     });
     </script>
