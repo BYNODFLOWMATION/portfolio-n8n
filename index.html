@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blong | Expert Automatisation n8n Freelance | BY NODFLOWMATION</title>
-    <meta name="description" content="Freelance expert en automatisation n8n. J'aide les entreprises à gagner du temps grâce à des workflows intelligents sur-mesure.">
+    <meta name="description" content="Freelance expert en automatisation n8n. Je remplace vos processus manuels par des systèmes intelligents qui tournent sans vous.">
     <link rel="canonical" href="https://bynodflowmation.github.io/portfolio-n8n/">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -90,7 +90,11 @@
         .about-avatar img { width: 100%; height: 100%; object-fit: cover; }
         .about-text h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(32px, 4vw, 48px); font-weight: 700; margin-bottom: 24px; line-height: 1.2; }
         .about-text p { font-size: 18px; color: var(--gray-400); line-height: 1.8; margin-bottom: 16px; }
-        .services-section { background: var(--black); padding: 140px 48px; }
+        .problem-section { background: var(--black); padding: 140px 48px; border-top: 1px solid var(--dark-border); }
+        .problem-content { max-width: 800px; margin: 0 auto; text-align: center; }
+        .problem-content h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(32px, 4vw, 48px); font-weight: 700; margin-bottom: 40px; line-height: 1.2; }
+        .problem-content p { font-size: 18px; color: var(--gray-400); line-height: 1.8; }
+        .services-section { background: var(--dark); padding: 140px 48px; border-top: 1px solid var(--dark-border); }
         .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; max-width: 1400px; margin: 0 auto; }
         .service-card { padding: 36px; background: var(--dark-surface); border: 1px solid var(--dark-border); border-radius: var(--radius); transition: all 0.4s var(--transition); position: relative; overflow: hidden; }
         .service-card:hover { border-color: var(--accent); transform: translateY(-4px); background: var(--accent-glow); }
@@ -112,28 +116,33 @@
         .project-tag { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; background: var(--accent-glow); border: 1px solid rgba(99, 102, 241, 0.2); border-radius: 100px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--accent-light); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500; margin-bottom: 24px; width: fit-content; }
         .project-info h3 { font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 700; line-height: 1.2; margin-bottom: 24px; letter-spacing: -0.01em; }
         .project-desc { font-size: 16px; color: var(--gray-400); line-height: 1.7; margin-bottom: 32px; }
+        .project-before-after { font-size: 14px; line-height: 1.7; margin-bottom: 24px; padding: 20px; background: rgba(99, 102, 241, 0.05); border: 1px solid rgba(99, 102, 241, 0.1); border-radius: var(--radius-sm); }
+        .project-before-after .before { color: var(--gray-500); margin-bottom: 8px; }
+        .project-before-after .after { color: var(--green); }
         .project-metrics { display: flex; gap: 32px; margin-top: auto; padding-top: 24px; flex-wrap: wrap; }
         .project-metric { display: flex; flex-direction: column; gap: 4px; }
         .project-metric-value { font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: var(--white); }
         .project-metric-label { font-size: 12px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.1em; }
         .project-stack { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
         .project-stack-item { padding: 6px 14px; background: var(--dark-surface); border: 1px solid var(--dark-border); border-radius: 100px; font-size: 12px; color: var(--gray-300); font-weight: 500; }
-        .tools-section { background: var(--dark); padding: 100px 48px; border-top: 1px solid var(--dark-border); border-bottom: 1px solid var(--dark-border); }
+        .process-section { background: var(--dark); padding: 140px 48px; border-top: 1px solid var(--dark-border); }
+        .tools-section { background: var(--black); padding: 100px 48px; border-top: 1px solid var(--dark-border); border-bottom: 1px solid var(--dark-border); }
         .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 24px; max-width: 1400px; margin: 0 auto; }
         .tool-item { display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 32px 24px; background: var(--dark-surface); border: 1px solid var(--dark-border); border-radius: var(--radius); transition: all 0.3s var(--transition); text-align: center; }
         .tool-item:hover { border-color: var(--accent); transform: translateY(-4px); background: var(--accent-glow); }
         .tool-icon { font-size: 48px; filter: grayscale(1); opacity: 0.7; transition: all 0.3s; }
         .tool-item:hover .tool-icon { filter: grayscale(0); opacity: 1; }
         .tool-name { font-size: 14px; color: var(--gray-300); font-weight: 600; }
-        .testimonials-section { background: var(--black); padding: 120px 48px; }
-        .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; max-width: 1400px; margin: 0 auto; }
-        .testimonial-card { padding: 40px; background: var(--dark-surface); border: 1px solid var(--dark-border); border-radius: var(--radius-lg); transition: all 0.4s var(--transition); }
-        .testimonial-card:hover { border-color: var(--gray-700); transform: translateY(-8px); box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4); }
-        .testimonial-stars { color: var(--orange); font-size: 18px; margin-bottom: 20px; }
-        .testimonial-text { font-size: 16px; color: var(--gray-300); line-height: 1.8; margin-bottom: 28px; font-style: italic; }
-        .testimonial-author { display: flex; align-items: center; gap: 16px; }
-        .testimonial-avatar { width: 52px; height: 52px; border-radius: 50%; background: var(--accent-glow); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 20px; color: var(--accent-light); }
-        .faq-section { background: var(--dark); padding: 120px 48px; border-top: 1px solid var(--dark-border); }
+        .testimonial-featured { background: var(--dark); padding: 120px 48px; border-top: 1px solid var(--dark-border); }
+        .testimonial-featured-content { max-width: 900px; margin: 0 auto; text-align: center; }
+        .testimonial-featured-quote { font-size: 60px; color: var(--accent); font-family: 'Space Grotesk', sans-serif; line-height: 1; margin-bottom: 24px; }
+        .testimonial-featured-text { font-size: 22px; color: var(--gray-300); line-height: 1.8; font-style: italic; margin-bottom: 40px; }
+        .testimonial-featured-stars { color: var(--orange); font-size: 24px; margin-bottom: 32px; }
+        .testimonial-featured-author { display: flex; align-items: center; justify-content: center; gap: 16px; }
+        .testimonial-featured-avatar { width: 56px; height: 56px; border-radius: 50%; background: var(--accent-glow); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 20px; color: var(--accent-light); }
+        .testimonial-featured-name { font-weight: 600; color: var(--white); font-size: 16px; }
+        .testimonial-featured-role { color: var(--gray-500); font-size: 14px; }
+        .faq-section { background: var(--black); padding: 120px 48px; border-top: 1px solid var(--dark-border); }
         .faq-container { max-width: 900px; margin: 0 auto; }
         .faq-item { border-bottom: 1px solid var(--dark-border); padding: 32px 0; cursor: pointer; transition: all 0.3s var(--transition); }
         .faq-item:hover { background: var(--accent-glow); padding-left: 20px; }
@@ -160,8 +169,8 @@
         .footer-back-top { width: 44px; height: 44px; border: 1px solid var(--dark-border); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--gray-500); text-decoration: none; font-size: 18px; transition: all 0.3s var(--transition); }
         .footer-back-top:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-3px); }
         @media (max-width: 1100px) { .project-card { grid-template-columns: 1fr; } .project-card:nth-child(even) { direction: ltr; } .about-content { grid-template-columns: 1fr; text-align: center; } .about-avatar { margin: 0 auto; } }
-        @media (max-width: 900px) { .section, .about-section, .tools-section, .testimonials-section, .faq-section, .cal-section { padding: 100px 28px; } nav { padding: 20px 28px; } nav.scrolled { padding: 16px 28px; } .nav-links { display: none; } .menu-toggle { display: flex; } .project-info { padding: 36px 28px; } footer { padding: 32px 28px; } .contact-links { flex-direction: column; } }
-        @media (max-width: 600px) { .section, .about-section, .services-section, .tools-section, .testimonials-section, .faq-section, .cal-section { padding: 80px 20px; } nav { padding: 16px 20px; } .hero-actions { flex-direction: column; align-items: stretch; } .btn-primary, .btn-secondary { justify-content: center; } .project-info h3 { font-size: 24px; } footer { flex-direction: column; gap: 20px; text-align: center; } .cursor, .cursor-dot { display: none; } .nav-logo-img { height: 56px; } .tools-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; } .testimonials-grid, .services-grid { grid-template-columns: 1fr; } .about-avatar { width: 100px; height: 100px; } }
+        @media (max-width: 900px) { .section, .about-section, .tools-section, .testimonial-featured, .faq-section, .cal-section, .problem-section, .process-section, .services-section { padding: 100px 28px; } nav { padding: 20px 28px; } nav.scrolled { padding: 16px 28px; } .nav-links { display: none; } .menu-toggle { display: flex; } .project-info { padding: 36px 28px; } footer { padding: 32px 28px; } .contact-links { flex-direction: column; } .process-grid { grid-template-columns: 1fr !important; } }
+        @media (max-width: 600px) { .section, .about-section, .services-section, .tools-section, .testimonial-featured, .faq-section, .cal-section, .problem-section, .process-section { padding: 80px 20px; } nav { padding: 16px 20px; } .hero-actions { flex-direction: column; align-items: stretch; } .btn-primary, .btn-secondary { justify-content: center; } .project-info h3 { font-size: 24px; } footer { flex-direction: column; gap: 20px; text-align: center; } .cursor, .cursor-dot { display: none; } .nav-logo-img { height: 56px; } .tools-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; } .services-grid { grid-template-columns: 1fr; } .about-avatar { width: 100px; height: 100px; } .hero-stats { flex-wrap: wrap; gap: 32px; } }
     </style>
 </head>
 <body>
@@ -195,25 +204,25 @@
     </div>
 
     <section class="hero" id="hero">
-        <div class="hero-bg"><div class="hero-gradient"></div><div class="hero-gradient-2"></div><div class="hero-grid"></div></div>
+        <div class="hero-bg"><div class="hero-gradient"></div><div class="hero-grid"></div></div>
         <div class="hero-content">
             <div class="hero-badge"><span class="hero-badge-dot"></span><span data-i18n="hero_badge">Disponible pour de nouveaux projets</span></div>
             <h1 class="hero-title">
-                <span data-i18n="hero_h1_line1">J'aide les entreprises à</span><br>
-                <span class="gradient-text" data-i18n="hero_h1_line2">gagner du temps</span><br>
-                <span data-i18n="hero_h1_line3">grâce à l'automatisation n8n</span>
+                <span data-i18n="hero_h1_line1">Je remplace vos</span><br>
+                <span class="gradient-text" data-i18n="hero_h1_line2">processus manuels</span><br>
+                <span data-i18n="hero_h1_line3">par des systèmes qui tournent sans vous.</span>
             </h1>
-            <p class="hero-description" data-i18n="hero_description">Je conçois des workflows d'automatisation intelligents avec n8n et l'IA — transformant vos processus manuels (CRM, documents, emails, API) en systèmes automatisés robustes. Gagnez jusqu'à 96% de temps et supprimez les erreurs humaines.</p>
+            <p class="hero-description" data-i18n="hero_description">Vous me décrivez ce que vos équipes font à la main — je le transforme en système autonome. Extraction de documents, prospection, génération de fichiers, synchronisation d'outils. Une fois lancé, plus personne n'a besoin d'y toucher.</p>
             <div class="hero-actions">
                 <a href="#contact" class="btn-primary"><span data-i18n="hero_btn_quote">Obtenir un devis gratuit</span><span class="arrow">→</span></a>
                 <a href="#work" class="btn-secondary" data-i18n="hero_btn_projects">Voir mes projets</a>
                 <a href="#cal" class="btn-secondary" data-i18n="hero_btn_call">Réserver un appel</a>
             </div>
             <div class="hero-stats">
-                <div class="hero-stat"><div class="hero-stat-value">3</div><div class="hero-stat-label" data-i18n="stat_projects">Projets</div></div>
-                <div class="hero-stat"><div class="hero-stat-value">96%</div><div class="hero-stat-label" data-i18n="stat_time">Temps gagné</div></div>
-                <div class="hero-stat"><div class="hero-stat-value">1K+</div><div class="hero-stat-label" data-i18n="metric_month">Factures/mois</div></div>
-                <div class="hero-stat"><div class="hero-stat-value">100%</div><div class="hero-stat-label" data-i18n="stat_accuracy">Automatisé</div></div>
+                <div class="hero-stat"><div class="hero-stat-value">95%</div><div class="hero-stat-label" data-i18n="stat_time">Temps gagné</div></div>
+                <div class="hero-stat"><div class="hero-stat-value">0</div><div class="hero-stat-label" data-i18n="stat_intervention">Intervention manuelle</div></div>
+                <div class="hero-stat"><div class="hero-stat-value" data-i18n="stat_days_value">~Jours</div><div class="hero-stat-label" data-i18n="stat_days">Délai de livraison</div></div>
+                <div class="hero-stat"><div class="hero-stat-value">100%</div><div class="hero-stat-label" data-i18n="stat_focus">Focus métier</div></div>
             </div>
         </div>
     </section>
@@ -222,22 +231,49 @@
         <div class="section-container">
             <div class="about-content">
                 <div class="about-avatar"><img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/PHOTO_MALT.jpg" alt="Photo de Blong Yang"></div>
-                <div>
+                <div class="about-text">
                     <h2 data-i18n="about_greeting">Salut ! Je m'appelle Blong.</h2>
-                    <p data-i18n="about_p1">Je suis freelance expert en automatisation n8n. Je travaille de façon <strong>structurée et fiable</strong>, en prenant le temps de comprendre vos besoins métier afin de concevoir des workflows clairs, robustes et faciles à maintenir.</p>
+                    <p data-i18n="about_p1">Je suis freelance spécialisé en automatisation et intégration d'IA. Je construis des systèmes complets qui remplacent vos tâches répétitives — de la collecte de données jusqu'à la livraison finale.</p>
+                    <p data-i18n="about_p2">Concrètement : vous me décrivez ce que vos équipes font à la main, et je le transforme en système autonome. Extraction de documents, pipelines de prospection, génération automatique de fichiers, traitement de factures — tout ce qui suit une logique répétitive, je l'automatise.</p>
+                    <p data-i18n="about_p3">Je ne livre pas des "automations". <strong>Je livre des systèmes qui tournent sans vous.</strong></p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="problem-section" id="problem">
+        <div class="section-container">
+            <div class="problem-content">
+                <h2 data-i18n="problem_heading">Vos équipes perdent des heures sur des tâches que personne ne devrait faire à la main.</h2>
+                <p data-i18n="problem_text">Recopier des données d'un document vers un tableur. Chercher des informations sur un site pour les coller ailleurs. Envoyer le même email 50 fois avec des pièces jointes différentes. Vérifier des données une par une.<br><br>Chaque minute passée sur ces tâches est une minute que vos équipes ne passent pas à réfléchir, vendre, conseiller ou produire.<br><br><strong style="color: #ffffff;">Le problème, ce n'est pas vos outils. C'est tout ce qu'il y a entre eux.</strong></p>
             </div>
         </div>
     </section>
 
     <section class="services-section" id="services">
         <div class="section-container">
-            <h2 class="section-heading" style="text-align: center; margin: 0 auto 80px;" data-i18n="services_heading">Ce que je peux automatiser pour vous</h2>
+            <h2 class="section-heading" style="text-align: center; margin: 0 auto 80px;" data-i18n="services_heading">Ce que je peux faire pour vous</h2>
             <div class="services-grid">
-                <div class="service-card" data-animate><span class="service-icon">📄</span><h3 class="service-name" data-i18n="service_1_name">Automatisation de Documents</h3><p class="service-desc" data-i18n="service_1_desc">Génération automatique de PDF, Word, PowerPoint à partir de vos données (CRM, formulaires, bases de données).</p></div>
-                <div class="service-card" data-animate><span class="service-icon">👥</span><h3 class="service-name" data-i18n="service_2_name">Intégration CRM</h3><p class="service-desc" data-i18n="service_2_desc">Synchronisation automatique entre vos outils (HubSpot, Pipedrive, Airtable, Notion) pour une vue unifiée de vos données clients.</p></div>
-                <div class="service-card" data-animate><span class="service-icon">🤖</span><h3 class="service-name" data-i18n="service_5_name">Traitement par IA</h3><p class="service-desc" data-i18n="service_5_desc">Extraction intelligente de données (OCR), classification de documents, génération de contenu avec GPT-4, Mistral ou Gemini.</p></div>
-                <div class="service-card" data-animate><span class="service-icon">🔍</span><h3 class="service-name" data-i18n="service_7_name">Pipeline de Génération de Leads</h3><p class="service-desc" data-i18n="service_7_desc">Automatisation du scraping, nettoyage, enrichissement (recherche d'emails) et vérification de prospects pour alimenter votre CRM.</p></div>
+                <div class="service-card" data-animate>
+                    <span class="service-icon">⚡</span>
+                    <h3 class="service-name" data-i18n="service_1_name">Vos tâches répétitives, en pilote automatique</h3>
+                    <p class="service-desc" data-i18n="service_1_desc">Un formulaire rempli, un fichier déposé — et tout se déclenche : collecte, enrichissement, calculs, génération de documents, envoi. De bout en bout, sans intervention.</p>
+                </div>
+                <div class="service-card" data-animate>
+                    <span class="service-icon">🧠</span>
+                    <h3 class="service-name" data-i18n="service_2_name">Vos documents lus et compris par l'IA</h3>
+                    <p class="service-desc" data-i18n="service_2_desc">Vos PDFs analysés page par page par l'IA. Factures, contrats, rapports — chaque donnée est extraite, classifiée et rangée dans votre base de données. Automatiquement.</p>
+                </div>
+                <div class="service-card" data-animate>
+                    <span class="service-icon">🔍</span>
+                    <h3 class="service-name" data-i18n="service_3_name">Votre prospection tourne toute seule</h3>
+                    <p class="service-desc" data-i18n="service_3_desc">Recherche de contacts, récupération d'emails, vérification, dédoublonnage — votre pipeline de prospection tourne en continu. Chaque prospect arrive propre dans votre CRM.</p>
+                </div>
+                <div class="service-card" data-animate>
+                    <span class="service-icon">🔗</span>
+                    <h3 class="service-name" data-i18n="service_4_name">Vos outils se parlent enfin entre eux</h3>
+                    <p class="service-desc" data-i18n="service_4_desc">Vos données nettoyées, calculées et synchronisées entre tous vos outils. Tableurs, bases de données, emails, drives — tout communique sans que vous ayez à copier-coller quoi que ce soit.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -245,18 +281,22 @@
     <section class="section projects-section" id="work">
         <div class="section-container">
             <div class="section-header" style="display: block; text-align: center;">
-                <h2 class="section-heading" style="margin: 0 auto;" data-i18n="projects_heading">Projets d'automatisation réalisés</h2>
-                <p class="section-subtitle" style="margin: 20px auto 0; max-width: 700px;" data-i18n="projects_subtitle">Découvrez comment j'ai aidé des entreprises à automatiser leurs processus métier.</p>
+                <h2 class="section-heading" style="margin: 0 auto;" data-i18n="projects_heading">Projets réalisés</h2>
+                <p class="section-subtitle" style="margin: 20px auto 0; max-width: 700px;" data-i18n="projects_subtitle">Quelques exemples concrets de processus manuels que j'ai transformés en systèmes autonomes.</p>
             </div>
             
             <article class="project-card" data-animate>
-                <div class="project-visual"><div class="project-visual-number">01</div><img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/BSA_AIR.png" alt="Workflow n8n de souscription financière" loading="lazy"></div>
+                <div class="project-visual"><div class="project-visual-number">01</div><img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/BSA_AIR.png" alt="Workflow d'automatisation documentaire" loading="lazy"></div>
                 <div class="project-info">
-                    <div class="project-tag" data-i18n="p1_tag">Finance</div>
-                    <h3 data-i18n="p1_title">Automatisation de Souscription Financière</h3>
-                    <p class="project-desc" data-i18n="p1_desc">Automatisation complète du processus de souscription, de l'extraction de données (OCR) à la génération de documents contractuels, en passant par des calculs complexes.</p>
+                    <div class="project-tag" data-i18n="p1_tag">Automatisation documentaire</div>
+                    <h3 data-i18n="p1_title">Génération automatique de dossiers complets</h3>
+                    <p class="project-desc" data-i18n="p1_desc">Un processus qui demandait de remplir manuellement chaque document, chercher les informations sur plusieurs sources, faire les calculs et envoyer les fichiers — le tout automatisé de bout en bout.</p>
+                    <div class="project-before-after">
+                        <div class="before" data-i18n="p1_before">⏱ Avant : ~45 minutes de travail manuel par dossier</div>
+                        <div class="after" data-i18n="p1_after">✅ Après : un formulaire de 2 minutes, tout le reste est automatique</div>
+                    </div>
                     <div class="project-metrics">
-                        <div class="project-metric"><div class="project-metric-value">96%</div><div class="project-metric-label" data-i18n="metric_time">Temps gagné</div></div>
+                        <div class="project-metric"><div class="project-metric-value">95%</div><div class="project-metric-label" data-i18n="metric_time">Temps gagné</div></div>
                         <div class="project-metric"><div class="project-metric-value">42</div><div class="project-metric-label">Nodes</div></div>
                     </div>
                     <div class="project-stack"><span class="project-stack-item">n8n</span><span class="project-stack-item">GPT-4</span><span class="project-stack-item">Mistral OCR</span><span class="project-stack-item">API REST</span></div>
@@ -264,25 +304,33 @@
             </article>
 
             <article class="project-card" data-animate>
-                <div class="project-visual"><div class="project-visual-number">02</div><img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/AGGREGATION_FACTURE.png" alt="Pipeline n8n de traitement de factures" loading="lazy"></div>
+                <div class="project-visual"><div class="project-visual-number">02</div><img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/AGGREGATION_FACTURE.png" alt="Pipeline de traitement de factures" loading="lazy"></div>
                 <div class="project-info">
-                    <div class="project-tag" data-i18n="p4_tag">Data Pipeline</div>
-                    <h3 data-i18n="p4_title">Pipeline de Traitement de Factures</h3>
-                    <p class="project-desc" data-i18n="p4_desc">Mise en place d'un pipeline pour traiter +1000 factures/mois. Le système automatise l'extraction (Gemini OCR), la classification, la déduplication et l'intégration en temps réel dans Supabase.</p>
+                    <div class="project-tag" data-i18n="p2_tag">Traitement de données</div>
+                    <h3 data-i18n="p2_title">Pipeline de traitement de factures</h3>
+                    <p class="project-desc" data-i18n="p2_desc">Des centaines de factures PDF à traiter chaque mois. Chaque page est analysée par l'IA, chaque article est extrait avec son prix, sa catégorie, ses caractéristiques — puis tout est rangé dans une base de données.</p>
+                    <div class="project-before-after">
+                        <div class="before" data-i18n="p2_before">⏱ Avant : des heures à recopier chaque facture ligne par ligne</div>
+                        <div class="after" data-i18n="p2_after">✅ Après : le PDF est déposé, tout est extrait et rangé automatiquement</div>
+                    </div>
                     <div class="project-metrics">
-                        <div class="project-metric"><div class="project-metric-value">1K+</div><div class="project-metric-label" data-i18n="metric_month">Par mois</div></div>
+                        <div class="project-metric"><div class="project-metric-value">100+</div><div class="project-metric-label" data-i18n="metric_types">Types classifiés</div></div>
                         <div class="project-metric"><div class="project-metric-value">38</div><div class="project-metric-label">Nodes</div></div>
                     </div>
-                    <div class="project-stack"><span class="project-stack-item">Google Gemini</span><span class="project-stack-item">Supabase</span><span class="project-stack-item">ILovePDF</span><span class="project-stack-item">n8n</span></div>
+                    <div class="project-stack"><span class="project-stack-item">Google Gemini</span><span class="project-stack-item">Supabase</span><span class="project-stack-item">iLovePDF</span><span class="project-stack-item">n8n</span></div>
                 </div>
             </article>
             
             <article class="project-card" data-animate>
-                <div class="project-visual"><div class="project-visual-number">03</div><img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/APIFY.png" alt="Pipeline de génération de prospects B2B" loading="lazy"></div>
+                <div class="project-visual"><div class="project-visual-number">03</div><img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/APIFY.png" alt="Pipeline de prospection automatisée" loading="lazy"></div>
                 <div class="project-info">
-                    <div class="project-tag" data-i18n="p5_tag">Lead Generation</div>
-                    <h3 data-i18n="p5_title">Pipeline de Génération de Prospects B2B</h3>
-                    <p class="project-desc" data-i18n="p5_desc">Pipeline 100% automatisé qui déclenche un scraping (Apify), puis nettoie, enrichit (recherche d'emails), valide les données et les synchronise avec une base de prospects (Baserow).</p>
+                    <div class="project-tag" data-i18n="p3_tag">Prospection</div>
+                    <h3 data-i18n="p3_title">Pipeline de prospection automatisée</h3>
+                    <p class="project-desc" data-i18n="p3_desc">Un pipeline complet qui recherche des contacts, trouve leurs emails professionnels, vérifie que les adresses sont valides, élimine les doublons, et insère les prospects proprement dans le CRM — sans aucune action manuelle.</p>
+                    <div class="project-before-after">
+                        <div class="before" data-i18n="p3_before">⏱ Avant : recherche manuelle de contacts un par un</div>
+                        <div class="after" data-i18n="p3_after">✅ Après : les prospects arrivent vérifiés et dédoublonnés dans le CRM</div>
+                    </div>
                     <div class="project-metrics">
                         <div class="project-metric"><div class="project-metric-value">100%</div><div class="project-metric-label" data-i18n="metric_automated">Automatisé</div></div>
                         <div class="project-metric"><div class="project-metric-value">95%</div><div class="project-metric-label" data-i18n="metric_quality">Qualité données</div></div>
@@ -293,9 +341,32 @@
         </div>
     </section>
 
+    <section class="process-section" id="process">
+        <div class="section-container">
+            <h2 class="section-heading" style="text-align: center; margin: 0 auto 80px;" data-i18n="process_heading">3 étapes. Pas 3 mois.</h2>
+            <div class="services-grid process-grid" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="service-card" data-animate>
+                    <span class="service-icon">📞</span>
+                    <h3 class="service-name" data-i18n="process_1_name">1. Appel découverte</h3>
+                    <p class="service-desc" data-i18n="process_1_desc">On identifie ensemble ce qui vous prend le plus de temps. Je vous dis si c'est automatisable, comment, et en combien de temps. Gratuit, 30 minutes.</p>
+                </div>
+                <div class="service-card" data-animate>
+                    <span class="service-icon">🔧</span>
+                    <h3 class="service-name" data-i18n="process_2_name">2. Construction</h3>
+                    <p class="service-desc" data-i18n="process_2_desc">Je construis votre système sur mesure. Chaque workflow est conçu pour votre métier, vos outils, vos cas particuliers. Vous validez à chaque étape.</p>
+                </div>
+                <div class="service-card" data-animate>
+                    <span class="service-icon">🚀</span>
+                    <h3 class="service-name" data-i18n="process_3_name">3. Livraison & support</h3>
+                    <p class="service-desc" data-i18n="process_3_desc">Le système est déployé, testé et documenté. C'est fait pour tourner tout seul. Et si quelque chose casse, je suis là.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="tools-section" aria-labelledby="tools-heading">
         <div class="section-container">
-            <h2 class="section-heading" id="tools-heading" style="text-align: center; margin: 0 auto 80px;" data-i18n="tools_heading">Écosystème d'automatisation</h2>
+            <h2 class="section-heading" id="tools-heading" style="text-align: center; margin: 0 auto 80px;" data-i18n="tools_heading">Outils que j'utilise</h2>
             <div class="tools-grid">
                 <div class="tool-item"><div class="tool-icon">⚡</div><div class="tool-name">n8n</div></div>
                 <div class="tool-item"><div class="tool-icon">🕷️</div><div class="tool-name">Apify</div></div>
@@ -303,29 +374,28 @@
                 <div class="tool-item"><div class="tool-icon">🔮</div><div class="tool-name">Mistral AI</div></div>
                 <div class="tool-item"><div class="tool-icon">💎</div><div class="tool-name">Google Gemini</div></div>
                 <div class="tool-item"><div class="tool-icon">🗂️</div><div class="tool-name">Baserow</div></div>
-                <div class="tool-item"><div class="tool-icon">📊</div><div class="tool-name">Airtable</div></div>
+                <div class="tool-item"><div class="tool-icon">📑</div><div class="tool-name">Carbone</div></div>
                 <div class="tool-item"><div class="tool-icon">🗄️</div><div class="tool-name">Supabase</div></div>
                 <div class="tool-item"><div class="tool-icon">✉️</div><div class="tool-name">Anymail Finder</div></div>
                 <div class="tool-item"><div class="tool-icon">✅</div><div class="tool-name">Million Verifier</div></div>
+                <div class="tool-item"><div class="tool-icon">🏢</div><div class="tool-name">Pappers</div></div>
                 <div class="tool-item"><div class="tool-icon">🪄</div><div class="tool-name">Zapier</div></div>
                 <div class="tool-item"><div class="tool-icon">🔗</div><div class="tool-name">API REST</div></div>
             </div>
         </div>
     </section>
 
-    <section class="section testimonials-section" id="testimonials">
+    <section class="testimonial-featured" id="testimonials">
         <div class="section-container">
-            <h2 class="section-heading" style="text-align: center; margin: 0 auto 80px;" data-i18n="testimonials_heading">Ce que disent mes clients</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card" data-animate>
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text" data-i18n="testimonial_1_text">"J'ai confié à Blong l'automatisation d'un workflow complexe. Le livrable est solide, bien structuré et fonctionnel. Bon communicant, rigoureux, et surtout capable de comprendre rapidement les enjeux. Je referai appel à lui."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">AD</div>
-                        <div>
-                            <div class="testimonial-name" data-i18n="testimonial_1_name">Alexis D.</div>
-                            <div class="testimonial-role" data-i18n="testimonial_1_role">CEO • Workflow Automation Lab</div>
-                        </div>
+            <div class="testimonial-featured-content">
+                <div class="testimonial-featured-quote">"</div>
+                <div class="testimonial-featured-stars">★★★★★</div>
+                <p class="testimonial-featured-text" data-i18n="testimonial_1_text">J'ai confié à Blong l'automatisation d'un workflow complexe. Le livrable est solide, bien structuré et fonctionnel. Bon communicant, rigoureux, et surtout capable de comprendre rapidement les enjeux. Je referai appel à lui.</p>
+                <div class="testimonial-featured-author">
+                    <div class="testimonial-featured-avatar">AD</div>
+                    <div style="text-align: left;">
+                        <div class="testimonial-featured-name" data-i18n="testimonial_1_name">Alexis D.</div>
+                        <div class="testimonial-featured-role" data-i18n="testimonial_1_role">CEO • Workflow Automation Lab</div>
                     </div>
                 </div>
             </div>
@@ -336,10 +406,22 @@
         <div class="section-container">
             <h2 class="section-heading" style="text-align: center; margin: 0 auto 80px;" data-i18n="faq_heading">Questions fréquentes</h2>
             <div class="faq-container">
-                <div class="faq-item" data-animate><div class="faq-question"><h3 data-i18n="faq_1_q">Qu'est-ce que n8n ?</h3><span class="faq-toggle">+</span></div><div class="faq-answer"><p data-i18n="faq_1_a">n8n est une plateforme d'automatisation open-source qui permet de connecter différentes applications et services via des workflows intelligents. Alternative puissante à Zapier, elle offre plus de flexibilité et de contrôle pour automatiser vos processus métier.</p></div></div>
-                <div class="faq-item" data-animate><div class="faq-question"><h3 data-i18n="faq_2_q">Combien de temps faut-il pour créer un workflow ?</h3><span class="faq-toggle">+</span></div><div class="faq-answer"><p data-i18n="faq_2_a">La durée varie selon la complexité : de quelques jours pour un workflow simple à plusieurs semaines pour des intégrations complexes avec IA et multi-systèmes. Je fournis toujours une estimation détaillée et un devis gratuit après analyse de vos besoins.</p></div></div>
-                <div class="faq-item" data-animate><div class="faq-question"><h3 data-i18n="faq_4_q">Pourquoi choisir n8n plutôt que Zapier ?</h3><span class="faq-toggle">+</span></div><div class="faq-answer"><p data-i18n="faq_4_a">n8n offre plus de flexibilité, aucune limite d'opérations, la possibilité d'auto-hébergement, et un meilleur rapport qualité-prix pour des workflows complexes. C'est idéal pour les entreprises qui veulent garder le contrôle de leurs données et automatisations.</p></div></div>
-                <div class="faq-item" data-animate><div class="faq-question"><h3 data-i18n="faq_5_q">Proposez-vous de la maintenance après livraison ?</h3><span class="faq-toggle">+</span></div><div class="faq-answer"><p data-i18n="faq_5_a">Oui, je propose des contrats de maintenance et de support pour assurer le bon fonctionnement de vos workflows dans le temps. Vous pouvez aussi opter pour une formation pour gérer vous-même les automatisations simples.</p></div></div>
+                <div class="faq-item" data-animate>
+                    <div class="faq-question"><h3 data-i18n="faq_1_q">Quels types de tâches pouvez-vous automatiser ?</h3><span class="faq-toggle">+</span></div>
+                    <div class="faq-answer"><p data-i18n="faq_1_a">Tout ce qui est répétitif et suit une logique : traitement de documents, prospection, génération de fichiers, synchronisation entre outils, extraction de données. Si vous le faites à la main plus de 3 fois par semaine, c'est probablement automatisable. On en parle lors de l'appel découverte.</p></div>
+                </div>
+                <div class="faq-item" data-animate>
+                    <div class="faq-question"><h3 data-i18n="faq_2_q">Combien de temps pour mettre en place une automatisation ?</h3><span class="faq-toggle">+</span></div>
+                    <div class="faq-answer"><p data-i18n="faq_2_a">Ça dépend de la complexité : quelques jours pour un processus simple, une à deux semaines pour un système plus complet avec de l'IA et plusieurs outils connectés. Je vous donne toujours une estimation claire avant de commencer.</p></div>
+                </div>
+                <div class="faq-item" data-animate>
+                    <div class="faq-question"><h3 data-i18n="faq_3_q">Mes données restent-elles chez moi ?</h3><span class="faq-toggle">+</span></div>
+                    <div class="faq-answer"><p data-i18n="faq_3_a">Oui. J'utilise principalement n8n en self-hosted, ce qui veut dire que vos données ne passent pas par des serveurs tiers. Vous gardez le contrôle total. Si vous utilisez déjà d'autres outils (Zapier, Make...), je m'adapte à votre environnement.</p></div>
+                </div>
+                <div class="faq-item" data-animate>
+                    <div class="faq-question"><h3 data-i18n="faq_4_q">Que se passe-t-il après la livraison ?</h3><span class="faq-toggle">+</span></div>
+                    <div class="faq-answer"><p data-i18n="faq_4_a">Le système est conçu pour tourner tout seul. Je vous fournis une documentation claire. Si vous voulez de la maintenance ou du support dans le temps, c'est possible aussi — on en discute selon vos besoins.</p></div>
+                </div>
             </div>
         </div>
     </section>
@@ -356,8 +438,8 @@
 
     <section class="section contact-section" id="contact">
         <div class="section-container contact-content">
-            <h2 class="contact-heading" data-i18n="contact_heading">Prêt à automatiser<br>vos processus ?</h2>
-            <p class="contact-sub" data-i18n="contact_sub">Vous avez un projet d'automatisation ? Remplissez ce formulaire ou réservez un appel pour discuter de la manière dont nous pouvons transformer vos workflows manuels en systèmes intelligents.</p>
+            <h2 class="contact-heading" data-i18n="contact_heading">Quel processus vous fait<br>perdre le plus de temps ?</h2>
+            <p class="contact-sub" data-i18n="contact_sub">Décrivez-moi en quelques mots ce que vos équipes font manuellement aujourd'hui. Je vous dis rapidement si c'est automatisable, comment, et en combien de temps.</p>
             <div class="tally-form-container">
                 <iframe id="tally-fr" src="https://tally.so/embed/dWA1yd?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="379" frameborder="0" marginheight="0" marginwidth="0" title="PRISE DE CONTACT"></iframe>
                 <iframe id="tally-en" src="https://tally.so/embed/ODPeaK?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="379" frameborder="0" marginheight="0" marginwidth="0" title="CONTACT FORM" class="hidden"></iframe>
@@ -383,53 +465,87 @@
     document.addEventListener("DOMContentLoaded", () => {
         const translations = {
             fr: {
-            nav_about: "À propos", nav_services: "Services", nav_work: "Projets", nav_testimonials: "Témoignages", nav_faq: "FAQ", nav_contact: "Contact", nav_cta: "Réserver un appel",
-            hero_badge: "Disponible pour de nouveaux projets", hero_h1_line1: "J'aide les entreprises à", hero_h1_line2: "gagner du temps", hero_h1_line3: "grâce à l'automatisation n8n", hero_description: "Je conçois des workflows d'automatisation intelligents avec n8n et l'IA — transformant vos processus manuels (CRM, documents, emails, API) en systèmes automatisés robustes. Gagnez jusqu'à 96% de temps et supprimez les erreurs humaines.", hero_btn_quote: "Obtenir un devis gratuit", hero_btn_projects: "Voir mes projets", hero_btn_call: "Réserver un appel",
-            stat_projects: "Projets", stat_time: "Temps gagné", metric_month: "Factures/mois", stat_accuracy: "Automatisé",
-            about_greeting: "Salut ! Je m'appelle Blong.", about_p1: "Je suis freelance expert en automatisation n8n. Je travaille de façon <strong>structurée et fiable</strong>, en prenant le temps de comprendre vos besoins métier afin de concevoir des workflows clairs, robustes et faciles à maintenir.",
-            services_heading: "Ce que je peux automatiser pour vous",
-            service_1_name: "Automatisation de Documents", service_1_desc: "Génération automatique de PDF, Word, PowerPoint à partir de vos données (CRM, formulaires, bases de données).",
-            service_2_name: "Intégration CRM", service_2_desc: "Synchronisation automatique entre vos outils (HubSpot, Pipedrive, Airtable, Notion) pour une vue unifiée de vos données clients.",
-            service_5_name: "Traitement par IA", service_5_desc: "Extraction intelligente de données (OCR), classification de documents, génération de contenu avec GPT-4, Mistral ou Gemini.",
-            service_7_name: "Pipeline de Génération de Leads", service_7_desc: "Automatisation du scraping, nettoyage, enrichissement (recherche d'emails) et vérification de prospects pour alimenter votre CRM.",
-            projects_heading: "Projets d'automatisation réalisés", projects_subtitle: "Découvrez comment j'ai aidé des entreprises à automatiser leurs processus métier.",
-            p1_tag: "Finance", p1_title: "Automatisation de Souscription Financière", p1_desc: "Automatisation complète du processus de souscription, de l'extraction de données (OCR) à la génération de documents contractuels, en passant par des calculs complexes.", metric_time: "Temps gagné",
-            p4_tag: "Data Pipeline", p4_title: "Pipeline de Traitement de Factures", p4_desc: "Mise en place d'un pipeline pour traiter +1000 factures/mois. Le système automatise l'extraction (Gemini OCR), la classification, la déduplication et l'intégration en temps réel dans Supabase.",
-            p5_tag: "Lead Generation", p5_title: "Pipeline de Génération de Prospects B2B", p5_desc: "Pipeline 100% automatisé qui déclenche un scraping (Apify), puis nettoie, enrichit (recherche d'emails), valide les données et les synchronise avec une base de prospects (Baserow).", metric_automated: "Automatisé", metric_quality: "Qualité données",
-            tools_heading: "Écosystème d'automatisation",
-            testimonials_heading: "Ce que disent mes clients", testimonial_1_text: "\"J'ai confié à Blong l'automatisation d'un workflow complexe. Le livrable est solide, bien structuré et fonctionnel. Bon communicant, rigoureux, et surtout capable de comprendre rapidement les enjeux. Je referai appel à lui.\"", testimonial_1_name: "Alexis D.", testimonial_1_role: "CEO • Workflow Automation Lab",
-            faq_heading: "Questions fréquentes",
-            faq_1_q: "Qu'est-ce que n8n ?", faq_1_a: "n8n est une plateforme d'automatisation open-source qui permet de connecter différentes applications et services via des workflows intelligents. Alternative puissante à Zapier, elle offre plus de flexibilité et de contrôle pour automatiser vos processus métier.",
-            faq_2_q: "Combien de temps faut-il pour créer un workflow ?", faq_2_a: "La durée varie selon la complexité : de quelques jours pour un workflow simple à plusieurs semaines pour des intégrations complexes avec IA et multi-systèmes. Je fournis toujours une estimation détaillée et un devis gratuit après analyse de vos besoins.",
-            faq_4_q: "Pourquoi choisir n8n plutôt que Zapier ?", faq_4_a: "n8n offre plus de flexibilité, aucune limite d'opérations, la possibilité d'auto-hébergement, et un meilleur rapport qualité-prix pour des workflows complexes. C'est idéal pour les entreprises qui veulent garder le contrôle de leurs données et automatisations.",
-            faq_5_q: "Proposez-vous de la maintenance après livraison ?", faq_5_a: "Oui, je propose des contrats de maintenance et de support pour assurer le bon fonctionnement de vos workflows dans le temps. Vous pouvez aussi opter pour une formation pour gérer vous-même les automatisations simples.",
-            cal_heading: "Discutons de votre projet",
-            contact_heading: "Prêt à automatiser<br>vos processus ?", contact_sub: "Vous avez un projet d'automatisation ? Remplissez ce formulaire ou réservez un appel pour discuter de la manière dont nous pouvons transformer vos workflows manuels en systèmes intelligents.", contact_cal: "Réserver un appel",
-            footer_rights: "Tous droits réservés"
+                nav_about: "À propos", nav_services: "Services", nav_work: "Projets", nav_testimonials: "Témoignages", nav_faq: "FAQ", nav_contact: "Contact", nav_cta: "Réserver un appel",
+                hero_badge: "Disponible pour de nouveaux projets",
+                hero_h1_line1: "Je remplace vos",
+                hero_h1_line2: "processus manuels",
+                hero_h1_line3: "par des systèmes qui tournent sans vous.",
+                hero_description: "Vous me décrivez ce que vos équipes font à la main — je le transforme en système autonome. Extraction de documents, prospection, génération de fichiers, synchronisation d'outils. Une fois lancé, plus personne n'a besoin d'y toucher.",
+                hero_btn_quote: "Obtenir un devis gratuit", hero_btn_projects: "Voir mes projets", hero_btn_call: "Réserver un appel",
+                stat_time: "Temps gagné", stat_intervention: "Intervention manuelle", stat_days_value: "~Jours", stat_days: "Délai de livraison", stat_focus: "Focus métier",
+                about_greeting: "Salut ! Je m'appelle Blong.",
+                about_p1: "Je suis freelance spécialisé en automatisation et intégration d'IA. Je construis des systèmes complets qui remplacent vos tâches répétitives — de la collecte de données jusqu'à la livraison finale.",
+                about_p2: "Concrètement : vous me décrivez ce que vos équipes font à la main, et je le transforme en système autonome. Extraction de documents, pipelines de prospection, génération automatique de fichiers, traitement de factures — tout ce qui suit une logique répétitive, je l'automatise.",
+                about_p3: "Je ne livre pas des \"automations\". <strong>Je livre des systèmes qui tournent sans vous.</strong>",
+                problem_heading: "Vos équipes perdent des heures sur des tâches que personne ne devrait faire à la main.",
+                problem_text: "Recopier des données d'un document vers un tableur. Chercher des informations sur un site pour les coller ailleurs. Envoyer le même email 50 fois avec des pièces jointes différentes. Vérifier des données une par une.<br><br>Chaque minute passée sur ces tâches est une minute que vos équipes ne passent pas à réfléchir, vendre, conseiller ou produire.<br><br><strong style=\"color: #ffffff;\">Le problème, ce n'est pas vos outils. C'est tout ce qu'il y a entre eux.</strong>",
+                services_heading: "Ce que je peux faire pour vous",
+                service_1_name: "Vos tâches répétitives, en pilote automatique", service_1_desc: "Un formulaire rempli, un fichier déposé — et tout se déclenche : collecte, enrichissement, calculs, génération de documents, envoi. De bout en bout, sans intervention.",
+                service_2_name: "Vos documents lus et compris par l'IA", service_2_desc: "Vos PDFs analysés page par page par l'IA. Factures, contrats, rapports — chaque donnée est extraite, classifiée et rangée dans votre base de données. Automatiquement.",
+                service_3_name: "Votre prospection tourne toute seule", service_3_desc: "Recherche de contacts, récupération d'emails, vérification, dédoublonnage — votre pipeline de prospection tourne en continu. Chaque prospect arrive propre dans votre CRM.",
+                service_4_name: "Vos outils se parlent enfin entre eux", service_4_desc: "Vos données nettoyées, calculées et synchronisées entre tous vos outils. Tableurs, bases de données, emails, drives — tout communique sans que vous ayez à copier-coller quoi que ce soit.",
+                projects_heading: "Projets réalisés", projects_subtitle: "Quelques exemples concrets de processus manuels que j'ai transformés en systèmes autonomes.",
+                p1_tag: "Automatisation documentaire", p1_title: "Génération automatique de dossiers complets", p1_desc: "Un processus qui demandait de remplir manuellement chaque document, chercher les informations sur plusieurs sources, faire les calculs et envoyer les fichiers — le tout automatisé de bout en bout.",
+                p1_before: "⏱ Avant : ~45 minutes de travail manuel par dossier", p1_after: "✅ Après : un formulaire de 2 minutes, tout le reste est automatique", metric_time: "Temps gagné",
+                p2_tag: "Traitement de données", p2_title: "Pipeline de traitement de factures", p2_desc: "Des centaines de factures PDF à traiter chaque mois. Chaque page est analysée par l'IA, chaque article est extrait avec son prix, sa catégorie, ses caractéristiques — puis tout est rangé dans une base de données.",
+                p2_before: "⏱ Avant : des heures à recopier chaque facture ligne par ligne", p2_after: "✅ Après : le PDF est déposé, tout est extrait et rangé automatiquement", metric_types: "Types classifiés",
+                p3_tag: "Prospection", p3_title: "Pipeline de prospection automatisée", p3_desc: "Un pipeline complet qui recherche des contacts, trouve leurs emails professionnels, vérifie que les adresses sont valides, élimine les doublons, et insère les prospects proprement dans le CRM — sans aucune action manuelle.",
+                p3_before: "⏱ Avant : recherche manuelle de contacts un par un", p3_after: "✅ Après : les prospects arrivent vérifiés et dédoublonnés dans le CRM", metric_automated: "Automatisé", metric_quality: "Qualité données",
+                process_heading: "3 étapes. Pas 3 mois.",
+                process_1_name: "1. Appel découverte", process_1_desc: "On identifie ensemble ce qui vous prend le plus de temps. Je vous dis si c'est automatisable, comment, et en combien de temps. Gratuit, 30 minutes.",
+                process_2_name: "2. Construction", process_2_desc: "Je construis votre système sur mesure. Chaque workflow est conçu pour votre métier, vos outils, vos cas particuliers. Vous validez à chaque étape.",
+                process_3_name: "3. Livraison & support", process_3_desc: "Le système est déployé, testé et documenté. C'est fait pour tourner tout seul. Et si quelque chose casse, je suis là.",
+                tools_heading: "Outils que j'utilise",
+                testimonial_1_text: "J'ai confié à Blong l'automatisation d'un workflow complexe. Le livrable est solide, bien structuré et fonctionnel. Bon communicant, rigoureux, et surtout capable de comprendre rapidement les enjeux. Je referai appel à lui.", testimonial_1_name: "Alexis D.", testimonial_1_role: "CEO • Workflow Automation Lab",
+                faq_heading: "Questions fréquentes",
+                faq_1_q: "Quels types de tâches pouvez-vous automatiser ?", faq_1_a: "Tout ce qui est répétitif et suit une logique : traitement de documents, prospection, génération de fichiers, synchronisation entre outils, extraction de données. Si vous le faites à la main plus de 3 fois par semaine, c'est probablement automatisable. On en parle lors de l'appel découverte.",
+                faq_2_q: "Combien de temps pour mettre en place une automatisation ?", faq_2_a: "Ça dépend de la complexité : quelques jours pour un processus simple, une à deux semaines pour un système plus complet avec de l'IA et plusieurs outils connectés. Je vous donne toujours une estimation claire avant de commencer.",
+                faq_3_q: "Mes données restent-elles chez moi ?", faq_3_a: "Oui. J'utilise principalement n8n en self-hosted, ce qui veut dire que vos données ne passent pas par des serveurs tiers. Vous gardez le contrôle total. Si vous utilisez déjà d'autres outils (Zapier, Make...), je m'adapte à votre environnement.",
+                faq_4_q: "Que se passe-t-il après la livraison ?", faq_4_a: "Le système est conçu pour tourner tout seul. Je vous fournis une documentation claire. Si vous voulez de la maintenance ou du support dans le temps, c'est possible aussi — on en discute selon vos besoins.",
+                cal_heading: "Discutons de votre projet",
+                contact_heading: "Quel processus vous fait<br>perdre le plus de temps ?", contact_sub: "Décrivez-moi en quelques mots ce que vos équipes font manuellement aujourd'hui. Je vous dis rapidement si c'est automatisable, comment, et en combien de temps.", contact_cal: "Réserver un appel",
+                footer_rights: "Tous droits réservés"
             },
             en: {
                 nav_about: "About", nav_services: "Services", nav_work: "Projects", nav_testimonials: "Testimonials", nav_faq: "FAQ", nav_contact: "Contact", nav_cta: "Book a call",
-                hero_badge: "Available for new projects", hero_h1_line1: "I help companies", hero_h1_line2: "save time", hero_h1_line3: "with n8n automation", hero_description: "I design intelligent automation workflows with n8n and AI—transforming your manual processes (CRM, documents, emails, APIs) into robust automated systems. Save up to 96% of time and eliminate human errors.", hero_btn_quote: "Get a free quote", hero_btn_projects: "See my projects", hero_btn_call: "Book a call",
-                stat_projects: "Projects", stat_time: "Time Saved", metric_month: "Invoices/month", stat_accuracy: "Automated",
-                about_greeting: "Hi! I'm Blong.", about_p1: "I am a freelance n8n automation expert. I work in a <strong>structured and reliable</strong> way, taking the time to understand your business needs to design clear, robust, and easy-to-maintain workflows.",
-                services_heading: "What I can automate for you",
-                service_1_name: "Document Automation", service_1_desc: "Automatic generation of PDF, Word, PowerPoint from your data (CRM, forms, databases).",
-                service_2_name: "CRM Integration", service_2_desc: "Automatic synchronization between your tools (HubSpot, Pipedrive, Airtable, Notion) for a unified view of your customer data.",
-                service_5_name: "AI Processing", service_5_desc: "Intelligent data extraction (OCR), document classification, content generation with GPT-4, Mistral, or Gemini.",
-                service_7_name: "Lead Generation Pipeline", service_7_desc: "Automation of scraping, cleaning, enriching (email lookup), and verifying prospects to feed your CRM.",
-                projects_heading: "Completed automation projects", projects_subtitle: "Discover how I have helped companies automate their business processes.",
-                p1_tag: "Finance", p1_title: "Financial Subscription Automation", p1_desc: "Complete automation of the subscription process, from data extraction (OCR) to the generation of contractual documents, including complex calculations.", metric_time: "Time Saved",
-                p4_tag: "Data Pipeline", p4_title: "Invoice Processing Pipeline", p4_desc: "Implementation of a pipeline to process +1000 invoices/month. The system automates extraction (Gemini OCR), classification, deduplication, and real-time integration into Supabase.",
-                p5_tag: "Lead Generation", p5_title: "B2B Lead Generation Pipeline", p5_desc: "A 100% automated pipeline that triggers scraping (Apify), then cleans, enriches (email lookup), validates data, and syncs it with a prospect database (Baserow).", metric_automated: "Automated", metric_quality: "Data Quality",
-                tools_heading: "Automation Ecosystem",
-                testimonials_heading: "What my clients say", testimonial_1_text: "\"I entrusted Blong with automating a complex workflow. The deliverable is solid, well-structured, and functional. A good communicator, rigorous, and above all, able to quickly understand the challenges. I will call on him again.\"", testimonial_1_name: "Alexis D.", testimonial_1_role: "CEO • Workflow Automation Lab",
-                faq_heading: "Frequently Asked Questions",
-                faq_1_q: "What is n8n?", faq_1_a: "n8n is an open-source automation platform that allows connecting different applications and services via intelligent workflows. A powerful alternative to Zapier, it offers more flexibility and control to automate your business processes.",
-                faq_2_q: "How long does it take to create a workflow?", faq_2_a: "The duration varies depending on complexity: from a few days for a simple workflow to several weeks for complex integrations with AI and multi-systems. I always provide a detailed estimate and a free quote after analyzing your needs.",
-                faq_4_q: "Why choose n8n over Zapier?", faq_4_a: "n8n offers more flexibility, no operation limits, the possibility of self-hosting, and a better value for complex workflows. It is ideal for companies that want to maintain control over their data and automations.",
-                faq_5_q: "Do you offer maintenance after delivery?", faq_5_a: "Yes, I offer maintenance and support contracts to ensure the smooth operation of your workflows over time. You can also opt for training to manage simple automations yourself.",
+                hero_badge: "Available for new projects",
+                hero_h1_line1: "I replace your",
+                hero_h1_line2: "manual processes",
+                hero_h1_line3: "with systems that run without you.",
+                hero_description: "Tell me what your teams do by hand — I turn it into an autonomous system. Document extraction, prospecting, file generation, tool synchronization. Once it's running, no one needs to touch it.",
+                hero_btn_quote: "Get a free quote", hero_btn_projects: "See my projects", hero_btn_call: "Book a call",
+                stat_time: "Time saved", stat_intervention: "Manual intervention", stat_days_value: "~Days", stat_days: "Delivery time", stat_focus: "Business focus",
+                about_greeting: "Hi! I'm Blong.",
+                about_p1: "I'm a freelancer specialized in automation and AI integration. I build complete systems that replace your repetitive tasks — from data collection to final delivery.",
+                about_p2: "In practice: you describe what your teams do by hand, and I turn it into an autonomous system. Document extraction, prospecting pipelines, automatic file generation, invoice processing — anything that follows a repetitive pattern, I automate it.",
+                about_p3: "I don't deliver \"automations\". <strong>I deliver systems that run without you.</strong>",
+                problem_heading: "Your teams spend hours on tasks no one should be doing by hand.",
+                problem_text: "Copying data from a document into a spreadsheet. Looking up information on a website to paste it somewhere else. Sending the same email 50 times with different attachments. Checking data one by one.<br><br>Every minute spent on these tasks is a minute your teams aren't spending thinking, selling, advising, or producing.<br><br><strong style=\"color: #ffffff;\">The problem isn't your tools. It's everything that sits between them.</strong>",
+                services_heading: "What I can do for you",
+                service_1_name: "Your repetitive tasks, on autopilot", service_1_desc: "A form filled out, a file uploaded — and everything triggers: collection, enrichment, calculations, document generation, sending. End to end, no intervention needed.",
+                service_2_name: "Your documents read and understood by AI", service_2_desc: "Your PDFs analyzed page by page by AI. Invoices, contracts, reports — every piece of data is extracted, classified, and stored in your database. Automatically.",
+                service_3_name: "Your prospecting runs by itself", service_3_desc: "Contact search, email lookup, verification, deduplication — your prospecting pipeline runs continuously. Every prospect arrives clean in your CRM.",
+                service_4_name: "Your tools finally talk to each other", service_4_desc: "Your data cleaned, calculated, and synchronized across all your tools. Spreadsheets, databases, emails, drives — everything communicates without you having to copy-paste anything.",
+                projects_heading: "Completed projects", projects_subtitle: "A few concrete examples of manual processes I've turned into autonomous systems.",
+                p1_tag: "Document automation", p1_title: "Automatic generation of complete files", p1_desc: "A process that required manually filling out each document, looking up information from multiple sources, doing calculations, and sending files — all automated end to end.",
+                p1_before: "⏱ Before: ~45 minutes of manual work per file", p1_after: "✅ After: a 2-minute form, everything else is automatic", metric_time: "Time saved",
+                p2_tag: "Data processing", p2_title: "Invoice processing pipeline", p2_desc: "Hundreds of PDF invoices to process each month. Each page is analyzed by AI, each item is extracted with its price, category, and characteristics — then everything is stored in a database.",
+                p2_before: "⏱ Before: hours copying each invoice line by line", p2_after: "✅ After: the PDF is uploaded, everything is extracted and stored automatically", metric_types: "Types classified",
+                p3_tag: "Prospecting", p3_title: "Automated prospecting pipeline", p3_desc: "A complete pipeline that searches for contacts, finds their professional emails, verifies that addresses are valid, removes duplicates, and inserts prospects cleanly into the CRM — with zero manual action.",
+                p3_before: "⏱ Before: manual contact search one by one", p3_after: "✅ After: prospects arrive verified and deduplicated in the CRM", metric_automated: "Automated", metric_quality: "Data quality",
+                process_heading: "3 steps. Not 3 months.",
+                process_1_name: "1. Discovery call", process_1_desc: "We identify together what takes up most of your time. I tell you if it's automatable, how, and how long it will take. Free, 30 minutes.",
+                process_2_name: "2. Build", process_2_desc: "I build your custom system. Each workflow is designed for your business, your tools, your edge cases. You validate at every step.",
+                process_3_name: "3. Delivery & support", process_3_desc: "The system is deployed, tested, and documented. It's built to run on its own. And if something breaks, I'm here.",
+                tools_heading: "Tools I use",
+                testimonial_1_text: "I entrusted Blong with automating a complex workflow. The deliverable is solid, well-structured, and functional. A good communicator, rigorous, and above all, able to quickly understand the challenges. I will call on him again.", testimonial_1_name: "Alexis D.", testimonial_1_role: "CEO • Workflow Automation Lab",
+                faq_heading: "Frequently asked questions",
+                faq_1_q: "What types of tasks can you automate?", faq_1_a: "Anything repetitive that follows a logic: document processing, prospecting, file generation, tool synchronization, data extraction. If you do it by hand more than 3 times a week, it's probably automatable. We can discuss it during the discovery call.",
+                faq_2_q: "How long does it take to set up an automation?", faq_2_a: "It depends on complexity: a few days for a simple process, one to two weeks for a more complete system with AI and multiple connected tools. I always give you a clear estimate before starting.",
+                faq_3_q: "Does my data stay with me?", faq_3_a: "Yes. I mainly use n8n self-hosted, which means your data doesn't pass through third-party servers. You keep full control. If you already use other tools (Zapier, Make...), I adapt to your environment.",
+                faq_4_q: "What happens after delivery?", faq_4_a: "The system is designed to run on its own. I provide clear documentation. If you want maintenance or support over time, that's possible too — we discuss it based on your needs.",
                 cal_heading: "Let's discuss your project",
-                contact_heading: "Ready to automate<br>your processes?", contact_sub: "Have an automation project? Fill out this form or book a call to discuss how we can transform your manual workflows into intelligent systems.", contact_cal: "Book a call",
+                contact_heading: "Which process wastes<br>most of your time?", contact_sub: "Describe in a few words what your teams do manually today. I'll quickly tell you if it's automatable, how, and how long it would take.", contact_cal: "Book a call",
                 footer_rights: "All rights reserved"
             }
         };
@@ -437,12 +553,10 @@
         const setLanguage = (lang) => {
             localStorage.setItem("lang", lang);
             document.documentElement.lang = lang;
-
             document.querySelectorAll("[data-i18n]").forEach(el => {
                 const key = el.getAttribute("data-i18n");
                 el.innerHTML = (translations[lang] && translations[lang][key]) || translations.fr[key];
             });
-
             const elements = ['tally', 'cal'];
             elements.forEach(type => {
                 const el_fr = document.getElementById(`${type}-fr`);
@@ -452,7 +566,6 @@
                     el_en.classList.toggle('hidden', lang !== 'en');
                 }
             });
-
             document.querySelectorAll(".lang-btn").forEach(btn => {
                 btn.classList.toggle("active", btn.dataset.lang === lang);
             });
@@ -465,7 +578,7 @@
             btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
         });
 
-        const cursor=document.getElementById("cursor"),cursorDot=document.getElementById("cursorDot");let mouseX=0,mouseY=0,cursorX=0,cursorY=0;function animateCursor(){cursorX+=.15*(mouseX-cursorX),cursorY+=.15*(mouseY-cursorY),cursor.style.left=cursorX+"px",cursor.style.top=cursorY+"px",requestAnimationFrame(animateCursor)}document.addEventListener("mousemove",e=>{mouseX=e.clientX,mouseY=e.clientY,cursorDot.style.left=mouseX+"px",cursorDot.style.top=mouseY+"px"}),animateCursor(),document.querySelectorAll("a, button, .btn-primary, .btn-secondary, .nav-cta, .project-card, .lang-btn, .contact-link, .tool-item, .testimonial-card, .service-card, .faq-item").forEach(e=>{e.addEventListener("mouseenter",()=>cursor.classList.add("hover")),e.addEventListener("mouseleave",()=>cursor.classList.remove("hover"))});const nav=document.getElementById("nav");window.addEventListener("scroll",()=>{nav.classList.toggle("scrolled",window.scrollY>60)});const menuToggle=document.getElementById("menuToggle"),mobileMenu=document.getElementById("mobileMenu");menuToggle.addEventListener("click",()=>{const e=menuToggle.classList.toggle("active");mobileMenu.classList.toggle("active"),menuToggle.setAttribute("aria-expanded",e),document.body.style.overflow=e?"hidden":""}),document.querySelectorAll(".mobile-link").forEach(e=>{e.addEventListener("click",()=>{menuToggle.classList.remove("active"),mobileMenu.classList.remove("active"),menuToggle.setAttribute("aria-expanded","false"),document.body.style.overflow=""})}),document.querySelectorAll(".faq-item").forEach(e=>{e.addEventListener("click",()=>{const t=e.classList.contains("active");document.querySelectorAll(".faq-item").forEach(e=>{e.classList.remove("active")}),t||e.classList.add("active")})});const observer=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting&&(e.target.classList.add("visible"),observer.unobserve(e.target))})},{threshold:.1,rootMargin:"0px 0px -50px 0px"});document.querySelectorAll("[data-animate]").forEach(e=>{observer.observe(e)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){const o=document.querySelector(this.getAttribute("href"));o&&(t.preventDefault(),o.scrollIntoView({behavior:"smooth",block:"start"}))})});
+        const cursor=document.getElementById("cursor"),cursorDot=document.getElementById("cursorDot");let mouseX=0,mouseY=0,cursorX=0,cursorY=0;function animateCursor(){cursorX+=.15*(mouseX-cursorX),cursorY+=.15*(mouseY-cursorY),cursor.style.left=cursorX+"px",cursor.style.top=cursorY+"px",requestAnimationFrame(animateCursor)}document.addEventListener("mousemove",e=>{mouseX=e.clientX,mouseY=e.clientY,cursorDot.style.left=mouseX+"px",cursorDot.style.top=mouseY+"px"}),animateCursor(),document.querySelectorAll("a, button, .btn-primary, .btn-secondary, .nav-cta, .project-card, .lang-btn, .contact-link, .tool-item, .testimonial-featured-content, .service-card, .faq-item").forEach(e=>{e.addEventListener("mouseenter",()=>cursor.classList.add("hover")),e.addEventListener("mouseleave",()=>cursor.classList.remove("hover"))});const nav=document.getElementById("nav");window.addEventListener("scroll",()=>{nav.classList.toggle("scrolled",window.scrollY>60)});const menuToggle=document.getElementById("menuToggle"),mobileMenu=document.getElementById("mobileMenu");menuToggle.addEventListener("click",()=>{const e=menuToggle.classList.toggle("active");mobileMenu.classList.toggle("active"),menuToggle.setAttribute("aria-expanded",e),document.body.style.overflow=e?"hidden":""}),document.querySelectorAll(".mobile-link").forEach(e=>{e.addEventListener("click",()=>{menuToggle.classList.remove("active"),mobileMenu.classList.remove("active"),menuToggle.setAttribute("aria-expanded","false"),document.body.style.overflow=""})}),document.querySelectorAll(".faq-item").forEach(e=>{e.addEventListener("click",()=>{const t=e.classList.contains("active");document.querySelectorAll(".faq-item").forEach(e=>{e.classList.remove("active")}),t||e.classList.add("active")})});const observer=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting&&(e.target.classList.add("visible"),observer.unobserve(e.target))})},{threshold:.1,rootMargin:"0px 0px -50px 0px"});document.querySelectorAll("[data-animate]").forEach(e=>{observer.observe(e)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){const o=document.querySelector(this.getAttribute("href"));o&&(t.preventDefault(),o.scrollIntoView({behavior:"smooth",block:"start"}))})});
     });
     </script>
 </body>
