@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blong | Expert Automatisation n8n Freelance | BY NODFLOWMATION</title>
-    <meta name="description" content="Freelance expert en automatisation n8n. Je remplace vos processus manuels par des systèmes intelligents qui tournent sans vous.">
+    <!-- Méta-description mise à jour -->
+    <meta name="description" content="Freelance expert en automatisation de processus métier. Je conçois des systèmes sur-mesure pour réduire vos coûts opérationnels et fiabiliser vos workflows.">
     <link rel="canonical" href="https://bynodflowmation.github.io/portfolio-n8n/">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -108,10 +109,11 @@
         .project-card + .project-card { margin-top: 32px; }
         .project-card:nth-child(even) { direction: rtl; }
         .project-card:nth-child(even) > * { direction: ltr; }
-        .project-visual { position: relative; min-height: 500px; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #1a1a1a; padding: 24px; }
-        .project-visual img { width: 100%; height: 100%; object-fit: contain; object-position: center; transition: transform 0.8s var(--transition); }
-        .project-card:hover .project-visual img { transform: scale(1.05); }
+        .project-visual { position: relative; min-height: 500px; overflow: hidden; display: flex; align-items: center; justify-content: center; background: var(--dark-surface); padding: 24px; }
         .project-visual-number { position: absolute; top: 24px; left: 24px; z-index: 2; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: rgba(255,255,255,0.3); letter-spacing: 0.1em; }
+        /* NOUVEAU STYLE POUR VISUEL WORKFLOW */
+        .project-workflow-graph { font-family: 'JetBrains Mono', monospace; color: var(--gray-700); font-size: 14px; line-height: 1.8; text-align: center; user-select: none; }
+        .project-workflow-graph pre { margin: 0; }
         .project-info { padding: 56px; display: flex; flex-direction: column; justify-content: center; }
         .project-tag { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; background: var(--accent-glow); border: 1px solid rgba(99, 102, 241, 0.2); border-radius: 100px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--accent-light); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500; margin-bottom: 24px; width: fit-content; }
         .project-info h3 { font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 700; line-height: 1.2; margin-bottom: 24px; letter-spacing: -0.01em; }
@@ -208,20 +210,19 @@
         <div class="hero-content">
             <div class="hero-badge"><span class="hero-badge-dot"></span><span data-i18n="hero_badge">Disponible pour de nouveaux projets</span></div>
             <h1 class="hero-title">
-                <span data-i18n="hero_h1_line1">Je remplace vos</span><br>
-                <span class="gradient-text" data-i18n="hero_h1_line2">processus manuels</span><br>
-                <span data-i18n="hero_h1_line3">par des systèmes qui tournent sans vous.</span>
+                <span data-i18n="hero_h1_line1">Vos processus manuels,</span><br>
+                <span class="gradient-text" data-i18n="hero_h1_line2">en pilotage automatique.</span>
             </h1>
-            <p class="hero-description" data-i18n="hero_description">Vous me décrivez ce que vos équipes font à la main — je le transforme en système autonome. Extraction de documents, prospection, génération de fichiers, synchronisation d'outils. Une fois lancé, plus personne n'a besoin d'y toucher.</p>
+            <p class="hero-description" data-i18n="hero_description">Je transforme vos processus manuels en systèmes autonomes fiables. De l'extraction de documents à la synchronisation d'outils, l'objectif est d'optimiser vos opérations et de libérer vos équipes pour des tâches à plus forte valeur ajoutée.</p>
             <div class="hero-actions">
                 <a href="#contact" class="btn-primary"><span data-i18n="hero_btn_quote">Obtenir un devis gratuit</span><span class="arrow">→</span></a>
                 <a href="#work" class="btn-secondary" data-i18n="hero_btn_projects">Voir mes projets</a>
                 <a href="#cal" class="btn-secondary" data-i18n="hero_btn_call">Réserver un appel</a>
             </div>
             <div class="hero-stats">
-                <div class="hero-stat"><div class="hero-stat-value">95%</div><div class="hero-stat-label" data-i18n="stat_time">Temps gagné</div></div>
-                <div class="hero-stat"><div class="hero-stat-value">0</div><div class="hero-stat-label" data-i18n="stat_intervention">Intervention manuelle</div></div>
-                <div class="hero-stat"><div class="hero-stat-value" data-i18n="stat_days_value">~Jours</div><div class="hero-stat-label" data-i18n="stat_days">Délai de livraison</div></div>
+                <div class="hero-stat"><div class="hero-stat-value">Jusqu'à 95%</div><div class="hero-stat-label" data-i18n="stat_time">de temps gagné</div></div>
+                <div class="hero-stat"><div class="hero-stat-value">Minimale</div><div class="hero-stat-label" data-i18n="stat_intervention">Intervention manuelle</div></div>
+                <div class="hero-stat"><div class="hero-stat-value" data-i18n="stat_days_value">~7 Jours</div><div class="hero-stat-label" data-i18n="stat_days">Délai moyen</div></div>
                 <div class="hero-stat"><div class="hero-stat-value">100%</div><div class="hero-stat-label" data-i18n="stat_focus">Focus métier</div></div>
             </div>
         </div>
@@ -233,9 +234,9 @@
                 <div class="about-avatar"><img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/PHOTO_MALT.jpg" alt="Photo de Blong Yang"></div>
                 <div class="about-text">
                     <h2 data-i18n="about_greeting">Salut ! Je m'appelle Blong.</h2>
-                    <p data-i18n="about_p1">Je suis freelance spécialisé en automatisation et intégration d'IA. Je construis des systèmes complets qui remplacent vos tâches répétitives — de la collecte de données jusqu'à la livraison finale.</p>
-                    <p data-i18n="about_p2">Concrètement : vous me décrivez ce que vos équipes font à la main, et je le transforme en système autonome. Extraction de documents, pipelines de prospection, génération automatique de fichiers, traitement de factures — tout ce qui suit une logique répétitive, je l'automatise.</p>
-                    <p data-i18n="about_p3">Je ne livre pas des "automations". <strong>Je livre des systèmes qui tournent sans vous.</strong></p>
+                    <p data-i18n="about_p1">Je suis freelance spécialisé en automatisation et intégration d'IA. Je conçois des systèmes sur-mesure pour exécuter vos processus métier de A à Z, de la collecte de données à la livraison finale.</p>
+                    <p data-i18n="about_p2">Mon approche : vous décrivez votre workflow, je le traduis en une solution technique robuste et documentée. Traitement de factures, génération de documents juridiques, pipelines de prospection... tout ce qui suit une logique claire peut être automatisé.</p>
+                    <p data-i18n="about_p3">Mon objectif est de livrer des systèmes fiables qui fonctionnent en arrière-plan, sans nécessiter de supervision constante.</p>
                 </div>
             </div>
         </div>
@@ -244,8 +245,8 @@
     <section class="problem-section" id="problem">
         <div class="section-container">
             <div class="problem-content">
-                <h2 data-i18n="problem_heading">Vos équipes perdent des heures sur des tâches que personne ne devrait faire à la main.</h2>
-                <p data-i18n="problem_text">Recopier des données d'un document vers un tableur. Chercher des informations sur un site pour les coller ailleurs. Envoyer le même email 50 fois avec des pièces jointes différentes. Vérifier des données une par une.<br><br>Chaque minute passée sur ces tâches est une minute que vos équipes ne passent pas à réfléchir, vendre, conseiller ou produire.<br><br><strong style="color: #ffffff;">Le problème, ce n'est pas vos outils. C'est tout ce qu'il y a entre eux.</strong></p>
+                <h2 data-i18n="problem_heading">Le coût caché des opérations manuelles.</h2>
+                <p data-i18n="problem_text">Recopier des données, vérifier des listes, synchroniser des fichiers : ces tâches à faible valeur ajoutée ont un coût direct sur la productivité. Elles introduisent aussi un risque d'erreur qui peut impacter la qualité des données et les décisions qui en découlent. Mon travail consiste à éliminer ce coût en fiabilisant ces processus.</p>
             </div>
         </div>
     </section>
@@ -255,24 +256,24 @@
             <h2 class="section-heading" style="text-align: center; margin: 0 auto 80px;" data-i18n="services_heading">Ce que je peux faire pour vous</h2>
             <div class="services-grid">
                 <div class="service-card" data-animate>
-                    <span class="service-icon">⚡</span>
-                    <h3 class="service-name" data-i18n="service_1_name">Vos tâches répétitives, en pilote automatique</h3>
-                    <p class="service-desc" data-i18n="service_1_desc">Un formulaire rempli, un fichier déposé — et tout se déclenche : collecte, enrichissement, calculs, génération de documents, envoi. De bout en bout, sans intervention.</p>
+                    <span class="service-icon">📄</span>
+                    <h3 class="service-name" data-i18n="service_1_name">Génération de documents complexes</h3>
+                    <p class="service-desc" data-i18n="service_1_desc">À partir d'un simple formulaire, le système collecte les données, les enrichit, effectue des calculs et assemble automatiquement des dossiers complets (contrats, rapports, annexes...) au format Word ou PDF.</p>
                 </div>
                 <div class="service-card" data-animate>
                     <span class="service-icon">🧠</span>
-                    <h3 class="service-name" data-i18n="service_2_name">Vos documents lus et compris par l'IA</h3>
-                    <p class="service-desc" data-i18n="service_2_desc">Vos PDFs analysés page par page par l'IA. Factures, contrats, rapports — chaque donnée est extraite, classifiée et rangée dans votre base de données. Automatiquement.</p>
+                    <h3 class="service-name" data-i18n="service_2_name">Extraction de données par l'IA</h3>
+                    <p class="service-desc" data-i18n="service_2_desc">L'IA analyse vos documents (factures, contrats, rapports) pour en extraire et structurer les données clés. Chaque information est ensuite classifiée et rangée dans votre base de données.</p>
                 </div>
                 <div class="service-card" data-animate>
                     <span class="service-icon">🔍</span>
-                    <h3 class="service-name" data-i18n="service_3_name">Votre prospection tourne toute seule</h3>
-                    <p class="service-desc" data-i18n="service_3_desc">Recherche de contacts, récupération d'emails, vérification, dédoublonnage — votre pipeline de prospection tourne en continu. Chaque prospect arrive propre dans votre CRM.</p>
+                    <h3 class="service-name" data-i18n="service_3_name">Pipelines de prospection automatisés</h3>
+                    <p class="service-desc" data-i18n="service_3_desc">Un système complet pour rechercher des contacts, trouver et vérifier leurs adresses email, dédoublonner les listes et intégrer les prospects qualifiés directement dans votre CRM.</p>
                 </div>
                 <div class="service-card" data-animate>
                     <span class="service-icon">🔗</span>
-                    <h3 class="service-name" data-i18n="service_4_name">Vos outils se parlent enfin entre eux</h3>
-                    <p class="service-desc" data-i18n="service_4_desc">Vos données nettoyées, calculées et synchronisées entre tous vos outils. Tableurs, bases de données, emails, drives — tout communique sans que vous ayez à copier-coller quoi que ce soit.</p>
+                    <h3 class="service-name" data-i18n="service_4_name">Synchronisation de vos outils</h3>
+                    <p class="service-desc" data-i18n="service_4_desc">Je connecte vos différentes plateformes (tableurs, bases de données, CRM, outils métier) pour que vos données soient cohérentes et à jour partout, sans copier-coller.</p>
                 </div>
             </div>
         </div>
@@ -282,29 +283,51 @@
         <div class="section-container">
             <div class="section-header" style="display: block; text-align: center;">
                 <h2 class="section-heading" style="margin: 0 auto;" data-i18n="projects_heading">Projets réalisés</h2>
-                <p class="section-subtitle" style="margin: 20px auto 0; max-width: 700px;" data-i18n="projects_subtitle">Quelques exemples concrets de processus manuels que j'ai transformés en systèmes autonomes.</p>
+                <p class="section-subtitle" style="margin: 20px auto 0; max-width: 700px;" data-i18n="projects_subtitle">Exemples concrets de processus manuels transformés en systèmes autonomes.</p>
             </div>
             
             <article class="project-card" data-animate>
-                <div class="project-visual"><div class="project-visual-number">01</div><img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/BSA_AIR.png" alt="Workflow d'automatisation documentaire" loading="lazy"></div>
+                <div class="project-visual">
+                    <div class="project-visual-number">01</div>
+                    <div class="project-workflow-graph"><pre>
+[ Formulaire ]
+      ↓
+[ Données externes ] → [ IA Analyse ]
+      ↓
+[ Calculs & Logique ]
+      ↓
+[ Document .docx ]
+                    </pre></div>
+                </div>
                 <div class="project-info">
-                    <div class="project-tag" data-i18n="p1_tag">Automatisation documentaire</div>
-                    <h3 data-i18n="p1_title">Génération automatique de dossiers complets</h3>
-                    <p class="project-desc" data-i18n="p1_desc">Un processus qui demandait de remplir manuellement chaque document, chercher les informations sur plusieurs sources, faire les calculs et envoyer les fichiers — le tout automatisé de bout en bout.</p>
+                    <div class="project-tag" data-i18n="p1_tag">Documentation & Légal</div>
+                    <h3 data-i18n="p1_title">Automatisation de dossiers d'opérations complexes</h3>
+                    <p class="project-desc" data-i18n="p1_desc">Automatisation complète d'un processus de création de dossiers qui impliquait la collecte manuelle de données depuis de multiples sources, des calculs complexes et l'assemblage de plusieurs documents.</p>
                     <div class="project-before-after">
                         <div class="before" data-i18n="p1_before">⏱ Avant : ~45 minutes de travail manuel par dossier</div>
-                        <div class="after" data-i18n="p1_after">✅ Après : un formulaire de 2 minutes, tout le reste est automatique</div>
+                        <div class="after" data-i18n="p1_after">✅ Après : un formulaire de 2 minutes, le reste est automatique</div>
                     </div>
                     <div class="project-metrics">
                         <div class="project-metric"><div class="project-metric-value">95%</div><div class="project-metric-label" data-i18n="metric_time">Temps gagné</div></div>
                         <div class="project-metric"><div class="project-metric-value">42</div><div class="project-metric-label">Nodes</div></div>
                     </div>
-                    <div class="project-stack"><span class="project-stack-item">n8n</span><span class="project-stack-item">GPT-4</span><span class="project-stack-item">Mistral OCR</span><span class="project-stack-item">API REST</span></div>
+                    <div class="project-stack"><span class="project-stack-item">n8n</span><span class="project-stack-item">GPT-4</span><span class="project-stack-item">Mistral AI</span><span class="project-stack-item">API REST</span></div>
                 </div>
             </article>
 
             <article class="project-card" data-animate>
-                <div class="project-visual"><div class="project-visual-number">02</div><img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/AGGREGATION_FACTURE.png" alt="Pipeline de traitement de factures" loading="lazy"></div>
+                <div class="project-visual">
+                    <div class="project-visual-number">02</div>
+                    <div class="project-workflow-graph"><pre>
+[ Dépôt PDF ]
+      ↓
+[ IA Analyse (Gemini) ]
+      ↓
+[ Classification & Structuration ]
+      ↓
+[ Base de données (Supabase) ]
+                    </pre></div>
+                </div>
                 <div class="project-info">
                     <div class="project-tag" data-i18n="p2_tag">Traitement de données</div>
                     <h3 data-i18n="p2_title">Pipeline de traitement de factures</h3>
@@ -322,7 +345,18 @@
             </article>
             
             <article class="project-card" data-animate>
-                <div class="project-visual"><div class="project-visual-number">03</div><img src="https://raw.githubusercontent.com/BYNODFLOWMATION/portfolio-n8n/main/APIFY.png" alt="Pipeline de prospection automatisée" loading="lazy"></div>
+                <div class="project-visual">
+                    <div class="project-visual-number">03</div>
+                    <div class="project-workflow-graph"><pre>
+[ Scraping (Apify) ]
+      ↓
+[ Recherche & Vérification Email ]
+      ↓
+[ Dédoublonnage ]
+      ↓
+[ CRM / Base de données ]
+                    </pre></div>
+                </div>
                 <div class="project-info">
                     <div class="project-tag" data-i18n="p3_tag">Prospection</div>
                     <h3 data-i18n="p3_title">Pipeline de prospection automatisée</h3>
@@ -343,22 +377,22 @@
 
     <section class="process-section" id="process">
         <div class="section-container">
-            <h2 class="section-heading" style="text-align: center; margin: 0 auto 80px;" data-i18n="process_heading">3 étapes. Pas 3 mois.</h2>
+            <h2 class="section-heading" style="text-align: center; margin: 0 auto 80px;" data-i18n="process_heading">Un processus simple et rapide</h2>
             <div class="services-grid process-grid" style="grid-template-columns: repeat(3, 1fr);">
                 <div class="service-card" data-animate>
                     <span class="service-icon">📞</span>
                     <h3 class="service-name" data-i18n="process_1_name">1. Appel découverte</h3>
-                    <p class="service-desc" data-i18n="process_1_desc">On identifie ensemble ce qui vous prend le plus de temps. Je vous dis si c'est automatisable, comment, et en combien de temps. Gratuit, 30 minutes.</p>
+                    <p class="service-desc" data-i18n="process_1_desc">On discute de vos processus actuels et on identifie ensemble les opportunités d'automatisation. Je vous donne une première estimation du temps et des solutions possibles.</p>
                 </div>
                 <div class="service-card" data-animate>
                     <span class="service-icon">🔧</span>
-                    <h3 class="service-name" data-i18n="process_2_name">2. Construction</h3>
-                    <p class="service-desc" data-i18n="process_2_desc">Je construis votre système sur mesure. Chaque workflow est conçu pour votre métier, vos outils, vos cas particuliers. Vous validez à chaque étape.</p>
+                    <h3 class="service-name" data-i18n="process_2_name">2. Construction & Validation</h3>
+                    <p class="service-desc" data-i18n="process_2_desc">Je construis une première version du système. Vous la testez et on l'ajuste ensemble pour qu'elle corresponde parfaitement à vos besoins.</p>
                 </div>
                 <div class="service-card" data-animate>
                     <span class="service-icon">🚀</span>
-                    <h3 class="service-name" data-i18n="process_3_name">3. Livraison & support</h3>
-                    <p class="service-desc" data-i18n="process_3_desc">Le système est déployé, testé et documenté. C'est fait pour tourner tout seul. Et si quelque chose casse, je suis là.</p>
+                    <h3 class="service-name" data-i18n="process_3_name">3. Livraison & Suivi</h3>
+                    <p class="service-desc" data-i18n="process_3_desc">Le système est déployé, documenté et prêt à l'emploi. Je reste disponible pour m'assurer que tout fonctionne parfaitement sur le long terme.</p>
                 </div>
             </div>
         </div>
@@ -407,20 +441,20 @@
             <h2 class="section-heading" style="text-align: center; margin: 0 auto 80px;" data-i18n="faq_heading">Questions fréquentes</h2>
             <div class="faq-container">
                 <div class="faq-item" data-animate>
-                    <div class="faq-question"><h3 data-i18n="faq_1_q">Quels types de tâches pouvez-vous automatiser ?</h3><span class="faq-toggle">+</span></div>
-                    <div class="faq-answer"><p data-i18n="faq_1_a">Tout ce qui est répétitif et suit une logique : traitement de documents, prospection, génération de fichiers, synchronisation entre outils, extraction de données. Si vous le faites à la main plus de 3 fois par semaine, c'est probablement automatisable. On en parle lors de l'appel découverte.</p></div>
+                    <div class="faq-question"><h3 data-i18n="faq_1_q">Quels types de processus pouvez-vous automatiser ?</h3><span class="faq-toggle">+</span></div>
+                    <div class="faq-answer"><p data-i18n="faq_1_a">Tout processus répétitif basé sur une logique métier : traitement de documents (factures, contrats), prospection commerciale, génération de rapports, synchronisation entre outils (CRM, ERP, tableurs), extraction de données web. Si une tâche est effectuée manuellement et de manière récurrente, il y a de fortes chances qu'elle soit automatisable.</p></div>
                 </div>
                 <div class="faq-item" data-animate>
-                    <div class="faq-question"><h3 data-i18n="faq_2_q">Combien de temps pour mettre en place une automatisation ?</h3><span class="faq-toggle">+</span></div>
-                    <div class="faq-answer"><p data-i18n="faq_2_a">Ça dépend de la complexité : quelques jours pour un processus simple, une à deux semaines pour un système plus complet avec de l'IA et plusieurs outils connectés. Je vous donne toujours une estimation claire avant de commencer.</p></div>
+                    <div class="faq-question"><h3 data-i18n="faq_2_q">Quel est le délai de mise en place ?</h3><span class="faq-toggle">+</span></div>
+                    <div class="faq-answer"><p data-i18n="faq_2_a">Le délai dépend de la complexité. Un workflow simple peut être livré en quelques jours. Un système complet intégrant de l'IA et plusieurs API peut prendre une à deux semaines. Une estimation précise est toujours fournie après l'appel découverte.</p></div>
                 </div>
                 <div class="faq-item" data-animate>
-                    <div class="faq-question"><h3 data-i18n="faq_3_q">Mes données restent-elles chez moi ?</h3><span class="faq-toggle">+</span></div>
-                    <div class="faq-answer"><p data-i18n="faq_3_a">Oui. J'utilise principalement n8n en self-hosted, ce qui veut dire que vos données ne passent pas par des serveurs tiers. Vous gardez le contrôle total. Si vous utilisez déjà d'autres outils (Zapier, Make...), je m'adapte à votre environnement.</p></div>
+                    <div class="faq-question"><h3 data-i18n="faq_3_q">Comment la sécurité des données est-elle assurée ?</h3><span class="faq-toggle">+</span></div>
+                    <div class="faq-answer"><p data-i18n="faq_3_a">Je privilégie des solutions auto-hébergées avec n8n, ce qui signifie que vos données transitent sur vos propres serveurs ou une infrastructure dédiée, et non via des plateformes tierces. Vous gardez ainsi un contrôle total sur la confidentialité et la sécurité de vos informations.</p></div>
                 </div>
                 <div class="faq-item" data-animate>
-                    <div class="faq-question"><h3 data-i18n="faq_4_q">Que se passe-t-il après la livraison ?</h3><span class="faq-toggle">+</span></div>
-                    <div class="faq-answer"><p data-i18n="faq_4_a">Le système est conçu pour tourner tout seul. Je vous fournis une documentation claire. Si vous voulez de la maintenance ou du support dans le temps, c'est possible aussi — on en discute selon vos besoins.</p></div>
+                    <div class="faq-question"><h3 data-i18n="faq_4_q">Quel est le suivi après la livraison ?</h3><span class="faq-toggle">+</span></div>
+                    <div class="faq-answer"><p data-i18n="faq_4_a">Le système est conçu pour être autonome. Je fournis une documentation complète pour sa gestion. Des contrats de maintenance ou de support ponctuel sont également disponibles pour assurer le bon fonctionnement sur le long terme et gérer les éventuelles évolutions.</p></div>
                 </div>
             </div>
         </div>
@@ -438,8 +472,8 @@
 
     <section class="section contact-section" id="contact">
         <div class="section-container contact-content">
-            <h2 class="contact-heading" data-i18n="contact_heading">Quel processus vous fait<br>perdre le plus de temps ?</h2>
-            <p class="contact-sub" data-i18n="contact_sub">Décrivez-moi en quelques mots ce que vos équipes font manuellement aujourd'hui. Je vous dis rapidement si c'est automatisable, comment, et en combien de temps.</p>
+            <h2 class="contact-heading" data-i18n="contact_heading">Quel processus impacte<br>le plus votre productivité ?</h2>
+            <p class="contact-sub" data-i18n="contact_sub">Décrivez-moi en quelques mots le processus manuel que vous souhaitez optimiser. Je reviendrai vers vous rapidement avec une analyse sur sa faisabilité, l'approche technique et une estimation de délai.</p>
             <div class="tally-form-container">
                 <iframe id="tally-fr" src="https://tally.so/embed/dWA1yd?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="379" frameborder="0" marginheight="0" marginwidth="0" title="PRISE DE CONTACT"></iframe>
                 <iframe id="tally-en" src="https://tally.so/embed/ODPeaK?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="379" frameborder="0" marginheight="0" marginwidth="0" title="CONTACT FORM" class="hidden"></iframe>
@@ -467,85 +501,81 @@
             fr: {
                 nav_about: "À propos", nav_services: "Services", nav_work: "Projets", nav_testimonials: "Témoignages", nav_faq: "FAQ", nav_contact: "Contact", nav_cta: "Réserver un appel",
                 hero_badge: "Disponible pour de nouveaux projets",
-                hero_h1_line1: "Je remplace vos",
-                hero_h1_line2: "processus manuels",
-                hero_h1_line3: "par des systèmes qui tournent sans vous.",
-                hero_description: "Vous me décrivez ce que vos équipes font à la main — je le transforme en système autonome. Extraction de documents, prospection, génération de fichiers, synchronisation d'outils. Une fois lancé, plus personne n'a besoin d'y toucher.",
+                hero_h1_line1: "Vos processus manuels,", hero_h1_line2: "en pilotage automatique.",
+                hero_description: "Je transforme vos processus manuels en systèmes autonomes fiables. De l'extraction de documents à la synchronisation d'outils, l'objectif est d'optimiser vos opérations et de libérer vos équipes pour des tâches à plus forte valeur ajoutée.",
                 hero_btn_quote: "Obtenir un devis gratuit", hero_btn_projects: "Voir mes projets", hero_btn_call: "Réserver un appel",
-                stat_time: "Temps gagné", stat_intervention: "Intervention manuelle", stat_days_value: "~Jours", stat_days: "Délai de livraison", stat_focus: "Focus métier",
+                stat_time: "de temps gagné", stat_intervention: "Intervention manuelle", stat_days_value: "~7 Jours", stat_days: "Délai moyen", stat_focus: "Focus métier",
                 about_greeting: "Salut ! Je m'appelle Blong.",
-                about_p1: "Je suis freelance spécialisé en automatisation et intégration d'IA. Je construis des systèmes complets qui remplacent vos tâches répétitives — de la collecte de données jusqu'à la livraison finale.",
-                about_p2: "Concrètement : vous me décrivez ce que vos équipes font à la main, et je le transforme en système autonome. Extraction de documents, pipelines de prospection, génération automatique de fichiers, traitement de factures — tout ce qui suit une logique répétitive, je l'automatise.",
-                about_p3: "Je ne livre pas des \"automations\". <strong>Je livre des systèmes qui tournent sans vous.</strong>",
-                problem_heading: "Vos équipes perdent des heures sur des tâches que personne ne devrait faire à la main.",
-                problem_text: "Recopier des données d'un document vers un tableur. Chercher des informations sur un site pour les coller ailleurs. Envoyer le même email 50 fois avec des pièces jointes différentes. Vérifier des données une par une.<br><br>Chaque minute passée sur ces tâches est une minute que vos équipes ne passent pas à réfléchir, vendre, conseiller ou produire.<br><br><strong style=\"color: #ffffff;\">Le problème, ce n'est pas vos outils. C'est tout ce qu'il y a entre eux.</strong>",
+                about_p1: "Je suis freelance spécialisé en automatisation et intégration d'IA. Je conçois des systèmes sur-mesure pour exécuter vos processus métier de A à Z, de la collecte de données à la livraison finale.",
+                about_p2: "Mon approche : vous décrivez votre workflow, je le traduis en une solution technique robuste et documentée. Traitement de factures, génération de documents juridiques, pipelines de prospection... tout ce qui suit une logique claire peut être automatisé.",
+                about_p3: "Mon objectif est de livrer des systèmes fiables qui fonctionnent en arrière-plan, sans nécessiter de supervision constante.",
+                problem_heading: "Le coût caché des opérations manuelles.",
+                problem_text: "Recopier des données, vérifier des listes, synchroniser des fichiers : ces tâches à faible valeur ajoutée ont un coût direct sur la productivité. Elles introduisent aussi un risque d'erreur qui peut impacter la qualité des données et les décisions qui en découlent. Mon travail consiste à éliminer ce coût en fiabilisant ces processus.",
                 services_heading: "Ce que je peux faire pour vous",
-                service_1_name: "Vos tâches répétitives, en pilote automatique", service_1_desc: "Un formulaire rempli, un fichier déposé — et tout se déclenche : collecte, enrichissement, calculs, génération de documents, envoi. De bout en bout, sans intervention.",
-                service_2_name: "Vos documents lus et compris par l'IA", service_2_desc: "Vos PDFs analysés page par page par l'IA. Factures, contrats, rapports — chaque donnée est extraite, classifiée et rangée dans votre base de données. Automatiquement.",
-                service_3_name: "Votre prospection tourne toute seule", service_3_desc: "Recherche de contacts, récupération d'emails, vérification, dédoublonnage — votre pipeline de prospection tourne en continu. Chaque prospect arrive propre dans votre CRM.",
-                service_4_name: "Vos outils se parlent enfin entre eux", service_4_desc: "Vos données nettoyées, calculées et synchronisées entre tous vos outils. Tableurs, bases de données, emails, drives — tout communique sans que vous ayez à copier-coller quoi que ce soit.",
-                projects_heading: "Projets réalisés", projects_subtitle: "Quelques exemples concrets de processus manuels que j'ai transformés en systèmes autonomes.",
-                p1_tag: "Automatisation documentaire", p1_title: "Génération automatique de dossiers complets", p1_desc: "Un processus qui demandait de remplir manuellement chaque document, chercher les informations sur plusieurs sources, faire les calculs et envoyer les fichiers — le tout automatisé de bout en bout.",
-                p1_before: "⏱ Avant : ~45 minutes de travail manuel par dossier", p1_after: "✅ Après : un formulaire de 2 minutes, tout le reste est automatique", metric_time: "Temps gagné",
+                service_1_name: "Génération de documents complexes", service_1_desc: "À partir d'un simple formulaire, le système collecte les données, les enrichit, effectue des calculs et assemble automatiquement des dossiers complets (contrats, rapports, annexes...) au format Word ou PDF.",
+                service_2_name: "Extraction de données par l'IA", service_2_desc: "L'IA analyse vos documents (factures, contrats, rapports) pour en extraire et structurer les données clés. Chaque information est ensuite classifiée et rangée dans votre base de données.",
+                service_3_name: "Pipelines de prospection automatisés", service_3_desc: "Un système complet pour rechercher des contacts, trouver et vérifier leurs adresses email, dédoublonner les listes et intégrer les prospects qualifiés directement dans votre CRM.",
+                service_4_name: "Synchronisation de vos outils", service_4_desc: "Je connecte vos différentes plateformes (tableurs, bases de données, CRM, outils métier) pour que vos données soient cohérentes et à jour partout, sans copier-coller.",
+                projects_heading: "Projets réalisés", projects_subtitle: "Exemples concrets de processus manuels transformés en systèmes autonomes.",
+                p1_tag: "Documentation & Légal", p1_title: "Automatisation de dossiers d'opérations complexes", p1_desc: "Automatisation complète d'un processus de création de dossiers qui impliquait la collecte manuelle de données depuis de multiples sources, des calculs complexes et l'assemblage de plusieurs documents.",
+                p1_before: "⏱ Avant : ~45 minutes de travail manuel par dossier", p1_after: "✅ Après : un formulaire de 2 minutes, le reste est automatique", metric_time: "Temps gagné",
                 p2_tag: "Traitement de données", p2_title: "Pipeline de traitement de factures", p2_desc: "Des centaines de factures PDF à traiter chaque mois. Chaque page est analysée par l'IA, chaque article est extrait avec son prix, sa catégorie, ses caractéristiques — puis tout est rangé dans une base de données.",
                 p2_before: "⏱ Avant : des heures à recopier chaque facture ligne par ligne", p2_after: "✅ Après : le PDF est déposé, tout est extrait et rangé automatiquement", metric_types: "Types classifiés",
                 p3_tag: "Prospection", p3_title: "Pipeline de prospection automatisée", p3_desc: "Un pipeline complet qui recherche des contacts, trouve leurs emails professionnels, vérifie que les adresses sont valides, élimine les doublons, et insère les prospects proprement dans le CRM — sans aucune action manuelle.",
                 p3_before: "⏱ Avant : recherche manuelle de contacts un par un", p3_after: "✅ Après : les prospects arrivent vérifiés et dédoublonnés dans le CRM", metric_automated: "Automatisé", metric_quality: "Qualité données",
-                process_heading: "3 étapes. Pas 3 mois.",
-                process_1_name: "1. Appel découverte", process_1_desc: "On identifie ensemble ce qui vous prend le plus de temps. Je vous dis si c'est automatisable, comment, et en combien de temps. Gratuit, 30 minutes.",
-                process_2_name: "2. Construction", process_2_desc: "Je construis votre système sur mesure. Chaque workflow est conçu pour votre métier, vos outils, vos cas particuliers. Vous validez à chaque étape.",
-                process_3_name: "3. Livraison & support", process_3_desc: "Le système est déployé, testé et documenté. C'est fait pour tourner tout seul. Et si quelque chose casse, je suis là.",
+                process_heading: "Un processus simple et rapide",
+                process_1_name: "1. Appel découverte", process_1_desc: "On discute de vos processus actuels et on identifie ensemble les opportunités d'automatisation. Je vous donne une première estimation du temps et des solutions possibles.",
+                process_2_name: "2. Construction & Validation", process_2_desc: "Je construis une première version du système. Vous la testez et on l'ajuste ensemble pour qu'elle corresponde parfaitement à vos besoins.",
+                process_3_name: "3. Livraison & Suivi", process_3_desc: "Le système est déployé, documenté et prêt à l'emploi. Je reste disponible pour m'assurer que tout fonctionne parfaitement sur le long terme.",
                 tools_heading: "Outils que j'utilise",
                 testimonial_1_text: "J'ai confié à Blong l'automatisation d'un workflow complexe. Le livrable est solide, bien structuré et fonctionnel. Bon communicant, rigoureux, et surtout capable de comprendre rapidement les enjeux. Je referai appel à lui.", testimonial_1_name: "Alexis D.", testimonial_1_role: "CEO • Workflow Automation Lab",
                 faq_heading: "Questions fréquentes",
-                faq_1_q: "Quels types de tâches pouvez-vous automatiser ?", faq_1_a: "Tout ce qui est répétitif et suit une logique : traitement de documents, prospection, génération de fichiers, synchronisation entre outils, extraction de données. Si vous le faites à la main plus de 3 fois par semaine, c'est probablement automatisable. On en parle lors de l'appel découverte.",
-                faq_2_q: "Combien de temps pour mettre en place une automatisation ?", faq_2_a: "Ça dépend de la complexité : quelques jours pour un processus simple, une à deux semaines pour un système plus complet avec de l'IA et plusieurs outils connectés. Je vous donne toujours une estimation claire avant de commencer.",
-                faq_3_q: "Mes données restent-elles chez moi ?", faq_3_a: "Oui. J'utilise principalement n8n en self-hosted, ce qui veut dire que vos données ne passent pas par des serveurs tiers. Vous gardez le contrôle total. Si vous utilisez déjà d'autres outils (Zapier, Make...), je m'adapte à votre environnement.",
-                faq_4_q: "Que se passe-t-il après la livraison ?", faq_4_a: "Le système est conçu pour tourner tout seul. Je vous fournis une documentation claire. Si vous voulez de la maintenance ou du support dans le temps, c'est possible aussi — on en discute selon vos besoins.",
+                faq_1_q: "Quels types de processus pouvez-vous automatiser ?", faq_1_a: "Tout processus répétitif basé sur une logique métier : traitement de documents (factures, contrats), prospection commerciale, génération de rapports, synchronisation entre outils (CRM, ERP, tableurs), extraction de données web. Si une tâche est effectuée manuellement et de manière récurrente, il y a de fortes chances qu'elle soit automatisable.",
+                faq_2_q: "Quel est le délai de mise en place ?", faq_2_a: "Le délai dépend de la complexité. Un workflow simple peut être livré en quelques jours. Un système complet intégrant de l'IA et plusieurs API peut prendre une à deux semaines. Une estimation précise est toujours fournie après l'appel découverte.",
+                faq_3_q: "Comment la sécurité des données est-elle assurée ?", faq_3_a: "Je privilégie des solutions auto-hébergées avec n8n, ce qui signifie que vos données transitent sur vos propres serveurs ou une infrastructure dédiée, et non via des plateformes tierces. Vous gardez ainsi un contrôle total sur la confidentialité et la sécurité de vos informations.",
+                faq_4_q: "Quel est le suivi après la livraison ?", faq_4_a: "Le système est conçu pour être autonome. Je fournis une documentation complète pour sa gestion. Des contrats de maintenance ou de support ponctuel sont également disponibles pour assurer le bon fonctionnement sur le long terme et gérer les éventuelles évolutions.",
                 cal_heading: "Discutons de votre projet",
-                contact_heading: "Quel processus vous fait<br>perdre le plus de temps ?", contact_sub: "Décrivez-moi en quelques mots ce que vos équipes font manuellement aujourd'hui. Je vous dis rapidement si c'est automatisable, comment, et en combien de temps.", contact_cal: "Réserver un appel",
+                contact_heading: "Quel processus impacte<br>le plus votre productivité ?", contact_sub: "Décrivez-moi en quelques mots le processus manuel que vous souhaitez optimiser. Je reviendrai vers vous rapidement avec une analyse sur sa faisabilité, l'approche technique et une estimation de délai.", contact_cal: "Réserver un appel",
                 footer_rights: "Tous droits réservés"
             },
             en: {
                 nav_about: "About", nav_services: "Services", nav_work: "Projects", nav_testimonials: "Testimonials", nav_faq: "FAQ", nav_contact: "Contact", nav_cta: "Book a call",
                 hero_badge: "Available for new projects",
-                hero_h1_line1: "I replace your",
-                hero_h1_line2: "manual processes",
-                hero_h1_line3: "with systems that run without you.",
-                hero_description: "Tell me what your teams do by hand — I turn it into an autonomous system. Document extraction, prospecting, file generation, tool synchronization. Once it's running, no one needs to touch it.",
+                hero_h1_line1: "Your manual processes,", hero_h1_line2: "on autopilot.",
+                hero_description: "I transform your manual processes into reliable autonomous systems. From document extraction to tool synchronization, the goal is to optimize your operations and free up your teams for higher-value tasks.",
                 hero_btn_quote: "Get a free quote", hero_btn_projects: "See my projects", hero_btn_call: "Book a call",
-                stat_time: "Time saved", stat_intervention: "Manual intervention", stat_days_value: "~Days", stat_days: "Delivery time", stat_focus: "Business focus",
+                stat_time: "time saved", stat_intervention: "Manual intervention", stat_days_value: "~7 Days", stat_days: "Average delivery time", stat_focus: "Business focus",
                 about_greeting: "Hi! I'm Blong.",
-                about_p1: "I'm a freelancer specialized in automation and AI integration. I build complete systems that replace your repetitive tasks — from data collection to final delivery.",
-                about_p2: "In practice: you describe what your teams do by hand, and I turn it into an autonomous system. Document extraction, prospecting pipelines, automatic file generation, invoice processing — anything that follows a repetitive pattern, I automate it.",
-                about_p3: "I don't deliver \"automations\". <strong>I deliver systems that run without you.</strong>",
-                problem_heading: "Your teams spend hours on tasks no one should be doing by hand.",
-                problem_text: "Copying data from a document into a spreadsheet. Looking up information on a website to paste it somewhere else. Sending the same email 50 times with different attachments. Checking data one by one.<br><br>Every minute spent on these tasks is a minute your teams aren't spending thinking, selling, advising, or producing.<br><br><strong style=\"color: #ffffff;\">The problem isn't your tools. It's everything that sits between them.</strong>",
+                about_p1: "I'm a freelancer specializing in automation and AI integration. I design and build custom systems to execute your business processes end-to-end, from data collection to final delivery.",
+                about_p2: "My approach: you describe your workflow, I translate it into a robust and documented technical solution. Invoice processing, legal document generation, prospecting pipelines... anything that follows a clear logic can be automated.",
+                about_p3: "My goal is to deliver reliable systems that run in the background, without requiring constant supervision.",
+                problem_heading: "The hidden cost of manual operations.",
+                problem_text: "Copying data, checking lists, syncing files: these low-value tasks have a direct cost on productivity. They also introduce a risk of error that can impact data quality and subsequent decisions. My work is to eliminate this cost by making these processes reliable.",
                 services_heading: "What I can do for you",
-                service_1_name: "Your repetitive tasks, on autopilot", service_1_desc: "A form filled out, a file uploaded — and everything triggers: collection, enrichment, calculations, document generation, sending. End to end, no intervention needed.",
-                service_2_name: "Your documents read and understood by AI", service_2_desc: "Your PDFs analyzed page by page by AI. Invoices, contracts, reports — every piece of data is extracted, classified, and stored in your database. Automatically.",
-                service_3_name: "Your prospecting runs by itself", service_3_desc: "Contact search, email lookup, verification, deduplication — your prospecting pipeline runs continuously. Every prospect arrives clean in your CRM.",
-                service_4_name: "Your tools finally talk to each other", service_4_desc: "Your data cleaned, calculated, and synchronized across all your tools. Spreadsheets, databases, emails, drives — everything communicates without you having to copy-paste anything.",
-                projects_heading: "Completed projects", projects_subtitle: "A few concrete examples of manual processes I've turned into autonomous systems.",
-                p1_tag: "Document automation", p1_title: "Automatic generation of complete files", p1_desc: "A process that required manually filling out each document, looking up information from multiple sources, doing calculations, and sending files — all automated end to end.",
-                p1_before: "⏱ Before: ~45 minutes of manual work per file", p1_after: "✅ After: a 2-minute form, everything else is automatic", metric_time: "Time saved",
+                service_1_name: "Complex Document Generation", service_1_desc: "From a simple form, the system gathers data, enriches it, performs calculations, and automatically assembles complete files (contracts, reports, appendices...) in Word or PDF format.",
+                service_2_name: "Data Extraction with AI", service_2_desc: "AI analyzes your documents (invoices, contracts, reports) to extract and structure key data. Each piece of information is then classified and stored in your database.",
+                service_3_name: "Automated Prospecting Pipelines", service_3_desc: "A complete system to search for contacts, find and verify their email addresses, deduplicate lists, and integrate qualified prospects directly into your CRM.",
+                service_4_name: "Tool Synchronization", service_4_desc: "I connect your different platforms (spreadsheets, databases, CRM, business tools) so your data is consistent and up-to-date everywhere, without copy-pasting.",
+                projects_heading: "Completed projects", projects_subtitle: "Concrete examples of manual processes transformed into autonomous systems.",
+                p1_tag: "Documentation & Legal", p1_title: "Automation of Complex Transaction Files", p1_desc: "Full automation of a dossier creation process that involved manual data collection from multiple sources, complex calculations, and the assembly of several documents.",
+                p1_before: "⏱ Before: ~45 minutes of manual work per file", p1_after: "✅ After: a 2-minute form, the rest is automatic", metric_time: "Time saved",
                 p2_tag: "Data processing", p2_title: "Invoice processing pipeline", p2_desc: "Hundreds of PDF invoices to process each month. Each page is analyzed by AI, each item is extracted with its price, category, and characteristics — then everything is stored in a database.",
                 p2_before: "⏱ Before: hours copying each invoice line by line", p2_after: "✅ After: the PDF is uploaded, everything is extracted and stored automatically", metric_types: "Types classified",
                 p3_tag: "Prospecting", p3_title: "Automated prospecting pipeline", p3_desc: "A complete pipeline that searches for contacts, finds their professional emails, verifies that addresses are valid, removes duplicates, and inserts prospects cleanly into the CRM — with zero manual action.",
                 p3_before: "⏱ Before: manual contact search one by one", p3_after: "✅ After: prospects arrive verified and deduplicated in the CRM", metric_automated: "Automated", metric_quality: "Data quality",
-                process_heading: "3 steps. Not 3 months.",
-                process_1_name: "1. Discovery call", process_1_desc: "We identify together what takes up most of your time. I tell you if it's automatable, how, and how long it will take. Free, 30 minutes.",
-                process_2_name: "2. Build", process_2_desc: "I build your custom system. Each workflow is designed for your business, your tools, your edge cases. You validate at every step.",
-                process_3_name: "3. Delivery & support", process_3_desc: "The system is deployed, tested, and documented. It's built to run on its own. And if something breaks, I'm here.",
+                process_heading: "A simple and fast process",
+                process_1_name: "1. Discovery call", process_1_desc: "We discuss your current processes and identify automation opportunities together. I'll provide an initial estimate of the time and possible solutions.",
+                process_2_name: "2. Build & Validate", process_2_desc: "I build a first version of the system. You test it, and we adjust it together to perfectly fit your needs.",
+                process_3_name: "3. Delivery & Follow-up", process_3_desc: "The system is deployed, documented, and ready to use. I remain available to ensure everything runs smoothly in the long run.",
                 tools_heading: "Tools I use",
                 testimonial_1_text: "I entrusted Blong with automating a complex workflow. The deliverable is solid, well-structured, and functional. A good communicator, rigorous, and above all, able to quickly understand the challenges. I will call on him again.", testimonial_1_name: "Alexis D.", testimonial_1_role: "CEO • Workflow Automation Lab",
                 faq_heading: "Frequently asked questions",
-                faq_1_q: "What types of tasks can you automate?", faq_1_a: "Anything repetitive that follows a logic: document processing, prospecting, file generation, tool synchronization, data extraction. If you do it by hand more than 3 times a week, it's probably automatable. We can discuss it during the discovery call.",
-                faq_2_q: "How long does it take to set up an automation?", faq_2_a: "It depends on complexity: a few days for a simple process, one to two weeks for a more complete system with AI and multiple connected tools. I always give you a clear estimate before starting.",
-                faq_3_q: "Does my data stay with me?", faq_3_a: "Yes. I mainly use n8n self-hosted, which means your data doesn't pass through third-party servers. You keep full control. If you already use other tools (Zapier, Make...), I adapt to your environment.",
-                faq_4_q: "What happens after delivery?", faq_4_a: "The system is designed to run on its own. I provide clear documentation. If you want maintenance or support over time, that's possible too — we discuss it based on your needs.",
+                faq_1_q: "What types of processes can you automate?", faq_1_a: "Any repetitive process based on business logic: document processing (invoices, contracts), sales prospecting, report generation, synchronization between tools (CRM, ERP, spreadsheets), web data extraction. If a task is done manually and recurrently, it is highly likely to be automatable.",
+                faq_2_q: "What is the implementation time?", faq_2_a: "The timeline depends on complexity. A simple workflow can be delivered in a few days. A complete system integrating AI and multiple APIs might take one to two weeks. A precise estimate is always provided after the discovery call.",
+                faq_3_q: "How is data security ensured?", faq_3_a: "I prioritize self-hosted solutions with n8n, meaning your data is processed on your own servers or a dedicated infrastructure, not through third-party platforms. This gives you full control over the confidentiality and security of your information.",
+                faq_4_q: "What happens after delivery?", faq_4_a: "The system is designed to be autonomous. I provide comprehensive documentation for its management. Maintenance contracts or ad-hoc support are also available to ensure long-term smooth operation and handle any future evolutions.",
                 cal_heading: "Let's discuss your project",
-                contact_heading: "Which process wastes<br>most of your time?", contact_sub: "Describe in a few words what your teams do manually today. I'll quickly tell you if it's automatable, how, and how long it would take.", contact_cal: "Book a call",
+                contact_heading: "Which process most impacts<br>your productivity?", contact_sub: "Briefly describe the manual process you want to optimize. I will get back to you quickly with an analysis of its feasibility, technical approach, and a time estimate.", contact_cal: "Book a call",
                 footer_rights: "All rights reserved"
             }
         };
